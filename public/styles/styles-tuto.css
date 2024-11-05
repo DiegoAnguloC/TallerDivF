@@ -89,3 +89,45 @@ header > nav > ul > li > a:hover{
         background-color: #cb176b;
     }
 }
+
+
+
+
+
+
+section > .primera{
+    display: flex;
+    margin: 10px;
+}
+section > .primera > .pr1{
+    display: flex;
+    flex-direction: column;
+}
+section > .primera > .pr2{
+    display: flex;
+    flex-direction: column;
+}
+section > .segunda{
+    display: flex;
+    margin: 10px;
+}
+section > .segunda > .sg1{
+    display: flex;
+    flex-direction: column;
+}
+section > .segunda > .sg2{
+    display: flex;
+    flex-direction: column;
+}
+section > .tercera{
+    display: flex;
+    margin: 10px;
+}
+section > .tercera > .tr1{
+    display: flex;
+    flex-direction: column;
+}
+section > .tercera > .tr2{
+    display: flex;
+    flex-direction: column;
+}

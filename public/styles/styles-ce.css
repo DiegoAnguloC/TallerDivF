@@ -89,3 +89,54 @@ header > nav > ul > li > a:hover{
         background-color: #cb176b;
     }
 }
+
+
+
+
+
+
+
+
+
+
+section > .excelsiur{
+    display: flex;
+}
+section > .excelsiur > .ce1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section > .excelsiur > .ce2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section > .cei{
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+section > .cei > .txt1{
+    font-size: 13px;
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    background-color: #f26d3d;
+    border: 2px solid black;
+}
+section > .cef{
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+section > .cef > .txt2{
+    font-size: 13px;
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    background-color: #f26d3d;
+    border: 2px solid black;
+}
