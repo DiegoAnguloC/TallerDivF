@@ -1,8 +1,39 @@
+typo
+
+variablees
+
+
+
 header{
     border-bottom: 1px solid black;
 }
+:root{
+    --negro: black;
+    --blanco: white;
+    --rosa: rgb(183, 0, 86);
 
-header > nav{
+    --movil: 375px;
+    --tablet: 768px;
+    --desktop: 1600px;
+}
+
+*{
+    color: var(--negro);
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+li{
+    display: flex;
+    margin: 0 70px;
+}
+.index header .cabecera h1, nav ul{
+    display: flex;
+    margin: 0 60px;
+}
+
+/* nav{
     height: 100vh;
     width: 150px;
     position: fixed;
@@ -21,7 +52,6 @@ header > nav > ul > li{
 }
 header > nav > ul > li > a{
     color: white;
-    text-decoration: none;
     display: block;
     padding: 10px;
     text-align: center;
@@ -29,8 +59,17 @@ header > nav > ul > li > a{
 header > nav > ul > li > a:hover{
     background-color: #cb176b;
 }
+*/ /*CODIGO INICIAL PARA COPIARLO EN LOS RESPONSIVE*/
 
-@media screen and (min-width:375px){
+
+@media (min-width: 375px) and (max-width: 425px){
+    ul{
+       box-sizing: border-box; 
+    }
+    a{
+        color: var(--blanco);
+        text-decoration: none;
+    }
     header > nav{
         height: 100vh;
         width: 200px;
@@ -50,7 +89,7 @@ header > nav > ul > li > a:hover{
     }
     header > nav > ul > li > a{
         color: white;
-        text-decoration: none;
+
         display: block;
         padding: 10px;
         text-align: center;
@@ -60,7 +99,8 @@ header > nav > ul > li > a:hover{
     }
 }
 
-@media screen and (min-width:425px){
+/*
+@media screen and (min-width:var(--tablet)){
     header > nav{
         height: 100vh;
         width: 220px;
@@ -80,7 +120,6 @@ header > nav > ul > li > a:hover{
     }
     header > nav > ul > li > a{
         color: white;
-        text-decoration: none;
         display: block;
         padding: 10px;
         text-align: center;
@@ -89,3 +128,52 @@ header > nav > ul > li > a:hover{
         background-color: #cb176b;
     }
 }
+
+
+@media screen and (min-width:var(--desktop)){
+    
+    .index .cabecera{
+        display: flex;
+        margin: 0 50px;
+    }
+    .index .cabecera > nav{
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #f20f79;
+        color: white;
+        padding-top: 20px;
+    }
+    
+    .index > nav > ul{
+        list-style-type: none;
+        padding: 0;
+        
+    }
+    header > nav > ul > li{
+        
+        margin: 10px 0;
+    }
+    header > nav > ul > li > a{
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    .index header .cabecera h1, nav ul{
+        display: flex;
+        margin: 0 60px;
+    }
+}
+ */
+
+
+.index header{
+--var1 : 30px;
+
+}
+
+.index .contenedor .articulo h1 a 
+
+.articulo header{}
