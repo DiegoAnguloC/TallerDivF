@@ -24,14 +24,16 @@ a{
     text-decoration: none;
     color: var(--negro);
 }
-li{
+/*ESTO ES PARA DESKTOP Y TABLET*/
+/*li{
     display: flex;
     margin: 0 70px;
-}
-.index header .cabecera h1, nav ul{
+}*/
+/*.index header .cabecera h1, nav ul{
     display: flex;
     margin: 0 60px;
-}
+}*/ 
+/*ESTO ES PARA DESKTOP Y TABLET*/
 
 /* nav{
     height: 100vh;
@@ -64,7 +66,11 @@ header > nav > ul > li > a:hover{
 
 @media (min-width: 375px) and (max-width: 425px){
     ul{
-       box-sizing: border-box; 
+       box-sizing: border-box;
+    }
+    li a{
+        display: inline-block;
+
     }
     a{
         color: var(--blanco);
