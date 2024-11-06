@@ -3,183 +3,164 @@ typo
 variablees
 
 
-
 header{
     border-bottom: 1px solid black;
 }
+/*VARIABLES*/
 :root{
     --negro: black;
     --blanco: white;
     --rosa: rgb(183, 0, 86);
+    --naranja: #F26D3D;
 
     --movil: 375px;
     --tablet: 768px;
     --desktop: 1600px;
 }
-
 *{
-    color: var(--negro);
+    margin: 0;
 }
+
 a{
     text-decoration: none;
-    color: var(--negro);
+    color: var(--blanco);
 }
-/*ESTO ES PARA DESKTOP Y TABLET*/
-/*li{
-    display: flex;
-    margin: 0 70px;
-}*/
-/*.index header .cabecera h1, nav ul{
-    display: flex;
-    margin: 0 60px;
-}*/ 
-/*ESTO ES PARA DESKTOP Y TABLET*/
-
-/* nav{
-    height: 100vh;
-    width: 150px;
-    position: fixed;
+/*estilo por defecto menu de navegacion*/
+.main_index{
+    margin: 20px 0;
+}
+nav{
     top: 0;
     right: 0;
-    background-color: #f20f79;
-    color: white;
-    padding-top: 20px;
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 0;
 }
 header > nav > ul{
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 header > nav > ul > li{
     margin: 10px 0;
 }
 header > nav > ul > li > a{
-    color: white;
-    display: block;
     padding: 10px;
-    text-align: center;
 }
 header > nav > ul > li > a:hover{
     background-color: #cb176b;
 }
-*/ /*CODIGO INICIAL PARA COPIARLO EN LOS RESPONSIVE*/
+/*sectiones*/
+section{
+    background-color: lightgray;
+}
+section article{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+/*botton general*/
+button{
+    background-color: var(--naranja);
+    border: none;
+    padding: 7 14px ;
+}
+img{
+    background-color: lightgreen;
+}
 
-
-@media (min-width: 375px) and (max-width: 425px){
-    ul{
-       box-sizing: border-box;
-    }
-    li a{
-        display: inline-block;
-
-    }
-    a{
-        color: var(--blanco);
-        text-decoration: none;
-    }
-    header > nav{
+/*Mobile menu*/
+@media screen and (max-width: 426px) {
+    header > nav {
         height: 100vh;
         width: 200px;
         position: fixed;
-        top: 0;
-        right: 0;
-        background-color: #f20f79;
-        color: white;
         padding-top: 20px;
     }
-    header > nav > ul{
-        list-style-type: none;
-        padding: 0;
+    header > nav > ul {
+        display: block; 
     }
-    header > nav > ul > li{
-        margin: 10px 0;
-    }
-    header > nav > ul > li > a{
-        color: white;
 
-        display: block;
-        padding: 10px;
-        text-align: center;
-    }
-    header > nav > ul > li > a:hover{
-        background-color: #cb176b;
-    }
-}
-
-/*
-@media screen and (min-width:var(--tablet)){
-    header > nav{
-        height: 100vh;
-        width: 220px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: #f20f79;
-        color: white;
-        padding-top: 20px;
-    }
-    header > nav > ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    header > nav > ul > li{
-        margin: 10px 0;
-    }
-    header > nav > ul > li > a{
-        color: white;
-        display: block;
-        padding: 10px;
-        text-align: center;
-    }
-    header > nav > ul > li > a:hover{
-        background-color: #cb176b;
-    }
-}
-
-
-@media screen and (min-width:var(--desktop)){
-    
-    .index .cabecera{
+    header > nav > ul > li {
         display: flex;
-        margin: 0 50px;
+        text-align: center;
+        justify-content: center;
+
     }
-    .index .cabecera > nav{
-        height: 100vh;
-        width: 200px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: #f20f79;
-        color: white;
-        padding-top: 20px;
+}
+
+/*Tablet menu*/
+@media screen and (min-width: 768px) {
+    .main_index{
+        margin: 20px 40px 20px 40px;
+    }
+    header > nav {
+        position: static;
+        width: auto;
+        padding-top: 0;
+    }
+
+    header > nav > ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header > nav > ul > li {
+        /* display: inline-block; */
+        margin: 0 20px; 
+        padding: 15px 0;
+    }
+
+    header > nav > ul > li > a {
+        padding: 10px;
+    }
+    /*SECTION 1*/
+    section{
+        margin-bottom: 50px;
+    }
+    .sectionIndex1{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .sectionIndex1 article{
+        margin-right: 100px;
+        padding: 25px 0;
+    }
+    .sectionIndex1 article{
+        margin-right: 100px;
+    }
+    .sectionIndex1 img{
+        width: 400px;
+        height: 110px;
+    }
+    .sectionIndex1 button{
+        position: absolute;
+        top: 220px;
+    }
+    /*SECTION 2*/
+    .sectionIndex2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    /*SECTION 3*/
+    .sectionIndex3{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .sectionIndex3 article{
+        margin-left: 100px;
+        padding: 25px 0;
     }
     
-    .index > nav > ul{
-        list-style-type: none;
-        padding: 0;
-        
+    .sectionIndex3 img{
+        width: 400px;
+        height: 110px;
     }
-    header > nav > ul > li{
-        
-        margin: 10px 0;
+    .sectionIndex3 button{
+        position: absolute;
+        top: 485px;
     }
-    header > nav > ul > li > a{
-        display: block;
-        padding: 10px;
-        text-align: center;
-    }
-    .index header .cabecera h1, nav ul{
-        display: flex;
-        margin: 0 60px;
-    }
+    
+    
 }
- */
-
-
-.index header{
---var1 : 30px;
-
-}
-
-.index .contenedor .articulo h1 a 
-
-.articulo header{}
