@@ -5,30 +5,60 @@ import { TextPlugin } from "/node_modules/gsap/TextPlugin.js";
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-  // Función para animación de máquina de escribir conservando estilos base
-  function typewriterEffect(element) {
-    const text = element.textContent;
-    element.textContent = ""; // Limpia el texto para iniciar el efecto
+  // Función para el efecto de máquina de escribir
+  function typewriterEffect(title, content) {
+    const titleDuration = title.textContent.length * 0.05;
+    const contentDuration = content.textContent.length * 0.05;
 
-    // Calcula la duración en función de la longitud del texto
-    const duration = text.length * 0.05;
+    // Asegura que el texto sea visible antes de empezar la animación
+    title.style.visibility = "visible";
+    content.style.visibility = "visible";
 
-    // Configura la animación de máquina de escribir sin cambiar estilos base
-    gsap.to(element, {
-      text: text,
-      duration: duration,
-      ease: "power1.inOut",
-      onStart: () => {
-        element.style.visibility = "visible";
-      },
-      onComplete: () => {
-        // Restaurar cualquier estilo original en el texto después de la animación si es necesario
-      },
-      clearProps: "text" // Sólo limpia el texto después de la animación
+    gsap.fromTo(
+      title,
+      { text: "" },
+      {
+        text: title.textContent,
+        duration: titleDuration,
+        ease: "power1.inOut",
+        clearProps: "text"
+      }
+    ).then(() => {
+      gsap.fromTo(
+        content,
+        { text: "" },
+        {
+          text: content.textContent,
+          duration: contentDuration,
+          ease: "power1.inOut",
+          clearProps: "text"
+        }
+      );
     });
   }
 
-  // Configuración para cada tarjeta con efecto de máquina de escribir
+  // Función para animar la aparición y expansión del contenedor card-text
+  function animateCardTextContainer(cardText, onComplete) {
+    // Oculta inicialmente el texto para que aparezca solo con el efecto de máquina de escribir
+    const title = cardText.querySelector("h2");
+    const content = cardText.querySelector("p");
+    title.style.visibility = "hidden";
+    content.style.visibility = "hidden";
+
+    gsap.fromTo(
+      cardText,
+      { opacity: 0, scaleY: 0 }, // Empieza oculto y colapsado verticalmente
+      {
+        opacity: 1,
+        scaleY: 1,
+        duration: 0.5,
+        ease: "power1.inOut",
+        onComplete, // Llama a typewriterEffect después de expandir el contenedor
+      }
+    );
+  }
+
+  // Configura ScrollTrigger para cada tarjeta
   gsap.utils.toArray(".card").forEach((card) => {
     ScrollTrigger.create({
       trigger: card,
@@ -37,19 +67,27 @@ document.addEventListener("DOMContentLoaded", () => {
       onEnter: () => {
         card.classList.add("visible");
         const cardText = card.querySelector(".card-text");
-        typewriterEffect(cardText);
+        const title = cardText.querySelector("h2");
+        const content = cardText.querySelector("p");
+
+        // Primero, anima el contenedor card-text, luego inicia el efecto de máquina de escribir en el texto
+        animateCardTextContainer(cardText, () => typewriterEffect(title, content));
       },
       onLeave: () => card.classList.remove("visible"),
       onEnterBack: () => {
         card.classList.add("visible");
         const cardText = card.querySelector(".card-text");
-        typewriterEffect(cardText);
+        const title = cardText.querySelector("h2");
+        const content = cardText.querySelector("p");
+
+        // Repite la animación al entrar de nuevo
+        animateCardTextContainer(cardText, () => typewriterEffect(title, content));
       },
       onLeaveBack: () => card.classList.remove("visible"),
     });
   });
 
-  // Animación para la tarjeta horizontal
+  // Configura ScrollTrigger para la tarjeta horizontal
   const horizontalCard = document.querySelector(".card-horizontal");
 
   ScrollTrigger.create({
@@ -58,14 +96,22 @@ document.addEventListener("DOMContentLoaded", () => {
     end: "bottom 10%",
     onEnter: () => {
       horizontalCard.classList.add("visible");
-      const horizontalText = horizontalCard.querySelector(".horizontal-text");
-      typewriterEffect(horizontalText);
+      const cardText = horizontalCard.querySelector(".horizontal-text");
+      const title = cardText.querySelector("h2");
+      const content = cardText.querySelector("p");
+
+      // Primero, anima el contenedor card-text de la tarjeta horizontal, luego el efecto de máquina de escribir
+      animateCardTextContainer(cardText, () => typewriterEffect(title, content));
     },
     onLeave: () => horizontalCard.classList.remove("visible"),
     onEnterBack: () => {
       horizontalCard.classList.add("visible");
-      const horizontalText = horizontalCard.querySelector(".horizontal-text");
-      typewriterEffect(horizontalText);
+      const cardText = horizontalCard.querySelector(".horizontal-text");
+      const title = cardText.querySelector("h2");
+      const content = cardText.querySelector("p");
+
+      // Repite la animación al entrar de nuevo
+      animateCardTextContainer(cardText, () => typewriterEffect(title, content));
     },
     onLeaveBack: () => horizontalCard.classList.remove("visible"),
   });

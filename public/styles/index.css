@@ -107,3 +107,12 @@ header {
     max-width: 300px;
     opacity: 1; 
 }
+
+.card-text, .horizontal-text {
+    visibility: hidden; /* Oculto al inicio */
+}
+
+.card.visible .card-text,
+.card-horizontal.visible .horizontal-text {
+    visibility: visible; /* Visible al activar la animación */
+}
