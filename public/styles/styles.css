@@ -79,7 +79,7 @@ img{
 /*Mobile menu responsive 1*/
 @media screen and (min-width: 375px) {
     header > nav {
-        /*display: none;*/
+        display: none; /*DISPLAY MENU*/
         height: 100vh;
         width: 200px;
         position: fixed;
@@ -95,28 +95,36 @@ img{
         justify-content: center;
 
     }
-    .sectionIndex1{
+    /*///NUEVO WIREFRAME INDEX - SECTION 1////*/
+    .article-background{
+        width: 100%;
+        background-color: lightpink;
+        height: 708px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .article-background div{
+        width: 250px;
+    }  
+    /*////NO ES NECESARIA LA IMAGEN*/
+    .sectionIndex1 img{
+        display: none;
+    }   
+    
+    /* .sectionIndex1{
         display: flex;
         flex-direction: column;
         gap: 16px;
         margin-bottom: 16px; 
-    }
-    .sectionIndex1 img{
-        order: -1;
-        width: 100%;
-        height: 658px;
-    }
-    .sectionIndex1 button{
-        display: none;
-    }
+    } */
+   
+    
     .sectionIndex2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin-bottom: 50px;
-    }
-    .sectionIndex2 article:nth-child(n+3) {
-        display: none;
     }
     
 }
@@ -142,20 +150,6 @@ img{
 /*//////////////////////TABLET///////////////////
 /*Tablet menu*/
 @media screen and (min-width: 768px) {
-    .main_index{
-        margin: 20px 40px 20px 40px;
-    }
-    header > nav {
-        position: static;
-        width: auto;
-        height: unset;
-        padding-top: 0;
-    }
-
-    header > nav > ul {
-        display: flex;
-        justify-content: center;
-    }
 
     header > nav > ul > li {
         /* display: inline-block; */
@@ -166,7 +160,20 @@ img{
     header > nav > ul > li > a {
         padding: 10px;
     }
-    /*SECTION 1*/
+    /*////////////NUEVA SECTION 1//////////////*/
+    .article-background{
+        width: 100%;
+        background-color: lightpink;
+        height: 465px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .article-background div{
+        width: 396px;
+        margin-left: 67px;
+    } 
     section{
         margin-bottom: 50px;
     }
@@ -177,17 +184,13 @@ img{
         margin-bottom: 30px;
     }
     .sectionIndex1 article{
-        margin-left: 100px;
         padding: 25px 0;
     }
     .sectionIndex1 img{
         width: 400px;
         height: 110px;
     }
-    .sectionIndex1 button{
-        position: absolute;
-        top: 220px;
-    }
+    
     /*SECTION 2*/
     .sectionIndex2{
         display: grid;
@@ -209,10 +212,5 @@ img{
         width: 400px;
         height: 110px;
     }
-    .sectionIndex3 button{
-        position: absolute;
-        top: 485px;
-    }
-    
     
 }
