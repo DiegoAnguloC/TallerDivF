@@ -1,0 +1,142 @@
+header{
+    border-bottom: 1px solid black;
+}
+
+header > nav{
+    height: 100vh;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f20f79;
+    color: white;
+    padding-top: 20px;
+}
+header > nav > ul{
+    list-style-type: none;
+    padding: 0;
+}
+header > nav > ul > li{
+    margin: 10px 0;
+}
+header > nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+header > nav > ul > li > a:hover{
+    background-color: #cb176b;
+}
+
+@media screen and (min-width:375px){
+    header > nav{
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #f20f79;
+        color: white;
+        padding-top: 20px;
+    }
+    header > nav > ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    header > nav > ul > li{
+        margin: 10px 0;
+    }
+    header > nav > ul > li > a{
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    header > nav > ul > li > a:hover{
+        background-color: #cb176b;
+    }
+}
+
+@media screen and (min-width:425px){
+    header > nav{
+        height: 100vh;
+        width: 220px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #f20f79;
+        color: white;
+        padding-top: 20px;
+    }
+    header > nav > ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    header > nav > ul > li{
+        margin: 10px 0;
+    }
+    header > nav > ul > li > a{
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    header > nav > ul > li > a:hover{
+        background-color: #cb176b;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+section > .excelsiur{
+    display: flex;
+}
+section > .excelsiur > .ce1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section > .excelsiur > .ce2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section > .cei{
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+section > .cei > .txt1{
+    font-size: 13px;
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    background-color: #f26d3d;
+    border: 2px solid black;
+}
+section > .cef{
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+section > .cef > .txt2{
+    font-size: 13px;
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    background-color: #f26d3d;
+    border: 2px solid black;
+}
