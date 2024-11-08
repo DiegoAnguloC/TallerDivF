@@ -99,27 +99,27 @@ header > nav > ul > li > a:hover{
 
 
 
-section > .excelsiur{
+.casos_de_exitos > section > .excelsiur{
     display: flex;
 }
-section > .excelsiur > .ce1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-section > .excelsiur > .ce2{
+.casos_de_exitos > section > .excelsiur > .ce1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-section > .cei{
+.casos_de_exitos > section > .excelsiur > .ce2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.casos_de_exitos > section > .cei{
     padding: 20px;
     justify-items: center;
     align-items: center;
 }
-section > .cei > .txt1{
+.casos_de_exitos > section > .cei > .txt1{
     font-size: 13px;
     width: 250px;
     height: 100%;
@@ -127,12 +127,12 @@ section > .cei > .txt1{
     background-color: #f26d3d;
     border: 2px solid black;
 }
-section > .cef{
+.casos_de_exitos > section > .cef{
     padding: 20px;
     justify-items: center;
     align-items: center;
 }
-section > .cef > .txt2{
+.casos_de_exitos > section > .cef > .txt2{
     font-size: 13px;
     width: 250px;
     height: 100%;
