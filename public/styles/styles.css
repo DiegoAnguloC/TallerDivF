@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     border-bottom: 1px solid black;
 }
@@ -88,4 +98,95 @@ header > nav > ul > li > a:hover{
     header > nav > ul > li > a:hover{
         background-color: #cb176b;
     }
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.main-article{
+    padding: 20px;
+    background-image: url('../assets/imagenes/card_horizontal.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1560px;
+    height: 678px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main-article .article-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 40%;
+}
+
+.featured{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.featured > h2{
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.featured .featured-article{
+    background-image: url('../assets/imagenes/card_vertical.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+}
+
+.featured .featured-article .article-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    margin: 150px auto;
+    width: 90%;
+    transform: translateY(50px); /* Empieza desplazado hacia abajo */
+    transition: transform 0.5s ease; /* Suaviza la transición */
+}
+
+.tutorial{
+    text-align: center;
+    padding: 20px;
+}
+
+.tutorial .tutorial-article{
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    padding: 20px;
+    width: 1560px;
+    height: 678px;
+}
+
+.tutorial .tutorial-article img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.tutorial .tutorial-article .article-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: left;
+    width: 50%;
+    height: 100%;
 }
