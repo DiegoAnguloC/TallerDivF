@@ -88,13 +88,30 @@ body {
 /*ESPACIADO DE BODY EN TABLET*/
 @media screen and (min-width: 768px){ 
     /*SETEO DE MARGENES Y ESPACIADO DE CONTENIDOS*/
+
+    header{
+        background-color: red;
+    }
+    .header{
+        display: flex;
+        margin: 0 1px;
+    }
+    .header nav ul{
+        display: flex;
+    }
+    .header nav ul li{
+        display: flex;
+        margin: 0 45px;
+    }
     main{
         display: flex;
         flex-direction: column;
         gap: 28px;
         margin: 16px 16px;
     }
-    
+    .tutorialVideo .contenido h1,p{
+        margin: 0 15px 6px;
+    }
     /*Para indentificar las sectiones*/
     section {
         background-color: lightgray;
@@ -115,7 +132,7 @@ body {
 /* =========================ARTICULOS========================= 
 PRIMER CONTENEDOR*/
 header{
-    display: none;
+    
 }
 .main_articulos .primerapart_articulos{
     display: flex;
