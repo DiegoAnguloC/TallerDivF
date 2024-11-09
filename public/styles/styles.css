@@ -108,7 +108,9 @@ p{
         gap: 28px;
         margin: 16px 16px;
     }
-    
+    .tutorialVideo .contenido h1,p{
+        margin: 0 15px 6px;
+    }
     /*Para indentificar las sectiones*/
     section {
         background-color: lightgray;
