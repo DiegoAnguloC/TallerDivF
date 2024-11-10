@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R1</title>
+    <title>Home</title>
     <link rel="stylesheet" href="assets/estilos/styles.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
 </head>
 <body class="index">
     <header>
-        <img src="./assets/imagenes/logo fondo claro.png" alt="portada">
+        <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
         <div class="btn-barra-lateral">
             <img src="./assets/imagenes/Icono_menu.png" alt="hamburguesa">
             <div class="contenido-bar">
@@ -26,86 +26,80 @@
         </div>
     </header>
 
-
-    <section>
-        <img src="./assets/imagenes/prueba-vertical.jpeg" alt="img">
-        <div class="text-princi">
+    <main> <!-- se añadio el tag main -->
+    <section class="articulo_principal"> <!-- se añadio la clase articulo_principal -->
+        <article class="imagen_de_fondo"></article> <!-- se hizo un contenedor para la imagen de fondo (revisar) -->
+        <article class="contenido_articulo">
             <h1>Titulo</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, delectus tenetur! Quaerat numquam porro sequi mollitia aperiam voluptatibus odio voluptatum nisi, tempora est iusto impedit assumenda nesciunt at provident dicta.
             Voluptas vel voluptatum ex nesciunt? Libero illum maiores neque minima expedita enim quod, atque placeat animi possimus. Voluptas odio debitis ad delectus fugiat expedita tempora, deleniti facilis dolor ab quam.
             </p>
-        </div>
+        </article>
+        <button class="boton_LeerMas">Leer más</button>
     </section>
 
-    <h1>Articulos</h1>
+    <section class="barra_de_separacion">
+        <h2>Articulos</h2>
+    </section>
 
-    <section>
-        <div class="contenedor">
-            <div class="contenido">
+    <section class="articulos_carrusel">
+        <article class="contenedor">
+            <div class="articulo">
                 <img src="./assets/imagenes/prueba-horizontal.jpeg" alt="img">
                 <h3>Titulo</h3>
                 <p>Fecha</p>
             </div>
-            <div class="contenido">
+            <div class="articulo">
                 <img src="./assets/imagenes/prueba-horizontal.jpeg" alt="img">
                 <h3>Titulo</h3>
                 <p>Fecha</p>
             </div>
-        </div>
+        </article>
     </section>
 
-    <h1>Tutoriales</h1>
+    <section class="barra_de_separacion">
+        <h2>Tutoriales</h2>
+    </section>
 
-    <section>
-        <div class="contenedor">
-            <div class="contenido">
+    <section class="tutorial_video">
+            <article class="video">
                 <video controls>
-                    <source src="./assets/videos/prueba-video.webm" type="video/webm">
-                    <source src="./assets/videos/prueba-video.mp4" type="video/mp4">
+                    <source src="#" type="video/webm">
+                    <source src="#" type="video/mp4">
                 </video>
+            </article>
+            <article class="contenido">
                 <p>Fecha</p>
-                <h3>Titutlo</h3>
+                <h3>Título</h3>
                 <p> Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis distinctio doloribus, nihil cumque eos sed unde veniam. Dolores, debitis consequuntur fugiat minima iusto nisi distinctio expedita qui exercitationem ea.
                 Sint voluptates, aliquam quas provident asperiores porro rem natus quia praesentium eveniet ex accusantium, quis inventore tempora hic distinctio, alias harum quisquam illo libero doloremque? Obcaecati alias molestias voluptatum? Exercitationem!
                 </p>
-            </div>
-            <div class="contenido">
-                <video controls>
-                    <source src="./assets/videos/prueba-video.webm" type="video/webm">
-                    <source src="./assets/videos/prueba-video.mp4" type="video/mp4">
-                </video>
-                <p>Fecha</p>
-                <h3>Titutlo</h3>
-                <p> Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis distinctio doloribus, nihil cumque eos sed unde veniam. Dolores, debitis consequuntur fugiat minima iusto nisi distinctio expedita qui exercitationem ea.
-                Sint voluptates, aliquam quas provident asperiores porro rem natus quia praesentium eveniet ex accusantium, quis inventore tempora hic distinctio, alias harum quisquam illo libero doloremque? Obcaecati alias molestias voluptatum? Exercitationem!
-                </p>
-            </div>
-        </div>
+            </article>
     </section>
 
-    <h1>Artistas</h1>
-
-    <section>
-        <div class="contenedor">
-            <div class="contenido">
-                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
-                <h3>Nombre</h3>
-            </div>
-            <div class="contenido">
-                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
-                <h3>Nombre</h3>
-            </div>
-            <div class="contenido">
-                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
-                <h3>Nombre</h3>
-            </div>
-            <div class="contenido">
-                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
-                <h3>Nombre</h3>
-            </div>                
-        </div>
+    <section class="barra_de_separacion">
+        <h2>Artistas</h2>
     </section>
 
+    <section class="artistas_carrusel">
+            <article class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+            <div class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+            <article class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+            <article class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+    </section>
+</main>
 
     <footer>
         <img src="./assets/imagenes/logo fondo claro.png" alt="Logo">
