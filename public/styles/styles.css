@@ -127,11 +127,36 @@ p{
     video {
         background-color: lightblue;
     }
-/* =========================INDEX y MENU HAMBURGUESA PENDIENTE============== */
+/* =========================INDEX y MENU HAMBURGUESA PENDIENTE============== 
+PRIMER CONTENIDO DE INDEX*/
+/*NO SE HARÁ USO DEL TAG DE IMAGEN*/
+.articulo_principal img {
+    display: none;
+}
+.articulo_principal{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 100%;
+    height: 465px;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.articulo_principal .text-princi{
+    width: 396px;
+    margin-left: 65px;
+}
+
+
+
+
+
+
+
 /* =========================ARTICULOS========================= 
 PRIMER CONTENIDO*/
 header{
-    display: none; /*header en proceso*/
+    /*display: none; /*header en proceso*/
 }
 .main_articulos .primerapart_articulos{
     display: flex;
@@ -177,12 +202,48 @@ header{
     flex-direction: column;
     /*align-items: center;*/   
 }
+.segundapart_articulos article .contenedor .contenido p{
+    margin: 0;  
+}
 .segundapart_articulos article .contenedor .contenido img{
     width: 200px;
     height: 200px;
     border-radius: 100px;
 }
-/*FALTA PARTE FINAL DE ARTICULOS*/
+/*TERCERA PARTE ARTICULOS*/
+/*NO SE USARAN EL TAG DE IMAGENES*/
+.tercerapart_articulos figure img {
+    display: none;
+}
+/*DISPLAY DE ARTICULOS CON IMAGEN DE FONDO*/
+.tercerapart_articulos {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.tercerapart_articulos .contenedor{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    background-color: lightgreen;
+    width: 100%;
+    height: 465px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.tercerapart_articulos .contenedor .contenido{
+    width: 396px;
+    margin-left: 65px;
+
+}
+.tercerapart_articulos .contenedor .contenido h2{
+    font-size: var(--h2);
+}
+/*DISPLAY DEL RESTO DEL CONTENIDO ES INECESARIO*/
+.cuartapart_articulos{
+    display: none;
+}
 
 /*============LEER ARTICULOS TABLET=============*/
 /*PRIMERA IMAGEN*/
