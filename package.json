@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js & browser-sync start --proxy 'http://localhost:8080' --files 'public/**/*.*'"
+    "start": "node index.js & browser-sync start --proxy 'http://localhost:8080' --files 'public/**/*.*'",
+    "server": "node index.js & browser-sync start --proxy 'http://your-ip-address:8080' --files 'public/**/*.*'"
   },
   "keywords": [],
   "author": "",
