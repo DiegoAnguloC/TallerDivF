@@ -4,118 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R1</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="scripts/indexanimations.js" type="module"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/estilos/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
 </head>
-
-<body>
+<body class="index">
     <header>
-        <h1>Home</h1>
-        <nav>
-            <ul>
-
-                <li><a href="./templates/tutorial/tutorial.html">Tutoriales</a></li>
-                <li><a href="./templates/articulos/articulos.html">Articulos</a></li>
-                <li><a href="./templates/c_exito/casos_de_exitos.html">Casos de exito</a></li>
-                <li><a href="./index.html">home</a></li>
-            </ul>
-        </nav>
+        <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
+        <div class="btn-barra-lateral">
+            <img src="./assets/imagenes/Icono_menu.png" alt="hamburguesa">
+            <div class="contenido-bar">
+                <nav>
+                    <ul>
+                        
+                        <li><a href="./templates/tutorial/tutorial.html">Tutoriales</a></li>
+                        <li><a href="./templates/articulos/articulos.html">Articulos</a></li>
+                        <li><a href="./templates/c_exito/casos_de_exitos.html">Casos de exito</a></li>
+                        <li><a href="./index.html">home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <section class="main">
-        <article class="main-article">
-            <div class="article-text">
-                <h1>FANTASMAS DE JAPON</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eligendi commodi dolor aperiam,
-                    modi veritatis accusantium aliquam doloribus itaque debitis minus ratione expedita labore nulla
-                    corporis quis culpa tempora porro.
-                    Saepe molestiae temporibus nihil voluptatum pariatur iste unde cupiditate asperiores, velit ab,
-                    accusamus ad accusantium, assumenda minus eaque quasi maxime mollitia hic? Aliquid, dignissimos
-                    quibusdam maxime molestiae amet aut quaerat?</p>
-            </div>
-            <!-- <button>more</button> -->
+    <main> <!-- se añadio el tag main -->
+    <section class="articulo_principal"> <!-- se añadio la clase articulo_principal -->
+        <article class="imagen_de_fondo"></article> <!-- se hizo un contenedor para la imagen de fondo (revisar) -->
+        <article class="contenido_articulo">
+            <h1>Titulo</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, delectus tenetur! Quaerat numquam porro sequi mollitia aperiam voluptatibus odio voluptatum nisi, tempora est iusto impedit assumenda nesciunt at provident dicta.
+            Voluptas vel voluptatum ex nesciunt? Libero illum maiores neque minima expedita enim quod, atque placeat animi possimus. Voluptas odio debitis ad delectus fugiat expedita tempora, deleniti facilis dolor ab quam.
+            </p>
         </article>
-        <!-- <img src="assets/imagenes/card_horizontal2.png" alt=""> -->
-
+        <button class="boton_LeerMas">Leer más</button>
     </section>
 
-    <section class="featured">
+    <section class="barra_de_separacion">
         <h2>Articulos</h2>
-        <article class="featured-article">
-            <div class="article-text">
-                <h1>FANTASMAS DE JAPON</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste nesciunt numquam fuga a
-                    doloremque aliquam tempora alias doloribus, cum sapiente, itaque suscipit dicta, dolorem culpa
-                    dolorum ea cumque aspernatur!</p>
+    </section>
+
+    <section class="articulos_carrusel">
+        <article class="contenedor">
+            <div class="articulo">
+                <img src="./assets/imagenes/prueba-horizontal.jpeg" alt="img">
+                <h3>Titulo</h3>
+                <p>Fecha</p>
             </div>
-            <!-- <button>more</button> -->
-        </article>
-        <article class="featured-article">
-            <div class="article-text">
-                <h1>FANTASMAS DE JAPON</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste nesciunt numquam fuga a
-                    doloremque aliquam tempora alias doloribus, cum sapiente, itaque suscipit dicta, dolorem culpa
-                    dolorum ea cumque aspernatur!</p>
+            <div class="articulo">
+                <img src="./assets/imagenes/prueba-horizontal.jpeg" alt="img">
+                <h3>Titulo</h3>
+                <p>Fecha</p>
             </div>
-            <!-- <button>more</button> -->
-        </article>
-        <article class="featured-article">
-            <div class="article-text">
-                <h1>FANTASMAS DE JAPON</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iste nesciunt numquam fuga a
-                    doloremque aliquam tempora alias doloribus, cum sapiente, itaque suscipit dicta, dolorem culpa
-                    dolorum ea cumque aspernatur!</p>
-            </div>
-            <!-- <button>more</button> -->
         </article>
     </section>
 
-    <section class="tutorial">
+    <section class="barra_de_separacion">
         <h2>Tutoriales</h2>
-        <article class="tutorial-article">
-            <img src="assets/imagenes/card_horizontal2.png" alt="">
-            <div class="article-text">
-                <h1>FANTASMAS DE JAPON1</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur quibusdam, porro
-                    dignissimos sint excepturi exercitationem. Incidunt enim laborum error doloribus dicta mollitia
-                    necessitatibus, eveniet, sit aperiam dolorem beatae repudiandae?
-                    Temporibus inventore libero reiciendis, accusamus ab non quaerat facilis incidunt numquam cumque, at
-                    natus aliquid quod. Amet est impedit nisi tempore unde? Minima praesentium quo a sapiente,
-                    reprehenderit rem iusto.</p>
-            </div>
-        </article>
-        <!-- <button>more</button> -->
     </section>
 
-    <section>
-        <button></button>
-        <article>
-            <img src="" alt="">
-            <div>
-                <h1>AUTOR</h1>
-            </div>
-        </article>
-        <article>
-            <img src="" alt="">
-            <div>
-                <h1>AUTOR</h1>
-            </div>
-        </article>
-        <article>
-            <img src="" alt="">
-            <div>
-                <h1>AUTOR</h1>
-            </div>
-        </article>
+    <section class="tutorial_video">
+            <article class="video">
+                <video controls>
+                    <source src="#" type="video/webm">
+                    <source src="#" type="video/mp4">
+                </video>
+            </article>
+            <article class="contenido">
+                <p>Fecha</p>
+                <h3>Título</h3>
+                <p> Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis distinctio doloribus, nihil cumque eos sed unde veniam. Dolores, debitis consequuntur fugiat minima iusto nisi distinctio expedita qui exercitationem ea.
+                Sint voluptates, aliquam quas provident asperiores porro rem natus quia praesentium eveniet ex accusantium, quis inventore tempora hic distinctio, alias harum quisquam illo libero doloremque? Obcaecati alias molestias voluptatum? Exercitationem!
+                </p>
+            </article>
     </section>
 
+    <section class="barra_de_separacion">
+        <h2>Artistas</h2>
+    </section>
+
+    <section class="artistas_carrusel">
+            <article class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+            <div class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+            <article class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+            <article class="artista">
+                <img src="./assets/imagenes/logo fondo claro.png" alt="Artista">
+                <h3>Nombre</h3>
+            </article>
+    </section>
+</main>
 
     <footer>
-        <h4>Helps</h4>
-        <h4>Status</h4>
-        <h4>Terms</h4>
-        <h4>Blog</h4>
+        <img src="./assets/imagenes/logo fondo claro.png" alt="Logo">
+        <div class="info">
+            <h4>©Copyright</h4>
+            <h4>Nosotros</h4>
+            <h4>Caracteres</h4>
+        </div>
+        <div class="canales">
+            <img src="./assets/imagenes/facebook.png" alt="facebook">
+            <img src="./assets/imagenes/pinterest.png" alt="pinterest">
+        </div>
 
     </footer>
 
