@@ -148,6 +148,11 @@ PRIMER CONTENIDO DE INDEX*/
         display: none;
     }
 
+    .articulo_principal img {
+        display: none;
+    }
+
+
     .articulo_principal {
         display: flex;
         flex-direction: column;
@@ -157,11 +162,95 @@ PRIMER CONTENIDO DE INDEX*/
         justify-content: center;
         align-items: flex-start;
     }
-
-    .articulo_principal .text-princi {
+   
+    .articulo_principal .contenido_articulo {
         width: 396px;
         margin-left: 65px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
     }
+
+
+    .index{
+        display: flex;
+        width: var(--ScreenWidth, 1920px);
+        height: 5096px;
+        min-height: 1080px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--12, 12px);
+        background: #10243F;
+    }
+   
+    .index header{
+        width: var(--ScreenWidth, 1920px);
+        height: 356px;
+
+
+    }
+
+
+    .index .articulo_principal{
+        width: 1573px;
+        height: 1132px;
+        padding: 0px var(--9, 9px) var(--28, 28px) var(--9, 9px);
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 26px;
+    }
+
+
+    .index .articulo_principal h1{
+        color: #FFF;
+        font-size: 89.76px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+
+    .index .articulo_principal p{
+        color: #FFF;
+        font-size: 28.43px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+    .index .barra_de_separacion{
+        width: 648px;
+        height: 129px;
+        padding: var(--9, 9px) var(--12, 12px);
+        align-items: center;
+        gap: 156px;
+    }
+
+
+    .index .articulos_carrusel{
+        width: 1572px;
+        height: 586px;
+        justify-content: center;
+        align-items: center;
+        gap: 49px;
+    }
+
+
+    .index .articulos_carrusel .articulo{
+        width: 283.058px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--9, 9px);
+    }
+    .index .tutorial_video{
+        display: flex;
+    }
+
+
 
 
 
