@@ -3,41 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styles.css">
     <title>Formulario de Inicio de Sesión</title>
 </head>
-<body>
+<body class="movil">
     <main class="login">
         <section class="email">
-            <h1 class="email-titulo">Email</h1>
-            <form action="/login" method="post">
-                <div>
-                    <label for="username">Email</label>
-                    <input type="text" id="username" name="username" required>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com">
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                
+                <div class="recordar">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordar contraseña</label>
+                    <a href="#">¿Olvidó su Contraseña?</a>
                 </div>
-                <div>
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <section class="recuerdo-contraseña">
-                    <div>
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">Recordar contraseña</label>
-                    </div>
-                    <div>
-                        <a href="#">¿Olvidaste tu contraseña?</a>
-                    </div>
-                </section>
-                <section>
-                    <button type="submit">Iniciar Sesión</button>
-                </section>
-                <p>or with</p>
-                <section>
-                    <button type="button" onclick="window.location.href='#'">Log in with Google</button>
-                </section>
-                <section class="texto">
-                    <p>¿No tienes cuenta?</p>
-                    <a href="../sign-up/sign_up.html">Sign Up</a>
-                </section>
+                
+                <button type="submit">Iniciar Sesión</button>
+                
+                <p class="center">or with</p>
+                
+                <button type="submit">Log in with Google</button>
+                
+                <p class="center">¿No tienes cuenta? <a href="#">Sign Up</a></p>
             </form>
         </section>
     </main>

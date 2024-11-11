@@ -343,7 +343,46 @@ PRIMER CONTENIDO*/
 
 }
 
-/* ====================================================== */
+/* ===================== Log in =============================== */
+
+.movil {
+    width: var(--movil);
+}
+
+.login form {
+    margin-left:16px;
+}
+
+.login label {
+    display: block;
+    width: 317px;
+    font-size: var(--p);
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+    display: block;
+    width: 317px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+}
+
+button[type="submit"] {
+    width: 319px;
+    height: 48px;
+    border-radius: 10px;
+    border:none ;
+}
+.recordar {
+    display: inline-flex;
+    align-items: center;
+    width: 317px;
+}
+
+.center{
+    text-align: center;
+}
 
 
 
