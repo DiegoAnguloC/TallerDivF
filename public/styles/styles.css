@@ -442,55 +442,116 @@ PRIMER CONTENIDO*/
 
 .movil {
     width: var(--movil);
+    background-color: var(--azulOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 0 16px; 
 }
-
-.login form {
-    margin-left:16px;
+.login {
+    width: 100%;
+    max-width: 360px; 
+    background-color: var(--rosa);
+    padding-left:16px;
+    padding-right: 16px;
 }
 
 .login label {
     display: block;
-    width: 317px;
     font-size: var(--p);
+    margin-bottom: 8px; 
 }
 
 .login input[type="email"],
 .login input[type="password"] {
     display: block;
-    width: 317px;
+    width: 100%;
     height: 48px;
-    border-radius: 10px;
+    padding: 0 12px; 
+    background-color: var(--aqua);
     border: none;
+    margin-bottom: 30px; 
+    font-size: var(--p);
+}
+::placeholder{
+    color: var(--azulOscuro);
 }
 
 button[type="submit"] {
-    width: 319px;
+    width: 100%;
     height: 48px;
-    border-radius: 10px;
-    border:none ;
+    background-color: var(--amarillo);
+    border: none;
+    font-size: var(--h6);
+    color: var(--azulOscuro);
+
 }
+
+
 .recordar {
     display: inline-flex;
     align-items: center;
-    width: 317px;
+    width: 100%;
+    margin-bottom: 16px; 
+    color: var(--blanco);
+}
+.recordar a{
+    color: var(--blanco);
 }
 
-.center{
+.center {
+    text-align: center;
+    color: var(--blanco);
+}
+.center a {
+    color: var(--blanco);
+}
+.orwith{
+    text-align: center;
+    color: var(--blanco);
+    font-size: var(--h6);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* ===================== sing =============================== */
+.singin {
+    width: 100%;
+    max-width: 360px; 
+    background-color: var(--rosa);
+    padding: 16px 24px;
     text-align: center;
 }
 
-/* ===================== sing =============================== */
 .singin input[type="email"],
 .singin input[type="tel"],
 .singin input[type="text"],
 .singin input[type="password"] {
     display: block;
-    width: 317px;
+    width: 284px;
     height: 48px;
-    border-radius: 10px;
-    border: 1px solid black;
     margin-bottom: 30px;
+    background-color: var(--aqua);
+    border: none;
 }
+
+.singin .orwith {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.singin #show-password {
+    margin-left: -70px;
+}
+
+.singin label[for="show-password"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--blanco);
+    font-size: 14px;
+}
+
+
 
 
 
