@@ -473,7 +473,18 @@ button[type="submit"] {
     text-align: center;
 }
 
-
+/* ===================== sing =============================== */
+.singin input[type="email"],
+.singin input[type="tel"],
+.singin input[type="text"],
+.singin input[type="password"] {
+    display: block;
+    width: 317px;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
 
 
 
