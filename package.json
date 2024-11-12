@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "animate.css": "^4.1.1",
     "express": "^4.21.1",
     "gsap": "^3.12.5",

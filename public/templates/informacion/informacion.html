@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información</title>
+    <link rel="stylesheet" href="../../styles/styles.css">
 </head>
 <body>
     <header>
         <img src="#" alt="#">
-        <nav>
-            <ul>
-                <li><a href="./templates/tutorial/tutorial.html">Tutoriales</a></li>
-                <li><a href="./templates/articulos/articulos.html">Articulos</a></li>
-                <li><a href="./templates/c_exito/casos_de_exitos.html">Casos de exito</a></li>
-                <li><a href="./index.html">home</a></li>
-            </ul>
-        </nav>
+        <div class="btn-barra-lateral" id="btn-menu">
+            <img src="../../assets/iconos/Icono_menu.png" alt="hamburguesa" class="hamburguesa">
+            <div class="contenido-bar" id="menu">
+                <img src="../../assets/iconos/close.png" alt="Cerrar menú" class="btn-cerrar-menu">
+                <nav>
+                    <ul>
+                        <li><a href="../tutorial/tutorial.html">Tutoriales</a></li>
+                        <li><a href="../articulos/articulos.html">Artículos</a></li>
+                        <li><a href="../c_exito/casos_de_exitos.html">Casos de éxito</a></li>
+                        <li><a href="../../index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -62,6 +69,6 @@
             <a href=""><img src="#" alt="Pinterest"></a>
         </article>
     </footer>
-    <!-- scripts? -->
+    <script src="../../burguer.js"></script>
 </body>
 </html>

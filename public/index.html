@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +7,84 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
     <script type="module" src="./scripts/home.js"></script>
+    <link rel="stylesheet" href="./splide/splide.min.css"> <!-- CSS de Splide -->
 </head>
+
 <body class="index">
     <header>
         <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
-        <div class="btn-barra-lateral">
-            <img src="./assets/iconos/Icono_menu.png" alt="hamburguesa">
-            <div class="contenido-bar">
+        <div class="btn-barra-lateral" id="btn-menu">
+            <img src="./assets/iconos/Icono_menu.png" alt="hamburguesa" class="hamburguesa">
+            <div class="contenido-bar" id="menu">
+                <img src="./assets/iconos/close.png" alt="Cerrar menú" class="btn-cerrar-menu">
                 <nav>
                     <ul>
-                        
                         <li><a href="./templates/tutorial/tutorial.html">Tutoriales</a></li>
                         <li><a href="./templates/articulos/articulos.html">Articulos</a></li>
                         <li><a href="./templates/c_exito/casos_de_exitos.html">Casos de exito</a></li>
-                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div>        
     </header>
 
-    <main> <!-- se añadio el tag main -->
-    <section class="articulo_principal"> <!-- se añadio la clase articulo_principal -->
-        <article class="imagen_de_fondo"></article> <!-- se hizo un contenedor para la imagen de fondo (revisar) -->
-        <article class="contenido_articulo">
-            <h1>Titulo</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, delectus tenetur! Quaerat numquam porro sequi mollitia aperiam voluptatibus odio voluptatum nisi, tempora est iusto impedit assumenda nesciunt at provident dicta.
-            Voluptas vel voluptatum ex nesciunt? Libero illum maiores neque minima expedita enim quod, atque placeat animi possimus. Voluptas odio debitis ad delectus fugiat expedita tempora, deleniti facilis dolor ab quam.
-            </p>
-        </article>
-        <button class="boton_LeerMas">Leer más</button>
-    </section>
+    <main>
+        <section class="articulo_principal">
+            <article class="imagen_de_fondo"></article>
+            <article class="contenido_articulo">
+                <h1>Titulo</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            </article>
+            <button class="boton_LeerMas">Leer más</button>
+        </section>
 
-    <section class="barra_de_separacion">
-        <h2>Articulos</h2>
-    </section>
+        <section class="barra_de_separacion">
+            <h2>Articulos</h2>
+        </section>
 
-    <section class="articulos_carrusel">
-        <article class="contenedor">
-            <div class="articulo">
-                <img src="https://via.placeholder.com/150" alt="placeholder image">
-                <h3>Titulo</h3>
-                <p>Fecha</p>
+        <section class="articulos_carrusel carrusel">
+            <div class="splide contenedor">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="articulo">    
+                                <img src="https://via.placeholder.com/150" alt="placeholder image">
+                                <h3>Titulo</h3>
+                                <p>Fecha</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="articulo">    
+                                <img src="https://via.placeholder.com/150" alt="placeholder image">
+                                <h3>Titulo</h3>
+                                <p>Fecha</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="articulo">    
+                                <img src="https://via.placeholder.com/150" alt="placeholder image">
+                                <h3>Titulo</h3>
+                                <p>Fecha</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="articulo">    
+                                <img src="https://via.placeholder.com/150" alt="placeholder image">
+                                <h3>Titulo</h3>
+                                <p>Fecha</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="articulo">
-                <img src="https://via.placeholder.com/150" alt="img">
-                <h3>Titulo</h3>
-                <p>Fecha</p>
-            </div>
-        </article>
-    </section>
+        </section>  
 
-    <section class="barra_de_separacion">
-        <h2>Tutoriales</h2>
-    </section>
+        <section class="barra_de_separacion">
+            <h2>Tutoriales</h2>
+        </section>
 
-    <section class="tutorial_video">
+        <section class="tutorial_video">
             <article class="video">
                 <video muted>
                     <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
@@ -73,35 +94,47 @@
             <article class="contenido">
                 <p>Fecha</p>
                 <h3>Título</h3>
-                <p> Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis distinctio doloribus, nihil cumque eos sed unde veniam. Dolores, debitis consequuntur fugiat minima iusto nisi distinctio expedita qui exercitationem ea.
-                Sint voluptates, aliquam quas provident asperiores porro rem natus quia praesentium eveniet ex accusantium, quis inventore tempora hic distinctio, alias harum quisquam illo libero doloremque? Obcaecati alias molestias voluptatum? Exercitationem!
-                </p>
+                <p>Descripcion...</p>
             </article>
-    </section>
+        </section>
 
-    <section class="barra_de_separacion">
-        <h2>Artistas</h2>
-    </section>
+        <section class="barra_de_separacion">
+            <h2>Artistas</h2>
+        </section>
 
-    <section class="artistas_carrusel">
-            <article class="artista">
-                <img src="https://via.placeholder.com/150" alt="Artista">
-                <h3>Nombre</h3>
-            </article>
-            <div class="artista">
-                <img src="https://via.placeholder.com/150" alt="Artista">
-                <h3>Nombre</h3>
-            </article>
-            <article class="artista">
-                <img src="https://via.placeholder.com/150" alt="Artista">
-                <h3>Nombre</h3>
-            </article>
-            <article class="artista">
-                <img src="https://via.placeholder.com/150" alt="Artista">
-                <h3>Nombre</h3>
-            </article>
-    </section>
-</main>
+        <section class="artistas_carrusel carrusel">
+            <div class="splide contenedor">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="artista">
+                                <img src="https://via.placeholder.com/150" alt="Artista">
+                                <h3>Nombre1</h3>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="artista">
+                                <img src="https://via.placeholder.com/150" alt="Artista">
+                                <h3>Nombre1</h3>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="artista">
+                                <img src="https://via.placeholder.com/150" alt="Artista">
+                                <h3>Nombre1</h3>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="artista">
+                                <img src="https://via.placeholder.com/150" alt="Artista">
+                                <h3>Nombre1</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <img src="./assets/imagenes/logo fondo claro.png" alt="Logo">
@@ -114,9 +147,10 @@
             <img src="./assets/iconos/facebook.png" alt="facebook">
             <img src="./assets/iconos/pinterest.png" alt="pinterest">
         </div>
-
     </footer>
 
+    <script src="./splide/splide.min.js"></script>
+    <script src="carrusel.js"></script>
+    <script src="burguer.js"></script>
 </body>
-
 </html>

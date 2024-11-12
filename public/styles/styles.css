@@ -617,3 +617,165 @@ section {
 .section-right {
     transform: translateX(100%);
 }
+
+/*=================== Estilos del menú hamburguesa ===================*/
+
+.contenido-bar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.contenido-bar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.contenido-bar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contenido-bar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contenido-bar.open {
+    right: 0;
+}
+
+.btn-barra-lateral {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 100;
+    padding: 20px;
+}
+
+#menu.active {
+    right: 0;
+}
+
+.btn-cerrar-menu {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#btn-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburguesa {
+    width: 30px;
+    height: auto;
+    background-color: transparent;
+    display: block;
+}
+
+.btn-cerrar-menu {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* =================== CARRUSEL =================== */
+
+/* Estiliza cada elemento del carrusel (li) para centrar su contenido */
+.splide__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+/* Asegura que la imagen, el título y la fecha estén alineados verticalmente */
+.splide__slide img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones sin distorsión */
+    border-radius: 8px;
+    margin-bottom: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Alineación de texto para el título y fecha */
+.splide__slide h3 {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.splide__slide p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Ajuste del contenedor principal del carrusel */
+.splide {
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 10px 0; /* Espacio superior e inferior para separar del resto del contenido */
+}
+
+/* Opcional: Espaciado entre las tarjetas */
+.splide__list {
+    display: flex;
+    gap: 10px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para la vista previa del video */
+  
+.video video {
+    transition: transform 0.3s ease;
+  }
+  
+  .video:hover video {
+    transform: scale(1.05); /* Efecto de acercamiento */
+  }
+
+/* Estilos básicos para las animaciones */
+section {
+    opacity: 0; /* Empezarán invisibles */
+    transform: translateX(100%); /* Salen de la derecha por defecto */
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Alterna entre entrar desde la izquierda y desde la derecha */
+.section-left {
+    transform: translateX(-100%);
+}
+
+.section-right {
+    transform: translateX(100%);
+}
