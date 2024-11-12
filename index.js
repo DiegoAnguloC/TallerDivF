@@ -10,5 +10,6 @@ app.get('/',(req, res)=> {
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor: en http://localhost:${PORT}`);
+    console.log(`Local en: http://localhost:${PORT}`);
+    //console.log(`Servidor en: http://your-ip-address:${PORT}`);
 });
