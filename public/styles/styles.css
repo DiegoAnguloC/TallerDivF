@@ -85,7 +85,10 @@ p {
 ====================================TABLET==================================*/
 /*ESPACIADO DE BODY EN TABLET*/
 @media screen and (min-width: 768px) {
-
+    /*BODY*/
+    body{
+        background-color: #10243F;
+    }
     /*SETEO DE MARGENES Y ESPACIADO DE CONTENIDOS*/
     header {
         background-color: red;
@@ -122,10 +125,10 @@ p {
         margin: 0 15px 6px;
     }
 
-    /*Para indentificar las sectiones*/
+    /*Para indentificar las sectiones
     section {
         background-color: lightgray;
-    }
+    }*/
 
     section article {
         color: var(--negro);
@@ -164,19 +167,30 @@ PRIMER CONTENIDO DE INDEX*/
     }
    
     .contenido_articulo {
-       position: absolute; 
-        top: 50%;
+        position: absolute; 
+        top: 45%;
         left: 10%;
         width: 396px;
-        background-color: lightgray;
-        padding: 10px;
         margin: 0;
-        /*margin-left: 65px;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 30px;
+        gap: 9px;
+        /*margin-left: 65px;
         align-self: stretch;*/
     }
+
+    .contenido_articulo h1{
+        font-size: var(--h5);
+        background-color: #10243F;
+        color: var(--blanco);
+    }
+    .contenido_articulo p{
+        background-color: #10243F;
+        color: var(--blanco);
+        padding: 0 15px;
+    }
+     
     
     .boton_LeerMas {
         position: absolute;
@@ -205,6 +219,11 @@ PRIMER CONTENIDO DE INDEX*/
         width: 100%; 
         max-width: 800px; 
         height: auto; 
+    }
+    .tutorial_video .contenido {
+        background-color: #0FF294; 
+        color: #10243F; 
+        padding: 20px; 
     }
     .tutorial_video .contenido p{
         margin: 0;
