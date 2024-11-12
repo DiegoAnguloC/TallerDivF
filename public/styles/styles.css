@@ -602,3 +602,133 @@ button[type="submit"] {
         margin-right: 10px;
     }
 }
+
+/* ----------------------- TUTORIAL MOVIL ----------------------- */
+@media screen and (max-width: 375px) {
+    .bodytuto {
+        display: flex;
+        width: 360px;
+        height: 2600px;
+        padding: var(--16, 16px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--16, 16px);
+        background: #11243F;
+    }
+
+    .bodytuto .maintuto {
+        display: flex;
+        width: 328px;
+        height: 2165px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--16, 16px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto {
+        display: flex;
+        width: 328px;
+        height: 347px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--12, 12px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto video {
+        width: 328px;
+        height: 183px;
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto {
+        display: flex;
+        width: 328px;
+        height: 152px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--9, 9px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto h6 {
+        color: var(--blanco);
+        font-size: var(--h6);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto h1 {
+        color: var(--blanco);
+        font-size: var(--h1);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto p {
+        color: var(--blanco);
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 {
+        display: flex;
+        width: 328px;
+        height: 347px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--12, 12px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 video {
+        width: 328px;
+        height: 183px;
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
+        display: flex;
+        width: 328px;
+        height: 152px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--9, 9px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 h6 {
+        color: var(--negro);
+        text-align: right;
+        font-size: var(--h6);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 232px;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 h1 {
+        color: var(--negro);
+        text-align: right;
+        font-size: var(--h1);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        align-self: stretch;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 p {
+        color: var(--blanco);
+        text-align: right;
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 328px;
+    }
+}
