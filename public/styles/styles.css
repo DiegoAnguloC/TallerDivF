@@ -591,3 +591,29 @@ button[type="submit"] {
         margin-right: 10px;
     }
 }
+
+/* Estilos para la vista previa del video */
+  
+  .video video {
+    transition: transform 0.3s ease;
+  }
+  
+  .video:hover video {
+    transform: scale(1.05); /* Efecto de acercamiento */
+  }
+
+/* Estilos básicos para las animaciones */
+section {
+    opacity: 0; /* Empezarán invisibles */
+    transform: translateX(100%); /* Salen de la derecha por defecto */
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Alterna entre entrar desde la izquierda y desde la derecha */
+.section-left {
+    transform: translateX(-100%);
+}
+
+.section-right {
+    transform: translateX(100%);
+}
