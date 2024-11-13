@@ -2,6 +2,12 @@
 :root {
     --font: ;
     --blanco: #ffff;
+    --blanco: #ffff;
+    --rosa: #f20f7a;
+    --azulOscuro: #11243f;
+    --azulMedio: #1e6c70;
+    --aqua: #0ff294;
+    --amarillo: #ecf213;
     --negro: black;
     --h1: 89.76px;
     --h2: 67.34px;
@@ -436,41 +442,113 @@ PRIMER CONTENIDO*/
 
 .movil {
     width: var(--movil);
+    background-color: var(--azulOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 0 16px; 
 }
-
-.login form {
-    margin-left:16px;
+.login {
+    width: 100%;
+    max-width: 360px; 
+    background-color: var(--rosa);
+    padding-left:16px;
+    padding-right: 16px;
 }
 
 .login label {
     display: block;
-    width: 317px;
     font-size: var(--p);
+    margin-bottom: 8px; 
 }
 
 .login input[type="email"],
 .login input[type="password"] {
     display: block;
-    width: 317px;
+    width: 100%;
     height: 48px;
-    border-radius: 10px;
+    padding: 0 12px; 
+    background-color: var(--aqua);
     border: none;
+    margin-bottom: 30px; 
+    font-size: var(--p);
+}
+::placeholder{
+    color: var(--azulOscuro);
 }
 
 button[type="submit"] {
-    width: 319px;
+    width: 100%;
     height: 48px;
-    border-radius: 10px;
-    border:none ;
+    background-color: var(--amarillo);
+    border: none;
+    font-size: var(--h6);
+    color: var(--azulOscuro);
+
 }
+
+
 .recordar {
     display: inline-flex;
     align-items: center;
-    width: 317px;
+    width: 100%;
+    margin-bottom: 16px; 
+    color: var(--blanco);
+}
+.recordar a{
+    color: var(--blanco);
 }
 
-.center{
+.center {
     text-align: center;
+    color: var(--blanco);
+}
+.center a {
+    color: var(--blanco);
+}
+.orwith{
+    text-align: center;
+    color: var(--blanco);
+    font-size: var(--h6);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* ===================== sing =============================== */
+.singin {
+    width: 100%;
+    max-width: 360px; 
+    background-color: var(--rosa);
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.singin input[type="email"],
+.singin input[type="tel"],
+.singin input[type="text"],
+.singin input[type="password"] {
+    display: block;
+    width: 284px;
+    height: 48px;
+    margin-bottom: 30px;
+    background-color: var(--aqua);
+    border: none;
+}
+
+.singin .orwith {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.singin #show-password {
+    margin-left: -70px;
+}
+
+.singin label[for="show-password"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--blanco);
+    font-size: 14px;
 }
 
 
@@ -616,4 +694,160 @@ section {
 
 .section-right {
     transform: translateX(100%);
+/* ----------------------- TUTORIAL MOVIL ----------------------- */
+@media (min-width: 320px) and (max-width:376px) {
+    .bodytuto {
+        display: flex;
+        width: 360px;
+        height: 2600px;
+        padding: var(--16, 16px);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--16, 16px);
+        background: #11243F;
+    }
+
+    .bodytuto .maintuto {
+        display: flex;
+        width: 328px;
+        height: 2165px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--16, 16px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto {
+        display: flex;
+        width: 328px;
+        height: 347px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--12, 12px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto video {
+        width: 328px;
+        height: 183px;
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto {
+        display: flex;
+        width: 328px;
+        height: 152px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--9, 9px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
+        background-color: red;
+        /* CAMBIARLO POR SVG */
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto h6 {
+        color: var(--blanco);
+        font-size: var(--h6);
+        font-style: normal;
+        font-weight: 600px;
+        line-height: normal;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto .h2_tuto {
+        background-color: green;
+        /* CAMBIARLO POR SVG */
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto .h2_tuto h2 {
+        color: var(--blanco);
+        font-size: var(--h2);
+        font-style: normal;
+        font-weight: 700px;
+        line-height: normal;
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto {
+        background-color: lightblue;
+        /* CAMBIARLO POR SVG */
+    }
+
+    .bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto p {
+        color: var(--blanco);
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400px;
+        line-height: normal;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 {
+        display: flex;
+        width: 328px;
+        height: 347px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--12, 12px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 video {
+        width: 328px;
+        height: 183px;
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
+        display: flex;
+        width: 328px;
+        height: 152px;  
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--9, 9px);
+        flex-shrink: 0;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
+        background-color: aqua;
+        /*  CAMBIAR POR SVG */
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
+        color: var(--negro);
+        text-align: right;
+        font-size: var(--h6);
+        font-style: normal;
+        font-weight: 600px;
+        line-height: normal;
+        width: 232px;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
+        background-color: chartreuse;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 h2 {
+        color: var(--negro);
+        text-align: right;
+        font-size: var(--h2);
+        font-style: normal;
+        font-weight: 700px;
+        line-height: normal;
+        align-self: stretch;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 {
+        background-color: gold;
+    }
+
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 p {
+        color: var(--blanco);
+        text-align: right;
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400px;
+        line-height: normal;
+        width: 328px;
+    }
 }
