@@ -95,17 +95,47 @@ p {
     body{
         background-color: #10243F;
     }
-    /*SETEO DE MARGENES Y ESPACIADO DE CONTENIDOS*/
+    h2{
+        color: var(--blanco);
+    }
+    /*MENU*/
     header {
-        background-color: red;
-    }
-
-    .header {
         display: flex;
-        margin: 0 1px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+    header .logo {
+        width: 103px; 
+    }
+    .btn-barra-lateral img {
+        width: 16px;
+    }
+    .contenido-bar {
+        /*display: none;*/
+        position: absolute;
+        top: 0; 
+        right: 0;
+        background-color: var(--azulOscuro); 
+        padding: 10px;
+        width: 100%; /* Ancho del menú */
+    }
+    .contenido-bar nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contenido-bar nav ul li {
+        margin: 10px 0;
+    }
+    .contenido-bar nav ul li a {
+        color: #fff; /* Color de los enlaces */
+        text-decoration: none;
     }
 
-    .header nav ul {
+    /*.header nav ul {
         display: flex;
     }
 
@@ -117,8 +147,8 @@ p {
     .tutorialVideo .contenido h1,
     p {
         margin: 0 15px 6px;
-    }
-
+    }*/
+    /*SETEO DE MARGENES Y ESPACIADO DE CONTENIDOS*/
     main {
         display: flex;
         flex-direction: column;
@@ -135,10 +165,6 @@ p {
     section {
         background-color: lightgray;
     }*/
-
-    section article {
-        color: var(--negro);
-    }
 
     /*Para identificar imagenes y videos*/
 
@@ -164,7 +190,7 @@ PRIMER CONTENIDO DE INDEX*/
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: 465px;
+        height: 440px;
         z-index: 1;
         /*display: flex;
         flex-direction: column;
@@ -174,9 +200,9 @@ PRIMER CONTENIDO DE INDEX*/
    
     .contenido_articulo {
         position: absolute; 
-        top: 45%;
-        left: 10%;
-        width: 396px;
+        top: 18%;
+        left: 32px;
+        width: 524px;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -188,11 +214,11 @@ PRIMER CONTENIDO DE INDEX*/
 
     .contenido_articulo h1{
         font-size: var(--h5);
-        background-color: #10243F;
+        background-color: var(--azulOscuro);
         color: var(--blanco);
     }
     .contenido_articulo p{
-        background-color: #10243F;
+        background-color: var(--azulOscuro);
         color: var(--blanco);
         padding: 0 15px;
     }
@@ -200,8 +226,8 @@ PRIMER CONTENIDO DE INDEX*/
     
     .boton_LeerMas {
         position: absolute;
-        top: 88%;
-        left: 10%;
+        top: 62%;
+        left: 32px;
         padding: 10px 20px;
         border: none;
     }
@@ -210,15 +236,45 @@ PRIMER CONTENIDO DE INDEX*/
     }
     
     /*ARTICULOS CARRUSEL INDEX*/
+    .barra_de_separacion{
+        background-image: url('../assets/imagenes/barra_de_separacion.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 53.33px;
+        width: 327.8px;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+    .barra_de_separacion h2{
+        font-size: var(--h5);
+    }
     .articulos_carrusel .contenedor{
         display: flex;
         flex-direction: row;
         gap: 21px;
         justify-content: center;
+        align-items: center;
 
+    }
+    .articulos_carrusel .contenedor .articulo{
+        width: 283px;
+        color: var(--blanco);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+
+    }
+    .articulos_carrusel .contenedor h3{
+        background-color: var(--aqua);
     }
     .articulos_carrusel .contenedor p{
         margin: 0;
+        background-color: var(--aqua);
+        
     }
     /*TUTORIALES*/
     video {
@@ -227,8 +283,8 @@ PRIMER CONTENIDO DE INDEX*/
         height: auto; 
     }
     .tutorial_video .contenido {
-        background-color: #0FF294; 
-        color: #10243F; 
+        background-color: var(--aqua);
+        color: var(--blanco);
         padding: 20px; 
     }
     .tutorial_video .contenido p{
@@ -242,37 +298,70 @@ PRIMER CONTENIDO DE INDEX*/
         justify-content: center;
         text-align: center;
     }
+    .artistas_carrusel .artista h3{
+        background-color: var(--aqua);
+        color: var(--blanco);
+    }
     /*LOGO EN HEADER Y FOOTER*/
     .logo{
         width: 230px;
     }
+    /*FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        color: #fff;
+        margin: 100px 0 32px 0;
+    }
 
+    footer .info {
+        display: flex;
+        justify-content: space-around;
+        gap: 70px;
+        text-align: center;
+    }
+    footer .canales {
+        display: flex;
+        justify-content: space-around;
+        gap: 61px;
+    }
+    footer .canales img {
+        width: 40px; 
+        height: auto;
+        border-radius: 50px;
+    }
 
     /* =========================ARTICULOS========================= 
 PRIMER CONTENIDO*/
-    header {
-        /*display: none; /*header en proceso*/
-    }
 
     .main_articulos .primerapart_articulos {
         display: flex;
         flex-direction: column;
         width: 725px;
-        height: 465px;
-        justify-content: center;
+        height: 456px;
+        /*justify-content: center;*/
         margin: 0;
-        background-color: grey;
+        background-color: #F20F7A;
     }
 
     .main_articulos .primerapart_articulos .contenido1 {
         display: flex;
         flex-direction: column;
+        width: 523.5px;
         gap: 16px;
-        margin: 66px;
+        margin: 16px;
     }
 
     .main_articulos .primerapart_articulos .contenido1 h2 {
-        font-size: var(--h2);
+        font-size: var(--h5);
+    }
+    .main_articulos .primerapart_articulos .contenido1 p {
+        background-color: var(--azulOscuro);
+        color: var(--blanco);
+        padding: 0 16px;
+        margin: 0;
     }
 
     /*CASOS DE EXITO CARRUSEL*/
@@ -286,7 +375,6 @@ PRIMER CONTENIDO*/
     .segundapart_articulos article h2 {
         font-size: var(--h6);
         margin-bottom: 28px;
-        background-color: grey;
         padding: 9px 12px;
     }
 
@@ -304,15 +392,22 @@ PRIMER CONTENIDO*/
         flex-direction: column;
         /*align-items: center;*/
     }
+    .segundapart_articulos article .contenedor .contenido h5{
+        background-color: var(--aqua);
+        color: var(--blanco);
+    }
 
     .segundapart_articulos article .contenedor .contenido p {
         margin: 0;
+        background-color: var(--aqua);
+        color: var(--blanco);
     }
 
     .segundapart_articulos article .contenedor .contenido img {
         width: 200px;
         height: 200px;
         border-radius: 100px;
+        margin-bottom: 9px;
     }
 
     /*TERCERA PARTE ARTICULOS*/
@@ -334,20 +429,26 @@ PRIMER CONTENIDO*/
         gap: 16px;
         background-color: lightgreen;
         width: 100%;
-        height: 465px;
-        justify-content: center;
+        height: 450px;
+        /*justify-content: center;*/
         align-items: flex-start;
 
     }
 
     .tercerapart_articulos .contenedor .contenido {
-        width: 396px;
-        margin-left: 65px;
+        width: 532.94px;
+        margin-left: 16px;
 
     }
 
     .tercerapart_articulos .contenedor .contenido h2 {
-        font-size: var(--h2);
+        font-size: var(--h5);
+        margin-bottom: 16px;
+    }
+    .tercerapart_articulos .contenedor .contenido p {
+        margin: 0;
+        color: var(--blanco);
+        background-color: var(--azulOscuro);
     }
 
     /*DISPLAY DEL RESTO DEL CONTENIDO ES INECESARIO*/
@@ -371,6 +472,7 @@ PRIMER CONTENIDO*/
         gap: 5px;
         padding: 4px 35px;
         width: 100%;
+        background-color: var(--rosa);
     }
 
     .mainLectura .articulo_intro h1 {
@@ -380,7 +482,6 @@ PRIMER CONTENIDO*/
     }
 
     .mainLectura .articulo_intro h2 {
-        color: var(--blanco);
         font-size: var(--h6);
         text-align: center;
     }
@@ -391,12 +492,22 @@ PRIMER CONTENIDO*/
         padding-left: 90px;
     }
 
-    .mainLectura .articulos_contenedor .articulo_parrafo {
+    .mainLectura .articulos_contenedor .articulo_parrafo p{
         padding: 12px 16px;
+        margin: 0;
+        background-color: var(--aqua);
+        color: var(--azulOscuro);
     }
-
+    .mainLectura .articulos_contenedor .articulo_parrafo:nth-child(1) h2{
+        background-color: var(--amarillo);
+    }
+    .mainLectura .articulos_contenedor .articulo_parrafo:nth-child(2) h2{
+        background-color: var(--rosa);
+    }
     .mainLectura .articulos_contenedor .articulo_parrafo h2 {
         font-size: var(--h5);
+        color: var(--azulOscuro);
+
     }
 
     /*SEGUNDA IMAGEN*/
