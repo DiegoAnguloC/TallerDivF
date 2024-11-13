@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
     <script type="module" src="./scripts/home.js"></script>
-    <link rel="stylesheet" href="./splide/splide.min.css"> <!-- CSS de Splide -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body class="index">
@@ -16,35 +17,78 @@
         <div class="navbar_container"></div>
     </header>
 
-    <main> <!-- se añadio el tag main -->
-    <section class="articulo_principal"> <!-- se añadio la clase articulo_principal -->
-        <article class="imagen_de_fondo"></article> <!-- se hizo un contenedor para la imagen de fondo (revisar) -->
-        <article class="contenido_articulo">
-            <h1>LA TEORÍA DEL INTERNET MUERTO: ¿ESTAMOS RODEADOS DE BOTS Y MANIPULACIONES?</h1>
-            <p>La teoría del "Internet Muerto" propone que buena parte de la actividad en la web está protagonizada por bots y algoritmos, y no por personas reales. Esta idea cuestiona si estamos interactuando genuinamente con otros usuarios o si somos presas de una manipulación sistemática en las redes sociales. ¿Hasta qué punto estamos rodeados de inteligencia artificial en lugar de humanidad? ¿Y quién se beneficia realmente de esta red fantasmal?
-            </p>
-        </article>
-        <button class="boton_LeerMas">Leer más</button>
-    </section>
-
-        <section class="barra_de_separacion">
-            <h2>Articulos</h2>
+    <main>
+        <section class="articulo_principal">
+            <article class="imagen_de_fondo"></article>
+            <article class="contenido_articulo">
+                <h1>LA TEORÍA DEL INTERNET MUERTO: ¿ESTAMOS RODEADOS DE BOTS Y MANIPULACIONES?</h1>
+                <p>La teoría del "Internet Muerto" propone que buena parte de la actividad en la web está protagonizada por bots y algoritmos, y no por personas reales...</p>
+            </article>
+            <button class="boton_LeerMas">Leer más</button>
         </section>
 
-    <section class="articulos_carrusel">
-        <article class="contenedor">
-            <div class="articulo">
-                <img src="https://via.placeholder.com/150" alt="placeholder image">
-                <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
-                <p>Fecha</p>
+        <section class="barra_de_separacion">
+            <h2>Artículos</h2>
+        </section>
+
+        <!-- Carrusel de artículos -->
+        <section class="articulos_carrusel swiper">
+            <div class="swiper-wrapper">
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
+                    <p>Fecha</p>
+                </div>
             </div>
-            <div class="articulo">
-                <img src="https://via.placeholder.com/150" alt="img">
-                <h3>La teoría del Internet muerto: ¿Estamos rodeados de...</h3>
-                <p>Fecha</p>
-            </div>
-        </article>
-    </section>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
 
         <section class="barra_de_separacion">
             <h2>Tutoriales</h2>
@@ -60,8 +104,7 @@
             <article class="contenido">
                 <p>Fecha</p>
                 <h3>Más Allá del Humano: El Valle Inquietante como Estética y sus Ecos en las Artes Gráficas</h3>
-                <p> DEl “Valle Inquietante” no solo es un término técnico, sino una estética que confronta la frontera entre lo humano y lo artificial. Hoy, este concepto pervade el cine, el arte digital y las gráficas contemporáneas, lanzándonos a un juego entre lo familiar y lo alienante. ¿Qué nos dice esta paradoja visual sobre nuestras propias percepciones y miedos?
-                </p>
+                <p>El “Valle Inquietante” no solo es un término técnico, sino una estética que confronta la frontera entre lo humano y lo artificial...</p>
             </article>
         </section>
 
@@ -69,44 +112,59 @@
             <h2>Artistas</h2>
         </section>
 
-        <section class="artistas_carrusel carrusel">
-            <div class="splide contenedor">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="artista">
-                                <img src="https://via.placeholder.com/150" alt="Artista">
-                                <h3>Nombre1</h3>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="artista">
-                                <img src="https://via.placeholder.com/150" alt="Artista">
-                                <h3>Nombre1</h3>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="artista">
-                                <img src="https://via.placeholder.com/150" alt="Artista">
-                                <h3>Nombre1</h3>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="artista">
-                                <img src="https://via.placeholder.com/150" alt="Artista">
-                                <h3>Nombre1</h3>
-                            </div>
-                        </li>
-                    </ul>
+        <!-- Carrusel de artistas -->
+        <section class="artistas_carrusel swiper">
+            <div class="swiper-wrapper">
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre1</h3>
                 </div>
-            </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre2</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre3</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre4</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre5</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre6</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre7</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre8</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre9</h3>
+                </div>
+                <div class="artista swiper-slide">
+                    <img src="https://via.placeholder.com/150" alt="Artista">
+                    <h3>Nombre10</h3></div>
+                </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </section>
     </main>
 
     <footer>
         <img src="./assets/imagenes/logo fondo claro.png" alt="Logo">
         <div class="info">
-            <h4>©Copyright</h4>
+            <h4>&copy;Copyright</h4>
             <h4>Nosotros</h4>
             <h4>Caracteres</h4>
         </div>
@@ -116,8 +174,7 @@
         </div>
     </footer>
 
-    <script src="./splide/splide.min.js"></script>
-    <script src="carrusel.js"></script>
+    <script src="./scripts/carrusel.js"></script>
     <script src="./scripts/burguer.js"></script>
 </body>
 </html>

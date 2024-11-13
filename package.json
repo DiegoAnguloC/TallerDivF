@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
     "animate.css": "^4.1.1",
     "express": "^4.21.1",
     "gsap": "^3.12.5",
     "node-dev": "^8.0.0",
     "p5": "^1.11.1",
+    "swiper": "^11.1.14",
     "tallerdivf": "file:"
   },
   "devDependencies": {
