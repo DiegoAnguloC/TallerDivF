@@ -820,6 +820,84 @@ p {
     padding-left: 444px;
 }
 
+/*------------------------------------------- AUTORES --------------------------------------*/
+@media (max-width: 376px){
+    .body_autores {
+        background-color: var(--azulOscuro);
+        position: relative;
+        min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+        display: flex;
+        flex-direction: column;
+        
+        header {
+            background-color: #FFF;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            
+            li {
+                display: inline;
+            }
+        }
+        
+        footer {
+            background-color: black;
+            bottom: 0;
+            width: 100%;
+            height: 262px;
+        }
+        
+        main {
+            flex: 1; /* Permite que main ocupe el espacio restante entre el header y footer */
+            margin-top: 70px;
+            background-color: var(--aqua);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 9px;
+            
+            .autor_grupo_autores_mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 16px;
+                
+                .elipse_amarillo_autores {
+                    display: flex;
+                    background-color: var(--amarillo);
+                    justify-content: center;
+                    align-items: center;
+                    width: 213px;
+                    height: 213px;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                    img {
+                        background-color: gray;
+                        width: 100px;
+                        height: 100px;
+                        display: flex;
+                    }
+                }
+                .barra_artistas{
+                    background-color: var(--rosa);
+                    width: 160px;
+                    height: 34px;
+                    padding-top: 9;
+                    padding-bottom: 9;
+                    padding-left: 12;
+                    padding-right: 12;
+                    h6{
+                        font-size: var(--h6);
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* ====================================================== */
 /*============================INICIO DE ESTILOS CSS RESPONSIVE=====================
 ====================================TABLET==================================*/
