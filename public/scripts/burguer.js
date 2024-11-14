@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             navbarContainer.innerHTML = data;
 
-            // Después de cargar el HTML, asignamos los eventos para el menú
+            // Menú principal hamburguesa
             const menuBtn = navbarContainer.querySelector(".hamburguesa");
             const menuBar = navbarContainer.querySelector("#menu");
             const closeBtn = navbarContainer.querySelector(".btn-cerrar-menu");
@@ -24,6 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     menuBar.classList.remove("active");
                 });
             }
+
+            // Menú desplegable de subcategorías
+            const toggleButtons = navbarContainer.querySelectorAll(".toggle-submenu");
+            toggleButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const targetId = button.getAttribute("data-target");
+                    const submenu = navbarContainer.querySelector(targetId);
+
+                    if (submenu) {
+                        submenu.classList.toggle("open");
+                        button.textContent = submenu.classList.contains("open") ? "x" : "+";
+                    }
+                });
+            });
         })
         .catch(error => console.error('Error al cargar el navbar:', error));
 });

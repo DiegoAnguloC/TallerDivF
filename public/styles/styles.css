@@ -353,6 +353,23 @@ PRIMER CONTENIDO DE INDEX*/
     cursor: pointer;
 }
 
+.submenu {
+  display: none;
+}
+.submenu.open {
+  display: block;
+}
+
+.toggle-submenu {
+  background: none;
+  border: none;
+  color: black;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
 
 
 
