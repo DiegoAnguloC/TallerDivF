@@ -90,10 +90,47 @@ p {
 /*============================INICIO DE ESTILOS CSS RESPONSIVE=====================
 ====================================TABLET==================================*/
 /*ESPACIADO DE BODY EN TABLET*/
-@media screen and (min-width: 768px) {
+@media (min-width: 668px) and (max-width: 768px) {
     /*BODY*/
     body{
+        
         background-color: #10243F;
+    }
+    .movil{
+        margin: 0 175px;
+    }
+    .singin> form > .check{
+        
+    }
+    .singin .orwith{
+        font-size: 17px;
+    }
+    .singin button{
+        margin: 8px;
+    }
+    .singin .center{
+        font-size: 15px;
+    }
+    .singin> form > button{
+       text-align: center;
+        width: 165px;
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .login .email form button{
+        text-align: center;
+    }
+    .login > .email> form > .orwith{
+        font-size: 17px;
+    }
+    .login > .email> form > button{
+        width: 300px;
+        height: 30px;
+        font-size: 17px;
+    }
+    .login > .email> form > button{
+        margin: 8px;
     }
     h2{
         color: var(--blanco);
