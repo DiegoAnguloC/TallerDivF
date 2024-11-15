@@ -131,6 +131,23 @@ p {
     }
     .login > .email> form > button{
         margin: 8px;
+        
+    }
+   
+    .bodytuto .maintuto .sectiontuto{
+
+    }
+    .bodytuto .maintuto .sectiontuto2 .contenidotuto2{
+        border: solid black;
+        width: 280px
+        
+    }
+    .bodytuto .maintuto .sectiontuto2{
+        display: flex;
+        margin: 0 50px;
+    }
+    .bodytuto .maintuto .sectiontuto2 video{
+        
     }
     h2{
         color: var(--blanco);
