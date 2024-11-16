@@ -42,6 +42,18 @@
     h1, h2, p{
         color: var(--blanco);
     }
+    body{
+        background-color: var(--azulOscuro);
+        color: var(--blanco);
+    }
+    button[type="submit"] {
+    width: 100%;
+    height: 48px;
+    background-color: var(--amarillo);
+    border: none;
+    font-size: var(--h6);
+    color: var(--azulOscuro);
+}
 /*INDEX - NO TERMINADO*/
 
     .index {
@@ -66,7 +78,9 @@
         gap: -61px;
         align-self: stretch;
     }
-
+    .movil{
+        margin: 0 175px;
+    }
 /*ARTICULOS-NO TERMINADO*/
 
 .main_articulos .primerapart_articulos {
@@ -370,4 +384,149 @@ main{
     }
 }
 
+/*========Configuracion para la pantalla Sign up y log in=====================*/
+.movil {
+    width: var(--movil);
+    background-color: var(--azulOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 0 16px; 
+}
+.login {
+    width: 100%;
+    max-width: 360px; 
+    background-color: var(--rosa);
+    padding-left:16px;
+    padding-right: 16px;
+}
+
+.login label {
+    display: block;
+    font-size: var(--p);
+    margin-bottom: 8px; 
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 12px; 
+    background-color: var(--aqua);
+    border: none;
+    margin-bottom: 30px; 
+    font-size: var(--p);
+}
+::placeholder{
+    color: var(--azulOscuro);
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 48px;
+    background-color: var(--amarillo);
+    border: none;
+    font-size: var(--h6);
+    color: var(--azulOscuro);
+
+}
+
+
+.recordar {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px; 
+    color: var(--blanco);
+}
+.recordar a{
+    color: var(--blanco);
+}
+
+.center {
+    text-align: center;
+    color: var(--blanco);
+}
+.center a {
+    color: var(--blanco);
+}
+.orwith{
+    text-align: center;
+    color: var(--blanco);
+    font-size: var(--h6);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.singin {
+    width: 100%;
+    max-width: 360px; 
+    background-color: var(--rosa);
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.singin input[type="email"],
+.singin input[type="tel"],
+.singin input[type="text"],
+.singin input[type="password"] {
+    display: block;
+    width: 284px;
+    height: 48px;
+    margin-bottom: 30px;
+    background-color: var(--aqua);
+    border: none;
+}
+
+.singin .orwith {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.singin #show-password {
+    margin-left: -70px;
+}
+
+.singin label[for="show-password"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--blanco);
+    font-size: 14px;
+}
+.singin> form > .check{
+        
+}
+.singin .orwith{
+    font-size: 17px;
+}
+.singin button{
+    margin: 8px;
+}
+.singin .center{
+    font-size: 15px;
+}
+.singin> form > button{
+   text-align: center;
+    width: 165px;
+    height: 30px;
+    font-size: 17px;
+}
+
+.login .email form button{
+    text-align: center;
+}
+.login > .email> form > .orwith{
+    font-size: 17px;
+}
+.login > .email> form > button{
+    width: 300px;
+    height: 30px;
+    font-size: 17px;
+}
+.login > .email> form > button{
+    margin: 8px;
+    
+}
 }
