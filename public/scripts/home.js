@@ -61,6 +61,7 @@ window.addEventListener('load', () => {
       element.appendChild(svg);
 
       const animationTimeline = gsap.timeline({ repeat: -1, repeatDelay: 3 });
+      const colors = ['#11243f', '#1e6c70', '#0ff294', '#ecf213', '#ffff', 'black'];
 
       const animations = [
           {
@@ -84,9 +85,12 @@ window.addEventListener('load', () => {
               duration: 2,
           },
           {
-            name: 'colorChange',
-            properties: () => ({ fill: `hsl(${Math.random() * 360}, 100%, 50%)` }),
-            duration: 2,
+              name: 'colorChange',
+              properties: () => {
+                  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                  return { fill: randomColor, stroke: randomColor };
+              },
+              duration: 2,
           },
           {
             name: 'weightChange',

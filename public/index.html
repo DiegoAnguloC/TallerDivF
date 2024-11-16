@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/frontend.css">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
     <script type="module" src="./scripts/home.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -13,24 +14,28 @@
 
 <body class="index">
     <header>
-        <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">    
+        <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
         <div class="navbar_container"></div>
     </header>
 
-    <main>
-        <section class="articulo_principal">
-            <article class="imagen_de_fondo"></article>
+    <main> <!-- se añadio el tag main -->
+        <section class="articulo_principal"> <!-- se añadio la clase articulo_principal -->
+            <article class="imagen_de_fondo"></article> <!-- se hizo un contenedor para la imagen de fondo (revisar) -->
             <article class="contenido_articulo">
                 <h1>LA TEORÍA DEL INTERNET MUERTO: ¿ESTAMOS RODEADOS DE BOTS Y MANIPULACIONES?</h1>
-                <p>La teoría del "Internet Muerto" propone que buena parte de la actividad en la web está protagonizada por bots y algoritmos, y no por personas reales...</p>
+                <p>La teoría del "Internet Muerto" propone que buena parte de la actividad en la web está protagonizada
+                    por bots y algoritmos, y no por personas reales. Esta idea cuestiona si estamos interactuando
+                    genuinamente con otros usuarios o si somos presas de una manipulación sistemática en las redes
+                    sociales. ¿Hasta qué punto estamos rodeados de inteligencia artificial en lugar de humanidad? ¿Y
+                    quién se beneficia realmente de esta red fantasmal?
+                </p>
             </article>
             <button class="boton_LeerMas">Leer más</button>
         </section>
 
         <section class="barra_de_separacion">
-            <h2>Artículos</h2>
+            <h2>Articulos</h2>
         </section>
-
         <!-- Carrusel de artículos -->
         <section class="articulos_carrusel swiper">
             <div class="swiper-wrapper">
@@ -97,14 +102,19 @@
         <section class="tutorial_video">
             <article class="video">
                 <video muted>
-                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                        type="video/webm">
                     <source src="#" type="video/mp4">
                 </video>
             </article>
             <article class="contenido">
                 <p>Fecha</p>
                 <h3>Más Allá del Humano: El Valle Inquietante como Estética y sus Ecos en las Artes Gráficas</h3>
-                <p>El “Valle Inquietante” no solo es un término técnico, sino una estética que confronta la frontera entre lo humano y lo artificial...</p>
+                <p> DEl “Valle Inquietante” no solo es un término técnico, sino una estética que confronta la frontera
+                    entre lo humano y lo artificial. Hoy, este concepto pervade el cine, el arte digital y las gráficas
+                    contemporáneas, lanzándonos a un juego entre lo familiar y lo alienante. ¿Qué nos dice esta paradoja
+                    visual sobre nuestras propias percepciones y miedos?
+                </p>
             </article>
         </section>
 
@@ -153,8 +163,9 @@
                 </div>
                 <div class="artista swiper-slide">
                     <img src="https://via.placeholder.com/150" alt="Artista">
-                    <h3>Nombre10</h3></div>
+                    <h3>Nombre10</h3>
                 </div>
+            </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -162,9 +173,9 @@
     </main>
 
     <footer>
-        <img src="./assets/imagenes/logo fondo claro.png" alt="Logo">
+        <img class="foot-logo" src="./assets/imagenes/logo fondo claro.png" alt="Logo">
         <div class="info">
-            <h4>&copy;Copyright</h4>
+            <h4>©Copyright</h4>
             <h4>Nosotros</h4>
             <h4>Caracteres</h4>
         </div>
@@ -172,9 +183,10 @@
             <img src="./assets/iconos/facebook.png" alt="facebook">
             <img src="./assets/iconos/pinterest.png" alt="pinterest">
         </div>
-    </footer>
 
+    </footer>
     <script src="./scripts/carrusel.js"></script>
     <script src="./scripts/burguer.js"></script>
 </body>
+
 </html>

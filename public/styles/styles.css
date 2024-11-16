@@ -750,15 +750,7 @@ button[type="submit"] {
   }
 }
 
-/* Estilos para la vista previa del video */
 
-.video video {
-  transition: transform 0.3s ease;
-}
-
-.video:hover video {
-  transform: scale(1.05); /* Efecto de acercamiento */
-}
 
 /* Estilos básicos para las animaciones */
 section {
