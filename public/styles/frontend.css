@@ -885,3 +885,124 @@ section {
     width: 212px;
     height: 35px;
 }
+
+
+/* ================== Animaciones Gabo ============ */
+
+/* ================== adn-style =================== */
+
+#animated-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Coloca el SVG detrás del contenido principal */
+    opacity: 0.5; /* Ajusta la opacidad para que sea sutil como fondo */
+}
+
+/* ================== Estilos del menú hamburguesa =================== */
+.contenido-bar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.contenido-bar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.contenido-bar ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.contenido-bar ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contenido-bar.open {
+  right: 0;
+}
+
+.btn-barra-lateral {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  color: #fff;
+  transition: right 0.3s ease;
+  z-index: 100;
+  padding: 20px;
+}
+
+#menu.active {
+  right: 0;
+}
+
+.btn-cerrar-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#btn-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburguesa {
+  width: 30px;
+  height: auto;
+  background-color: transparent;
+  display: block;
+}
+
+.btn-cerrar-menu {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.submenu {
+display: none;
+}
+.submenu.open {
+display: block;
+}
+
+.toggle-submenu {
+background: none;
+border: none;
+color: black;
+font-size: inherit;
+cursor: pointer;
+padding: 0;
+margin: 0;
+float: right;
+}
