@@ -84,14 +84,14 @@ button[type="submit"] {
     height: 48px;
     background-color: var(--amarillo);
     border: none;
-    font-size: var(--h6);
+    font-size: 14px;
     color: var(--azulOscuro);
 
 }
 
 
 .recordar {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     width: 100%;
     margin-bottom: 16px;
@@ -100,8 +100,40 @@ button[type="submit"] {
 
 .recordar a {
     color: var(--blanco);
+    text-decoration: none;
+}
+.recordar input[type="checkbox"] {
+    margin-right: 8px;
+    appearance: none; 
+    width: 18.576px;
+    height: 18.576px;
+    border-radius: 4.644px;
+    border: 0.929px solid var(--blanco);
+    background-color: transparent;
+    cursor: pointer;
 }
 
+.recordar input[type="checkbox"]:checked {
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recordar input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: var(--negro);
+    font-size: 14px;
+}
+.recordar label { font-size: 14px; 
+    white-space: nowrap; 
+}
+.recordar a { 
+    color: var(--blanco); 
+    text-decoration: none; 
+    margin-left: auto; 
+    font-size: 14px; 
+}
 .center {
     text-align: center;
     color: var(--blanco);
@@ -110,15 +142,17 @@ button[type="submit"] {
 .center a {
     background-color: var();
     color: var(--blanco);
+    text-decoration: none;
 }
 
 .orwith {
     text-align: center;
     color: var(--blanco);
-    font-size: var(--h6);
+    font-size: var 14px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 
 /* ===================== sing =============================== */
 .singin {
@@ -597,6 +631,9 @@ button[type="submit"] {
 /*=================================LEER_TUTOTIAL_ESCRITO_MOBILE=========================*/
 .main_leer_tut_escrit_mob {
     background-color: var(--azulOscuro);
+    width: 360px;
+    height: 2049px;
+    padding: 16px;
     header {
         background-color: #FFF;
         position: fixed;
@@ -616,14 +653,55 @@ button[type="submit"] {
         height: 262px;
     }
     .primera_parte_leer_tut_escritomob {
+        margin-bottom: 16px;
         .imagen_leer_tut_escritomob {
             img {
                 width: 200px;
+                height: 200px;
             }
         }
         .fecha{
+            width: 249px;
+            height: 23px;
             background-color: var(--azulMedio);
             font-size: var(--h6);
+            text-align: right;
+            margin-bottom: 12px;
+        }
+        .barra_artistas{
+            background-color: var(--rosa);
+            width: 213px;
+            height: 42px;
+            padding: var(--9, 9px) 12px;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        p {
+            background-color: var(--aqua);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 332px;
+            height: 129px;
+        }
+    }
+    .subtitulo_Leer_tut_escritomob{
+        margin-bottom: 16px;
+        align-items: center;
+        h6{
+            background-color: var(--amarillo);
+            width: 178px;
+            height: 49px;
+            margin-bottom: 12px;
+        }
+        p {
+            background-color: var(--aqua);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 328px;
+            height: 311px;
         }
     }
 }
