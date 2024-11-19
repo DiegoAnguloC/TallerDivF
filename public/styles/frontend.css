@@ -908,21 +908,23 @@ main.main-info .info p {
 
 /*============================ Animaciones Igna ======================================== */
 /*----------------------------------Scroll Trigger Sections--------------------------------------*/
-section {
-    opacity: 0;
-    /* Empezarán invisibles */
-    transform: translateX(100%);
-    /* Salen de la derecha por defecto */
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-/* Alterna entre entrar desde la izquierda y desde la derecha */
-.section-left {
-    transform: translateX(-100%);
-}
-
-.section-right {
-    transform: translateX(100%);
+.index{
+    section {
+        opacity: 0;
+        /* Empezarán invisibles */
+        transform: translateX(100%);
+        /* Salen de la derecha por defecto */
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    
+    /* Alterna entre entrar desde la izquierda y desde la derecha */
+    .section-left {
+        transform: translateX(-100%);
+    }
+    
+    .section-right {
+        transform: translateX(100%);
+    }
 }
 /*----------------------------------Estilos de Prueba Header y Footer--------------------------------------*/
 .index header .logo {
