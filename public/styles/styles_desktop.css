@@ -1,0 +1,819 @@
+typo
+
+variablees
+
+
+header{
+    border-bottom: 1px solid black;
+}
+/*VARIABLES*/
+:root{
+    --negro: black;
+    --blanco: white;
+    --rosa: rgb(183, 0, 86);
+    --naranja: #F26D3D;
+
+    --movil: 375px;
+    --tablet: 768px;
+    --desktop: 1600px;
+}
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+/*estilo por defecto menu de navegacion*/
+/* .main_index{
+    margin: 16px 16px;
+}
+header nav{
+    nuevo
+
+    display: none;
+    height: 100vh;
+    width: 150px;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    background: var(--negro);
+    color: var(--blanco);
+    padding-top: 20px;
+}
+header > nav > ul{
+    list-style: none;
+    padding: 0;
+}
+header > nav > ul > li{
+    margin: 10px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+header > nav > ul > li > a{
+    padding: 10px;
+}
+header > nav > ul > li > a:hover{
+    background-color: #cb176b;
+} */
+/*sections*/
+/*section{
+    background-color: lightgray;
+}
+
+section article{
+    background-color: var(--negro);
+    color: var(--blanco);
+}*/
+/*botton general*/
+/*button{
+    background-color: var(--naranja);
+    border: none;
+    padding: 7 14px ;
+}
+img{
+    background-color: lightgreen;
+} */
+
+
+
+
+
+
+
+
+
+/*//////////////////MOBILE/////////////////////////
+/*Mobile menu responsive 1*/
+@media screen and (min-width: 1920px) {
+    body {
+        background-color: #10243F;
+        color: var(--blanco);
+        width: 1920px;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+    }
+    header{
+        position: fixed;
+        display: flex;
+        padding: 10px;
+        height: 356px;
+        width: 100%;
+        justify-content: space-between;
+        background-image: url(../assets/imagenes/Vector\ 14.png), url(../assets/imagenes/Vector\ 15.png);
+        background-repeat: no-repeat;
+        background-size: 100% 356px, 100% 356px;
+        background-position: top left, top right;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+    }
+
+    header > img{
+        width: 603.71px;
+        height: 188.16px;
+        margin: 0px 30px;
+    }
+    header > .btn-barra-lateral > img{
+        display: none;
+    }
+    
+    header > .btn-barra-lateral > .contenido-bar{
+        height: 100%;
+        margin: 0px 10px;
+    }
+    header > .btn-barra-lateral > .contenido-bar > nav {
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        color: var(--blanco);
+    }
+    header > .btn-barra-lateral > .contenido-bar > nav > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    header > .btn-barra-lateral > .contenido-bar > nav > ul > li {
+        margin: 0px 5px;
+        width: 200px;
+        text-align: center;
+    }
+    header > .btn-barra-lateral > .contenido-bar > nav > ul > li > a{
+        padding: 10px;
+        color: var(--negro);
+        background-image: url(../assets/imagenes/Vector\ 21.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    
+    main{
+        background-color: var(--negro);
+        width: 1613px;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 356px;
+    }
+
+
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+    }
+    footer > img{
+        position: relative;
+        left: 60px;
+        width: 585px;
+        height: 221px;
+    }
+    footer > .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer > .info > h4{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    footer > .canales{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer > .canales > img{
+        margin-right: 50px;
+        border-radius: 50%;
+        width: 39.47px;
+        height: 39.47px;
+    }
+
+
+
+
+
+
+
+    /* Index */
+
+    .index > main > .articulo_principal > .imagen_de_fondo{
+        height: 1130px;
+        width: 1570px;
+        background-image: url(../assets/imagenes/prueba-perfil.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .index > main > .articulo_principal{
+        text-align: center;
+        height: 1132px;
+        margin-bottom: 40px;
+    }
+    .index > main > .articulo_principal > .contenido_articulo{
+        position: relative;
+        top: -630px;
+    }
+    .index > main > .articulo_principal > .contenido_articulo > p{
+        /* position: absolute; */
+        background-color: #10243F;
+        /* top: -280px;
+        right: 150px; */
+        width: 1410px;
+        font-size: 30px;
+        text-align: left;
+        padding-bottom: 40px;
+    }
+    .index > main > .articulo_principal > .contenido_articulo > h1{
+        /* position: relative;
+        top: -600px;
+        right: -10px; */
+        width: 1570px;
+        background-image: url(../assets/imagenes/Vector\ 20.png);
+        background-repeat: no-repeat;
+        background-size: 1500px auto;
+        font-size: 85px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .index > main > .articulo_principal > button{
+        position: relative;
+        top: -620px;
+        right: 640px;
+        font-size: 40px;
+        background: none;
+        border: none;
+        background-image: url(../assets/imagenes/Vector\ 21.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 65px;
+        width: 253px;
+    }
+
+
+
+
+
+    .index > main > .barra_de_separacion{
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 129px;
+        background-image: url(../assets/imagenes/Vector\ 18.png);
+        background-repeat: no-repeat;
+        background-size: 648px auto;
+    }
+    .index > main > .barra_de_separacion > h2{
+        color: var(--blanco);
+        font-size: 130px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .index > main > .barra_de_separacion:nth-child(4){
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 129px;
+        background-image: url(../assets/imagenes/Vector\ 18.png);
+        background-repeat: no-repeat;
+        background-size: 685px auto;
+    }
+
+
+
+
+
+
+    .index > main > .articulos_carrusel > .contenedor{
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+        width: 1572px;
+        height: 586px;
+        justify-content: center;
+        align-items: center;
+    }
+    .index > main > .articulos_carrusel > .contenedor > .articulo{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    .index > main > .articulos_carrusel > .contenedor > .articulo > img{
+        height: 205px;
+        width: 283px;
+        margin-bottom: 15px;
+    }
+    .index > main > .articulos_carrusel > .contenedor > .articulo > h3{
+        margin-bottom: 15px;
+    }
+    .index > main > .articulos_carrusel > .contenedor > .articulo > p{
+        padding-bottom: 15px;
+    }
+
+
+
+
+
+    .index > main > .tutorial_video{
+        margin: 50px;
+    }
+    .index > main > .tutorial_video > .video > video{
+        width: 1583px;
+        height: 805.09px;
+    }
+    .index > main > .tutorial_video > .contenido{
+        width: 1583px;
+        height: 545px;
+        background-image: url(../assets/imagenes/Vector\ 24.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        margin-top: 40px;
+    }
+    .index > main > .tutorial_video > .contenido > p{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .index > main > .tutorial_video > .contenido > h3{
+        margin-bottom: 15px;
+        font-size: 100px;
+        width: 1480px;
+    }
+
+
+
+
+
+    .index > main > .artistas_carrusel{
+        display: flex;
+        margin: 50px;
+        overflow: hidden;
+        width: 1593px;
+        height: 609px;
+
+    }
+    .index > main > .artistas_carrusel > .artista{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+    .index > main > .artistas_carrusel > .artista > img{
+        height: 424px;
+        width: 438px;
+        margin-bottom: 40px;
+    }
+    .index > main > .artistas_carrusel > .artista > h3{
+        text-align: center;
+        font-size: 40px;
+        width: 288px;
+        height: 102px;
+        background-image: url(../assets/imagenes/Vector\ 24.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        text-align: center;
+    }    
+
+
+    
+
+    /* Casos de Exito - Articulos*/
+    
+    .articulos > main > .barra_de_separacion{
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 129px;
+        background-image: url(../assets/imagenes/Vector\ 18.png);
+        background-repeat: no-repeat;
+        background-size: 1028px 129px;
+    }
+    .articulos > main > .barra_de_separacion > h2{
+        color: var(--blanco);
+        font-size: 130px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .articulos > main{
+        height: 100%;
+    }
+    .articulos > main > section > .excelsiur{
+        display: flex;
+        width: 1596px;
+        height: 858px;
+        overflow: hidden;
+    }
+    .articulos > main > section > .excelsiur > .ce1{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 609px;
+        height: 858px;
+    }
+    .articulos > main > section > .excelsiur > .ce1 > img{
+        width: 553px;
+        height: 558px;
+        border-radius: 50%;
+    }
+    .articulos > main > section > .excelsiur > .ce1 > .cnt{
+        margin-top: 25px;
+        width: 609px;
+        height: 296px;
+        background-image: url(../assets/imagenes/Vector\ 24.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .articulos > main > section > .excelsiur > .ce1 > .cnt > .txt > h3{
+        font-size: 40px;
+    }
+    .articulos > main > section > .excelsiur > .ce1 > .cnt > .txt > p{
+        font-size: 30px;
+    }
+    .articulos > main > section > .ce{
+        padding-top: 30px;
+        justify-items: center;
+        align-items: center;
+        height: 1307px;
+    }
+    .articulos > main > section > .ce > img{
+        height: 1282px;
+        width: 1610.5px;
+    }
+    .articulos > main > section > .ce > .txt{
+        position: relative;
+        top: -1290px;
+    }
+    .articulos > main > section > .ce > .txt > h3{
+        font-size: 85px;
+        width: 1595px;
+        padding: 15px;
+        background-image: url(../assets/imagenes/Vector\ 20.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        margin-bottom: 30px;
+    }
+    .articulos > main > section > .ce > .txt > p{
+        font-size: 70px;
+        width: 1595px;
+        padding: 15px;
+        background-color: #10243F;
+    }
+    .articulos > main > section > .ce > button{
+        position: relative;
+        top: -1260px;
+        right: 640px;
+        font-size: 40px;
+        background: none;
+        border: none;
+        background-image: url(../assets/imagenes/Vector\ 21.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 65px;
+        width: 253px;
+    }
+
+
+
+    /* Leer Articulo Video */
+
+    .leer_articulos > img{
+        height: 1455px;
+        width: 1920px;
+        margin-top: 396px;
+    }
+    .leer_articulos > main{
+        margin: auto;
+        background-color: #10243f00;
+    }
+    .leer_articulos > main > .primerapart_articulos{
+        background-color: var(--negro);
+        color: var(--blanco);
+        width: 1920px;
+        height: 1022px;
+        text-align: center;
+    }
+    .leer_articulos > main > .primerapart_articulos > .contenido1 > h2{
+        margin-bottom: 20px;
+        font-size: 70px;
+        width: 1364px;
+        height: 365px;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .leer_articulos > main > .primerapart_articulos > .contenido1 > h3{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 196px;
+        width: 1920px;
+        font-size: 55px;
+    }
+    .leer_articulos > main > .primerapart_articulos > .contenido1 > p{
+        height: 413px;
+        width: 1920px;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+
+    .leer_articulos > main > img{
+        width: 1574px;
+        height: 944px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .leer_articulos > main > .segundapart_articulos{
+        width: 1574px;
+        height: 1990px;
+        margin-bottom: 60px;
+        
+    }
+    .leer_articulos > main > .segundapart_articulos > .amarillo{
+        width: 1574px;
+        height: 409.02px;
+        position: relative;
+        top: 60px;
+    }
+    .leer_articulos > main > .segundapart_articulos > .verde{
+        width: 1574px;
+        height: 1574px;
+    }
+    .leer_articulos > main > .segundapart_articulos > .txt{
+        margin-bottom: 60px;
+        position: relative;
+        top: -1500px;
+        justify-content: center;
+        align-items: center;
+        color: var(--negro);
+    }
+    .leer_articulos > main > .segundapart_articulos > .txt > h3{
+        font-size: 70px;
+        width: 1198px;
+        height: 150px;
+    }
+    .leer_articulos > main > .segundapart_articulos > .txt > p{
+        font-size: 40px;
+        width: 1161px;
+        height: 1356px;
+    }
+    .leer_articulos > main > .tercerapart_articulos > .rosa{
+        width: 1524px;
+        height: 141.27px;
+        position: relative;
+        top: 50px;
+    }
+    .leer_articulos > main > .tercerapart_articulos{
+        width: 1524px;
+        height: 902px;
+        position: relative;
+        top: -300px;
+    }
+    .leer_articulos > main > .tercerapart_articulos > .txt{
+        position: relative;
+        top: 350px;
+        left: 100px;
+        z-index: 10;
+        color: var(--negro);
+    }
+    .leer_articulos > main > .tercerapart_articulos > .txt > .subti{
+        width: 328px;
+        margin-bottom: 20px;
+        background-color: #D9D9D9;
+        background-image: url(../assets/imagenes/Vector\ 116.png);
+        background-repeat: no-repeat;
+        background-size: 100px 100%;
+        background-position: top right;
+    }
+    .leer_articulos > main > .tercerapart_articulos > .txt > .parrafo{
+        width: 328px;
+        padding: 10px;
+        background-color: #D9D9D9;
+        background-image: url(../assets/imagenes/Vector\ 117.png);
+        background-repeat: no-repeat;
+        background-size: 100px 20px;
+        background-position: bottom right;
+    }
+    
+
+
+
+    /*Tutorial*/
+    .tutorial > main{
+        margin-top: 396px;
+    }
+    .tutorial > main > .escrito > img{
+        width: 1524px;
+        height: 914px;
+    }
+    .tutorial > main > .escrito > .barra-separadora{
+        margin: 50px 0px;
+        height: 129px;
+        background-image: url(../assets/imagenes/Vector\ 18.png);
+        background-repeat: no-repeat;
+        background-size: 648px 129px;
+    }
+    .tutorial > main > .escrito > .barra-separadora > h3{
+        margin: 50px 0px;
+        font-size: 50px;
+        height: 50px;
+        position: relative;
+        left: 10px;
+        top: 30px;
+    }
+    .tutorial > main > .escrito > .cont > h2{
+        margin-bottom: 50px;
+        font-size: 70px;
+        background-image: url(../assets/imagenes/Vector\ 49.png);
+        background-repeat: no-repeat;
+        background-size: 1387px 153px;
+        height: 153px;
+    }
+    .tutorial > main > .escrito > .cont > p{
+        margin-bottom: 50px;
+        font-size: 50px;
+        background-image: url(../assets/imagenes/Vector\ 51.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 269px;
+        width: 1523px;
+    }
+    .tutorial > main > .video > video{
+        width: 1524px;
+        height: 914px;
+    }
+    .tutorial > main > .video > .barra-separadora{
+        margin: 50px 0px;
+        height: 127px;
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm.png);
+        background-repeat: no-repeat;
+        background-size: 894px 127pxpx;
+    }
+    .tutorial > main > .video > .barra-separadora > h3{
+        margin: 50px 0px;
+        font-size: 50px;
+        height: 50px;
+        color: var(--negro);
+        position: relative;
+        left: 350px;
+        top: 35px;
+    }
+    .tutorial > main > .video > .cont > h2{
+        margin-bottom: 50px;
+        font-size: 70px;
+        background-image: url(../assets/imagenes/Vector\ 49.png);
+        background-repeat: no-repeat;
+        background-size: 1387px 153px;
+        height: 153px;
+        text-align: center;
+    }
+    .tutorial > main > .video > .cont > p{
+        margin-bottom: 50px;
+        font-size: 50px;
+        background-image: url(../assets/imagenes/Vector\ 51.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 269px;
+        width: 1523px;
+    }
+
+
+
+
+    /*Leer-Tutoriales-Video*/
+    .leer_tutorial_video > main > article > video{
+        width: 1529px;
+        height: 914px;
+    }
+    .leer_tutorial_video > main > article > .barra-separadora{
+        margin: 50px 0px;
+        height: 127px;
+        background-image: url(../assets/imagenes/Vector\ 18.png);
+        background-repeat: no-repeat;
+        background-size: 894px 127px;
+    }
+    .leer_tutorial_video > main > article > .barra-separadora > h3{
+        margin: 50px 0px;
+        font-size: 50px;
+        height: 50px;
+        position: relative;
+        left: 10px;
+        top: 35px;
+    }
+    .leer_tutorial_video > main > article > .cont > h2{
+        margin-bottom: 50px;
+        font-size: 70px;
+        background-image: url(../assets/imagenes/Vector\ 49.png);
+        background-repeat: no-repeat;
+        background-size: 894px 153px;
+        height: 153px;
+    }
+    .leer_tutorial_video > main > article > .cont > p{
+        margin-bottom: 50px;
+        font-size: 50px;
+        background-image: url(../assets/imagenes/Vector\ 51.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 570px;
+        width: 1518px;
+    }
+    .leer_tutorial_video > main > article > .sub > h2{
+        margin-bottom: 50px;
+        font-size: 70px;
+        background-image: url(../assets/imagenes/Vector\ 53.png);
+        background-repeat: no-repeat;
+        background-size: 1000px 153px;
+        height: 153px;
+        color: var(--rosa);
+    }
+    .leer_tutorial_video > main > article > .parrafo > p{
+        margin-bottom: 50px;
+        font-size: 50px;
+        background-color: var(--rosa);
+        height: 396px;
+        width: 1521px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+
+    /*Leer-Tutorial-Escrito*/
+    .leer_tutorial_escrito > main > article > figure > img{
+        width: 1524px;
+        height: 899px;
+    }
+    .leer_tutorial_escrito > main > article > figure > figcaption{
+        width: 1095px;
+        height: 118px;
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm2.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        margin: 40px 0px;
+    }
+    .leer_tutorial_escrito > main > article > figure > figcaption > time{
+        font-size: 55px;
+        position: relative;
+        top: 20px;
+        left: 450px;
+    }
+    .leer_tutorial_escrito > main > article > section > h1{
+        background-image: url(../assets/imagenes/Vector\ 18.png);
+        background-repeat: no-repeat;
+        background-size: 100% 162px;
+        background-position: bottom;
+        width: 1524px;
+        height: 162px;
+        font-size: 85px;
+    }
+    .leer_tutorial_escrito > main > article > section > p{
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .leer_tutorial_escrito > main > article > .sub > .contenido > h2{
+        background-image: url(../assets/imagenes/Vector\ 55.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        font-size: 60px;
+        width: 756px;
+        height: 240px;
+        align-content: center;
+        color: var(--negro);
+    }
+    .leer_tutorial_escrito > main > article > .sub > .contenido > .sub-cont{
+        display: flex;
+        background-image: url(../assets/imagenes/Vector\ 58.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .leer_tutorial_escrito > main > article > .sub > .contenido > .sub-cont > img{
+        height: 1188px;
+        width: 593px;
+        margin-top: 110px;
+    }
+    .leer_tutorial_escrito > main > article > .sub > .contenido > .sub-cont > p{
+        font-size: 50px;
+        align-content: center;
+        margin: 40px 40px;
+    }
+
+
+
+
+    /*Autores*/
+
+    .autores > main > 
+}
