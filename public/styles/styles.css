@@ -9,7 +9,7 @@
     --aqua: #0ff294;
     --amarillo: #ecf213;
     --negro: black;
-    --h1: 89.76px;
+    --h1: 89.76px;/* no se dividen los pixeles... redondeen, quieren fracciones? usen EMs o REMs*/
     --h2: 67.34px;
     --h3: 50.52px;
     --h4: 37.9px;
