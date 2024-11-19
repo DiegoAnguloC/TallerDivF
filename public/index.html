@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--E: títulos correctos! Sean semánticos -->
     <title>Home</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/frontend.css">
 </head>
 <body class="index">
+    <!--E: NO SE MUESTRA APROPIADAMENTE EN EL BROWSER -->
     <header>
         <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
         <div class="btn-barra-lateral">
@@ -15,11 +17,12 @@
             <div class="contenido-bar">
                 <nav>
                     <ul>
-                        
+                        <!-- E: ESTA ESTRUCTURA ESTÁ INCOMPLETA. NO HAY INFORMACIÓN -->
                         <li><a href="./templates/tutorial/tutorial.html">Tutoriales</a></li>
                         <li><a href="./templates/articulos/articulos.html">Articulos</a></li>
                         <li><a href="./templates/c_exito/casos_de_exitos.html">Casos de exito</a></li>
                         <li><a href="./index.html">home</a></li>
+                        <li><a href="./templates/autores/autores.html">Autores</a></li>
                     </ul>
                 </nav>
             </div>
@@ -84,7 +87,7 @@
                 <img src="https://via.placeholder.com/150" alt="Artista">
                 <h3>Nombre</h3>
             </article>
-            <div class="artista">
+            <article class="artista">
                 <img src="https://via.placeholder.com/150" alt="Artista">
                 <h3>Nombre</h3>
             </article>
@@ -100,11 +103,13 @@
 </main>
 
     <footer>
+        <!-- E: SE MUESTRA DE FORMA INCORRECTA -->
         <img src="./assets/imagenes/logo fondo claro.png" alt="Logo">
         <div class="info">
+            <!-- E: COMO H4? -->
             <h4>©Copyright</h4>
-            <h4>Nosotros</h4>
-            <h4>Caracteres</h4>
+            <h4>Nosotros</h4><!--E: COMO NOSOTROS? -->
+            <h4>Caracteres</h4><!--E:  COMO CARACTERES, ESTO YA SE DEFINIÓ HACE TIEMPO... -->
         </div>
         <div class="canales">
             <img src="./assets/iconos/facebook.png" alt="facebook">
