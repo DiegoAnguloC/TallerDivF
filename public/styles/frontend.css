@@ -412,11 +412,13 @@ main.main-info .info p {
     align-items: center;
     gap: 21px;
 }
-
-.index .articulos_carrusel .articulo img {
+.index .articulos_carrusel .articulo img{
+    width: 150px;
+    height: 150px;
     margin-top: 16px;
-    width: 212.145px;
-    height: 154px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .index .articulos_carrusel .articulo {
@@ -510,9 +512,12 @@ main.main-info .info p {
 }
 
 
-.index .artistas_carrusel .artista img {
-    width: 99px;
-    height: 78px;
+.index .artistas_carrusel .artista img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ====================================================== */
@@ -708,7 +713,6 @@ main.main-info .info p {
 .tercerapart_articulos figure img {
     display: none;
 }
-
 
 /* /DISPLAY DE ARTICULOS CON IMAGEN DE FONDO/ */
 .tercerapart_articulos {
@@ -906,6 +910,10 @@ main.main-info .info p {
     color: #333;
 }
 
+
+
+
+
 /*============================ Animaciones Igna ======================================== */
 /*----------------------------------Scroll Trigger Sections--------------------------------------*/
 .index{
@@ -972,15 +980,14 @@ main.main-info .info p {
 /* ================== adn-style =================== */
 
 #animated-svg {
-    position: fixed;
+    position: fixed; /* Fijo para que siempre esté visible */
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%; 
     z-index: -1;
-    /* Coloca el SVG detrás del contenido principal */
-    opacity: 0.5;
-    /* Ajusta la opacidad para que sea sutil como fondo */
+    opacity: 0.25;
+    pointer-events: none;
 }
 
 /* ================== Estilos del menú hamburguesa =================== */
