@@ -303,163 +303,203 @@ button[type="submit"] {
 /*-----------------------------------------------------------------*/
 /*---------------------------PEDRO---------------------------------*/
 .index {
-    /* display: flex; */
-    height: 2136px;
-    /* max-width: 360px; */
-    min-height: 806px;
-    padding: 16px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 28px;
-    background-color:var(--azulOscuro);
+    min-height: 100vh;
+    padding: 0 16px;
+    background-color: var(--azulOscuro);
+    overflow-x: hidden;
+    width: 100%; /* Ancho completo del viewport */
+    max-width: 480px; /* Tamaño máximo móvil */
+}
+
+.index main{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 16px;
+justify-content: center;
+padding-right: 16px;
+width: 100%; /* Ajusta al ancho del contenedor */
+padding: 16px;
 }
 
 .index .articulo_principal{
-    /* display: flex; */
-    height: 708px;
-    /* width: 100%; */
-    padding: 0px 9px 9px 9px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 61px;
-    align-self: center;
+display: flex;
+height: 708px;
+padding: 16px;
+flex-direction: column;
+background-color: var(--rosa);
 }
 
 
 .index .articulo_principal .contenido_articulo {
-    display: flex;
-    height: 420px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: center;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding:16px 0;
 }
 
 
 .index .articulo_principal h1{
-    color: var(--blanco);
-    font-family: Goldman;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+padding: 16px;
+color: var(--blanco);
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 16px;
+background-color: var(--azulOscuro);
+line-height: normal;
 }
 
 
 .index .articulo_principal p{
-    color: #FFF;
-    font-family: "Fira Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: var(--azulOscuro);
+margin-top: 16px;
+margin-bottom: 16px;
 }
 
+.index .articulo_principal button{
+padding: 10px 16px;
+background-color: var(--amarillo);
+border: none;
+font-size: var(--h6);
+color: var(--azulOscuro);
+align-self: flex-start;
+
+}
 
 .barra_de_separacion{
-    display: flex;
-    width: 213px;
-    padding: 9px 12px;
-    align-items: center;
-    gap: 156px;
-    color: #FFF;
-    font-family: Goldman;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+display: flex;
+width: 213px;
+padding: var(--9, 9px) var(--12, 12px);
+align-items: center;
+gap: 156px;
+color: #FFF;
+font-family: Goldman;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background-color: var(--rosa);
+margin-top: 16px;
+margin-bottom: 16px;
 }
-
 
 .index .articulos_carrusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 21px;
-}
-.index .articulos_carrusel .articulo img{
-    width: 212.145px;
-    height: 154px;
-   
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 21px;
 }
 
+.index .articulos_carrusel .articulo img{
+margin-top: 16px;
+width: 212.145px;
+height: 154px;
+}
 
 .index .articulos_carrusel .articulo{
-    display: flex;
-    width: 213px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 9px;
+display: flex;
+width: 213px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--9, 9px);
 }
-
 
 .index .articulos_carrusel .articulo h3{
-    color: #FFF;
-    font-family: Goldman;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+background-color: var(--aqua);
+color: var(--negro);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
-
 
 .index .articulos_carrusel .articulo p{
-    color: #FFF;
-    font-family: "Fira Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+background-color: var(--aqua);
+color: var(--negro);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
+
 .index .tutorial_video{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+display: flex;
+width: 328px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--12, 12px);
+}
+
+.index .tutorial_video .video{
+justify-content: center;
+height: 183px;
 }
 
 .index .tutorial_video .contenido h3{
-    color: #FFF;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+color: #FFF;
+background-color: var(--azulMedio);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 12px;
+margin-bottom: 12px;
 }
 
-.index .tutorial_video .contenido p{
-    color: #FFF;
-    font-family: "Fira Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+.index .tutorial_video .contenido p:nth-child(1){
+background-color: var(--rosa);
+color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.index .tutorial_video .contenido p:nth-child(3){
+background-color: var(--aqua);
+color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .index .artistas_carrusel{
-    display: flex;
-    align-items: center;
-    gap: 16px;
+display: flex;
+align-items: center;
+gap: var(--16, 16px);
 }
 .index .artistas_carrusel .artista{
-    width: 100%;
-    height: 125.5px;
+width: 99px;
+height: 125.5px;
 }
 
 .index .artistas_carrusel .artista h3{
-    color: #FFF;
-    text-align: center;
-    font-family: "Fira Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+color: var(--negro);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: var(--aqua);
 }
 
 
 .index .artistas_carrusel .artista img{
-    width: 99px;
-    height: 78px;
+width: 99px;
+height: 78px;
 }
 
 /* ====================================================== */
