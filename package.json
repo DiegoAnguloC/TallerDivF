@@ -17,7 +17,8 @@
     "gsap": "^3.12.5",
     "node-dev": "^8.0.0",
     "p5": "^1.11.1",
-    "tallerdivf": "file:"
+    "swiper": "^11.1.14",
+    "tallerdivf": "file:../TallerDivF"
   },
   "devDependencies": {
     "browser-sync": "^3.0.3",

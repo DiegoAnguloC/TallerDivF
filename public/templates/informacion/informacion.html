@@ -4,64 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información</title>
+    <link rel="stylesheet" href="../../styles/frontend.css">
 </head>
 <body>
     <header>
-        <img src="#" alt="#">
-        <nav>
-            <ul>
-                <li><a href="./templates/tutorial/tutorial.html">Tutoriales</a></li>
-                <li><a href="./templates/articulos/articulos.html">Articulos</a></li>
-                <li><a href="./templates/c_exito/casos_de_exitos.html">Casos de exito</a></li>
-                <li><a href="./index.html">home</a></li>
-            </ul>
-        </nav>
+        <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
+        <div class="navbar_container"></div>
     </header>
-
-    <main>
+    <main class="main-info">
+        <h1>Título</h1>
         <section class="info">
-            <h1>Título</h1>
             <img src="#" alt="Imagen principal">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas, officia optio numquam ad, deserunt voluptate minima ea praesentium, doloribus ex et? Numquam quia iste nisi sunt assumenda dignissimos blanditiis.</p>
         </section>
-        <section class="grupos">
-            <article class="grupo">
-                <img src="#" alt="Grupo 1">
+        <section class="grupos-info">
+            <article class="grupo-info">
+                <!-- Se añadieron la etiqueta figure a las imagenes de la section grupo-info -->
+                <figure>
+                    <img src="#" alt="Grupo 6">
+                </figure>
                 <h2>Grupo 1</h2>
             </article>
-            <article class="grupo">
-                <img src="#" alt="Grupo 2">
+            <article class="grupo-info">
+                <figure>
+                    <img src="#" alt="Grupo 6">
+                </figure>
                 <h2>Grupo 2</h2>
             </article>
-            <article class="grupo">
-                <img src="#" alt="Grupo 3">
+            <article class="grupo-info">
+                <figure>
+                    <img src="#" alt="Grupo 6">
+                </figure>
                 <h2>Grupo 3</h2>
             </article>
-            <article class="grupo">
-                <img src="#" alt="Grupo 4">
+            <article class="grupo-info">
+                <figure>
+                    <img src="#" alt="Grupo 6">
+                </figure>
                 <h2>Grupo 4</h2>
             </article>
-            <article class="grupo">
-                <img src="#" alt="Grupo 5">
+            <article class="grupo-info">
+                <figure>
+                    <img src="#" alt="Grupo 6">
+                </figure>
                 <h2>Grupo 5</h2>
+            </article>
+            <article class="grupo-info">
+                <figure>
+                    <img src="#" alt="Grupo 6">
+                </figure>
+                <h2>Grupo 6</h2>
             </article>
         </section>
     </main>
 
     <footer>
-        <article class="">
-            <img src="#" alt="Logo">
-        </article>
-        <article class="">
-            <a href="#">Copyright</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Caracteres</a>
-        </article>
-        <article class="">
-            <a href=""><img src="#" alt="Facebook"></a>
-            <a href=""><img src="#" alt="Pinterest"></a>
-        </article>
+        <div class="fter_container"></div>
     </footer>
-    <!-- scripts? -->
+    <script src="../../scripts/burguer.js"></script>
+    <script src="../../scripts/fter.js"></script>
 </body>
 </html>
