@@ -1015,7 +1015,7 @@ header{
     background-color: var(--blanco);
 }
 
-.index footer {
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1026,7 +1026,7 @@ header{
     background-color: var(--blanco);
 }
 
-.index .foot-logo {
+.foot-logo {
     width: 200px;
     height: 50px;
 }
