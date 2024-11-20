@@ -371,7 +371,7 @@ button[type="submit"] {
     height: 708px;
     padding: 16px;
     flex-direction: column;
-    background-color: var(--rosa);
+    background-image: url(/assets/imagenes/tuto-escrito.png);
 }
 
 
@@ -420,10 +420,10 @@ button[type="submit"] {
 .barra_de_separacion{
     display: flex;
     width: 213px;
-    padding: var(--9, 9px) var(--12, 12px);
+    padding: 12px;
     align-items: center;
     gap: 156px;
-    color: #FFF;
+    color: var(--azulOscuro);
     font-family: Goldman;
     font-size: 21px;
     font-style: normal;
