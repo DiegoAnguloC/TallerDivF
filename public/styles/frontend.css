@@ -9,13 +9,13 @@
     --aqua: #0ff294;
     --amarillo: #ecf213;
     --negro: black;
-    --h1: 89.76px;
-    --h2: 67.34px;
-    --h3: 50.52px;
-    --h4: 37.9px;
-    --h5: 28.43px;
-    --h6: 21.33px;
-    --p: 16px;
+    --h1: 5.610rem;
+    --h2: 4.209rem;
+    --h3: 3.157rem;
+    --h4: 2.369rem;
+    --h5: 1.777rem;
+    --h6: 1.333rem;
+    --p: 1rem;
 
     --movil: 375px;
     --tablet: 768px;
@@ -934,6 +934,164 @@ button[type="submit"] {
     font-weight: 400;
     line-height: normal;
 }
+
+/* SE AGREGO EL CSS (SE HABIA PERDIDO JIJU) 19/11/2024 Mgl */
+/* ========================= TUTORIAL ================================= */
+.bodytuto {
+    display: flex;
+    width: 360px;
+    height: 2600px;
+    padding: var(--16, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--16, 16px);
+    background: #11243F;
+}
+
+.bodytuto .maintuto {
+    display: flex;
+    width: 328px;
+    height: 2165px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--16, 16px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto {
+    display: flex;
+    width: 328px;
+    height: 347px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--12, 12px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto video {
+    width: 328px;
+    height: 183px;
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto {
+    display: flex;
+    width: 328px;
+    height: 152px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--9, 9px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
+    background-color: red;
+    /* CAMBIARLO POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto h6 {
+    color: var(--blanco);
+    font-size: var(--h6);
+    font-style: normal;
+    font-weight: 600px;
+    line-height: normal;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h2_tuto {
+    background-color: green;
+    /* CAMBIARLO POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h2_tuto h2 {
+    color: var(--blanco);
+    font-size: var(--h2);
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto {
+    background-color: lightblue;
+    /* CAMBIARLO POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto p {
+    color: var(--blanco);
+    font-size: var(--p);
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+.bodytuto .maintuto .sectiontuto2 {
+    display: flex;
+    width: 328px;
+    height: 347px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--12, 12px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto2 video {
+    width: 328px;
+    height: 183px;
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
+    display: flex;
+    width: 328px;
+    height: 152px;  
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--9, 9px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
+    background-color: aqua;
+    /*  CAMBIAR POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
+    color: var(--negro);
+    text-align: right;
+    font-size: var(--h6);
+    font-style: normal;
+    font-weight: 600px;
+    line-height: normal;
+    width: 232px;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
+    background-color: chartreuse;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 h2 {
+    color: var(--negro);
+    text-align: right;
+    font-size: var(--h2);
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 {
+    background-color: gold;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 p {
+    color: var(--blanco);
+    text-align: right;
+    font-size: var(--p);
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+    width: 328px;
+}
+
 
 /*     ==================================================================== */
 /*------------------------------------------------------------------------*/
