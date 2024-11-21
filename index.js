@@ -22,6 +22,8 @@ const routes = {
     signup: '/templates/sign-up/sign_up.html'
 };
 
+const articulos = require('./public/assets/jsons/articulos.json');
+
 // Ruta raíz
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', routes.home));
@@ -67,6 +69,18 @@ app.get('/login', (req, res) => {
 app.get('/signup', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', routes.signup));
 });
+
+app.get('/articulos/:id', (req, res) => {
+    const articuloId = parseInt(req.params.id, 10); // Convertir ID a número
+    const articulo = articulos.find(a => a.id === articuloId);
+
+    if (articulo) {
+        res.json(articulo); // Devuelve el artículo como JSON
+    } else {
+        res.status(404).send('Artículo no encontrado');
+    }
+});
+
 
 // Inicia el servidor
 app.listen(PORT, () => {
