@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--E: títulos correctos! Sean semánticos -->
     <title>Home</title>
-    
-    <!--<link rel="stylesheet" href="../../styles/frontend.css">-->
+
+    <link rel="stylesheet" href="../../styles/frontend.css">
     <link rel="stylesheet" href="../../styles/tablet.css">
     <!--<link rel="stylesheet" href="../../styles/desktop.css">-->
 
@@ -27,7 +27,7 @@
     <main> <!-- se añadio el tag main -->
         <section class="articulo_principal"> <!-- se añadio la clase articulo_principal -->
             <article class="imagen_de_fondo">
-                
+
             </article> <!-- se hizo un contenedor para la imagen de fondo (revisar) -->
             <article class="contenido_articulo">
                 <h1>LA TEORÍA DEL INTERNET MUERTO: ¿ESTAMOS RODEADOS DE BOTS Y MANIPULACIONES?</h1>
@@ -47,7 +47,7 @@
         <!-- Carrusel de artículos -->
         <section class="articulos_carrusel swiper">
             <div class="swiper-wrapper">
-                <div class="articulo swiper-slide">
+                <!-- <div class="articulo swiper-slide">
                     <img src="/assets/imagenes/img_arti.png" alt="placeholder image">
                     <h3>El Mito de Sísifo: Cuando la Rutina se Vuelve Castigo</h3>
                     <p>8 de noviembre de 2024</p>
@@ -96,7 +96,7 @@
                     <img src="/assets/imagenes/img_arti2.png" alt="placeholder image">
                     <h3>Más Allá del Humano: El Valle Inquietante como Estética y sus Ecos en las Artes Gráficas</h3>
                     <p>8 de noviembre de 2024</p>
-                </div>
+                </div> -->
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
@@ -187,9 +187,44 @@
     <script src="./scripts/carrusel.js"></script>
     <script src="./scripts/burguer.js"></script>
     <script src="./scripts/fter.js"></script>
+    <script>
+        // Selecciona el contenedor
+        const contenedor = document.querySelector(".swiper-wrapper");
+
+        // Carga los artículos desde el archivo JSON
+        fetch("./assets/jsons/articulos.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("No se pudo cargar el archivo JSON");
+                }
+                return response.json();
+            })
+            .then((articulos) => {
+                articulos.forEach((articulo) => {
+                    const div = document.createElement("div");
+                    div.className = "articulo swiper-slide";
+
+                    // Contenido del artículo con ID dinámico
+                    div.innerHTML = `
+                <img src="${articulo.img}" alt="Portada artículo ${articulo.titulo}">
+                <h3>${articulo.titulo}</h3>
+                <p>${articulo.fecha}</p>
+            `;
+
+                    // Agrega evento de clic para redirigir al artículo respectivo
+                    div.addEventListener("click", () => {
+                        window.location.href = `/articulos/${articulo.id}`; // Ruta dinámica
+                    });
+
+                    contenedor.appendChild(div);
+                });
+            })
+            .catch((error) => {
+                console.error("Error al cargar los artículos:", error);
+            });
+
+    </script>
 </body>
 
 
 </html>
-
-
