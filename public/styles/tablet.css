@@ -299,7 +299,7 @@ object-fit: cover;
     height: 465px;
     justify-content: center;
     margin: 0;
-    background-color: grey;
+    background-image: url(../assets/imagenes/prueba-vertical.jpeg); /*se cambio background-color por background-image*/
 }
 
 .main_articulos .primerapart_articulos .contenido1 {
@@ -311,8 +311,11 @@ object-fit: cover;
 
 .main_articulos .primerapart_articulos .contenido1 h2 {
     font-size: var(--h2);
+    background-color: var(--azulOscuro); /*background color para el h2*/
 }
-
+.main_articulos .primerapart_articulos .contenido1 p{ /*se agrego fondo para la tipo*/
+    background-color: var(--azulOscuro);
+}
 .segundapart_articulos {
     display: flex;
     flex-direction: column;
@@ -373,7 +376,7 @@ object-fit: cover;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: lightgreen;
+    background-image: url(../assets/imagenes/Group\ 16.png); /*otra vez un backgorund-image*/
     width: 100%;
     height: 465px;
     justify-content: center;
@@ -389,8 +392,13 @@ object-fit: cover;
 
 .tercerapart_articulos .contenedor .contenido h2 {
     font-size: var(--h2);
+    background-color: var(--azulOscuro); /*fondo para la tipografia*/
+    color: var(--blanco);
 }
-
+.tercerapart_articulos .contenedor .contenido p{ /*fondo para la tipografia*/
+    background-color: var(--azulOscuro); 
+    color: var(--blanco);
+}
 /*==========LEER ARTÍCULOS: TABLET===========*/
 main{
     margin: 0;
