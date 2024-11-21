@@ -552,6 +552,95 @@ button[type="submit"] {
     margin-left: auto;
     margin-right: auto;
 }
+/* leer_tutorial_video-mobile */
+
+.leer_tutorial_video-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 16 0 16;
+    background-color: var(--azulOscuro);
+    overflow-x: hidden;
+    width: 100%; /* Ancho completo del viewport */
+    max-width: 480px; /* Tamaño máximo móvil */
+}
+
+.leer_tutorial_video-mobile main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%; /* Ajusta al ancho del contenedor */
+}
+
+.leer_tutorial_video-mobile .tutorial_principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal img{
+    width: 328px;
+    height: 183px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal p:nth-child(1){
+    background-color: var(--rosa);
+    color: var(--blanco);
+    font-size: 16px;
+    width: 63%;
+    margin-top: 9px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal h1{
+    background-color: var(--azulMedio);
+    color: var(--blanco);
+    font-size: 32px;
+    width: 72%;
+    margin-top: 9px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal p:nth-child(3){
+    background-color: var(--aqua);
+    color: var(--blanco);
+    font-size: 16px;
+    width: 79%;
+    margin-top: 9px;
+}
+
+.leer_tutorial_video-mobile .subtitulo_tutorial{
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.leer_tutorial_video-mobile .subtitulo_tutorial h2{
+    background-color: var(--amarillo);
+    color: var(--rosa);
+    font-size: 24px;
+    width: 65%;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+
+.leer_tutorial_video-mobile .subtitulo_tutorial p{
+    background-color: var(--rosa);
+    color: var(--blanco);
+    font-size: 16px;
+}
+
 
 /* ====================================================== */
 
