@@ -1061,6 +1061,7 @@ button[type="submit"] {
     width: 328px;
     height: 183px;
     flex-shrink: 0;
+    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto {
@@ -1126,6 +1127,7 @@ button[type="submit"] {
     width: 328px;
     height: 183px;
     flex-shrink: 0;
+    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
