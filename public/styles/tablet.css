@@ -899,6 +899,100 @@ main.main-info .info p {
     width: 18px;
     background-color: transparent;
 }
+
+/*=================================LEER_TUTOTIAL_ESCRITO_MOBILE=========================*/
+.main_leer_tut_escrit_mob {
+    background-color: var(--azulOscuro);
+    width: 100%;
+    height: auto;
+    padding: 16px;
+}    
+.main_leer_tut_escrit_mob header {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+.main_leer_tut_escrit_mob li {
+    display: inline;
+}
+footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 262px;
+}
+.primera_parte_leer_tut_escritomob {
+    margin-bottom: 16px;
+}        
+.primera_parte_leer_tut_escritomob .imagen_leer_tut_escritomob img {
+    width: 100%;
+    height: 458px;
+            
+}
+.primera_parte_leer_tut_escritomob .fecha{
+            width: 100%;
+            height: 23px;
+            background-color: var(--azulMedio);
+            font-size: var(--h6);
+            text-align: left;
+            margin-bottom: 12px;
+        }
+.primera_parte_leer_tut_escritomob .barra_artistas{
+            background-color: var(--rosa);
+            width: 289px;
+            height: 42px;
+            padding: var(--9, 9px) 12px;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+.primera_parte_leer_tut_escritomob p {
+            background-color: var(--aqua);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 100%;
+            height: 129px;
+        }
+.subtitulo_Leer_tut_escritomob{
+        display: flex; /*add*/
+        flex-direction: row-reverse; /*add*/
+        gap: 20px;
+        margin-bottom: 16px;
+        align-items: center;
+}
+.subtitulo_Leer_tut_escritomob:nth-of-type(2),
+.subtitulo_Leer_tut_escritomob:nth-of-type(4) {
+    flex-direction: row; /* Cambiar flujo: Imagen a la derecha, texto a la izquierda */
+}        
+.subtitulo_Leer_tut_escritomob .imagen_subtitulo {
+            flex: 1;
+}            
+.subtitulo_Leer_tut_escritomob .imagen_subtitulo img{
+                width: 273px;
+                height: 465px;
+                border: 1px solid white;
+            }
+.subtitulo_Leer_tut_escritomob .tutorial_contenedor{
+            flex: 2;
+        }
+.subtitulo_Leer_tut_escritomob h6{
+            background-color: var(--amarillo);
+            width: 178px;
+            height: 49px;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+.subtitulo_Leer_tut_escritomob p {
+            background-color: var(--aqua);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 100%;
+            height: 311px;
+        }
 /* ================== Estilos del menú hamburguesa =================== */
 .contenido-bar {
     position: fixed;
