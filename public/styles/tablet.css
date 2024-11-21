@@ -634,10 +634,12 @@ main{
 }
 .login {
     width: 100%;
-    max-width: 360px; 
+    max-width: 360px;
+    height: 475px; 
     background-color: var(--rosa);
     padding-left:16px;
     padding-right: 16px;
+    margin: 0 175px;
 }
 
 .login label {
@@ -704,7 +706,9 @@ button[type="submit"] {
     background-color: var(--rosa);
     padding: 16px 24px;
     text-align: center;
+    margin: 0 180px;
 }
+
 
 .singin input[type="email"],
 .singin input[type="tel"],
