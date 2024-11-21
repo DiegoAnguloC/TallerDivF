@@ -54,6 +54,10 @@ main {
     font-size: var(--h6);
     color: var(--azulOscuro);
 }
+    header>.logo{
+        width: 25vh;
+        height: 100%;
+    }
 /*INDEX - NO TERMINADO*/
 
 .index {
@@ -101,6 +105,11 @@ padding:16px 0;
 width: 393px;
 }
 
+.index .articulo_principal {
+    width: 738px;
+    height: 538px;
+    background-image: url(../assets/imagenes/prueba-horizontal.jpeg);
+}
 
 .index .articulo_principal h1{
 padding: 16px;
