@@ -1,0 +1,71 @@
+{
+    "titulo": "La teoría del Internet muerto: ¿Estamos rodeados de bots y manipulaciones?",
+    "autor": "Equipo editorial de Mutarte",
+    "fecha": "8 de noviembre de 2024",
+    "categoría": "Artículos",
+    "lead": "La teoría del 'Internet Muerto' propone que buena parte de la actividad en la web está protagonizada por bots y algoritmos, y no por personas reales. Esta idea cuestiona si estamos interactuando genuinamente con otros usuarios o si somos presas de una manipulación sistemática en las redes sociales. ¿Hasta qué punto estamos rodeados de inteligencia artificial en lugar de humanidad? ¿Y quién se beneficia realmente de esta red fantasmal?",
+    "contenido": [
+        {
+            "subtitulo": "El Internet como un espacio fantasma",
+            "texto": "En 2021, comenzó a circular un rumor tan inquietante como provocador: la teoría del 'Internet Muerto'. Esta teoría sugiere que, desde hace varios años, buena parte del contenido y la interacción en Internet no proviene de usuarios humanos sino de bots, algoritmos y otras formas de inteligencia artificial. Bajo esta premisa, las redes sociales, foros, e incluso sitios de noticias estarían siendo 'poblados' artificialmente, creando una ilusión de actividad y de relevancia social que en realidad es ficticia."
+        },
+        {
+            "subtitulo": "La manipulación de las redes sociales: el arma perfecta de distracción masiva",
+            "texto": "Si consideramos la teoría del 'Internet Muerto' desde una perspectiva crítica, el propósito parece evidente: una red colmada de bots y de cuentas artificiales permite una manipulación de masas a una escala nunca antes vista. Las redes sociales se convierten así en máquinas perfectas para construir realidades a la medida de sus operadores. Al saturar el espacio digital con contenido prediseñado y respuestas automatizadas, los actores en control (sean gobiernos, corporaciones o grupos con intereses específicos) pueden manipular la percepción pública sobre cualquier tema."
+        },
+        {
+            "subtitulo": "Los bots y el contenido algorítmico: ¿quién está detrás?",
+            "texto": "Es fácil imaginar la cantidad de entidades que pueden beneficiarse de una Internet poblada mayoritariamente por bots. Corporaciones, gobiernos y otros grupos interesados pueden crear ejércitos de cuentas ficticias para saturar de contenido un espacio y ahogar voces disidentes. A diferencia de la manipulación publicitaria tradicional, la propaganda digital impulsada por bots pasa desapercibida y se percibe como un flujo natural de la conversación social, de ahí su efectividad."
+        },
+        {
+            "subtitulo": "¿Cómo afecta la teoría del 'Internet Muerto' nuestra percepción de la realidad?",
+            "texto": "La teoría del 'Internet Muerto' plantea una paradoja inquietante: si el Internet ha sido llenado de contenido falso, ¿cómo sabemos qué es real? Al no poder confiar en la autenticidad de lo que consumimos y con quién interactuamos, nuestra propia percepción de lo que constituye la realidad social y política se distorsiona. Nos volvemos más susceptibles a las noticias falsas, a los radicalismos, e incluso al aislamiento social, pues interactuar en redes sociales se convierte en un ejercicio de paranoia."
+        },
+        {
+            "subtitulo": "¿Qué podemos hacer? Estrategias para sobrevivir en una red de espejismos",
+            "texto": "Si aceptamos la posibilidad de que parte de lo que vemos e interactuamos en Internet no es real, ¿cómo podemos navegar de forma consciente en un espacio tan manipulado? Cuestionar la autenticidad de la información, reducir la exposición a redes sociales, fomentar la interacción en la vida real, y adoptar una postura crítica y desapegada son formas de minimizar el impacto de la manipulación algorítmica."
+        },
+        {
+            "subtitulo": "Epílogo de una red muerta",
+            "texto": "La teoría del 'Internet Muerto' puede parecer exagerada o apocalíptica, pero hay algo en ella que resuena con la experiencia diaria de quienes pasan tiempo en las redes sociales. Cada vez es más común encontrar publicaciones repetitivas, respuestas idénticas y comportamientos extrañamente uniformes en la red. Si bien es poco probable que el 100% de Internet esté muerto, la presencia creciente de bots y algoritmos ha comenzado a teñir de gris el espacio virtual."
+        }
+    ],
+    "palabras_clave": [
+        "teoría del Internet muerto",
+        "bots",
+        "manipulación en redes sociales",
+        "inteligencia artificial",
+        "desinformación",
+        "internet"
+    ],
+    "descripción_de_imágenes": [
+        {
+            "descripción": "Una red de iconos de redes sociales en un fondo oscuro, simulando un vacío cibernético, con algunos rostros pixelados que se desvanecen."
+        },
+        {
+            "descripción": "Un teléfono móvil en el que se muestra una red social llena de comentarios idénticos, resaltando la presencia de posibles bots."
+        },
+        {
+            "descripción": "Una pantalla llena de códigos y algoritmos, simulando el concepto de inteligencia artificial gobernando el espacio digital."
+        }
+    ],
+    "epígrafes": [
+        "¿Es el Internet un teatro de sombras manejado por algoritmos?",
+        "La manipulación sistemática de redes: bots y fake news como armas de control social.",
+        "Interactuando con la nada: la teoría del ‘Internet Muerto’ y la presencia creciente de bots en línea."
+    ],
+    "citas": [
+        {
+            "texto": "Nos encontramos en una era de simulación total. Ya no podemos distinguir lo real de lo imaginado.",
+            "autor": "Jean Baudrillard"
+        },
+        {
+            "texto": "La tecnología no es neutral; cada algoritmo trae consigo una ideología.",
+            "autor": "Shoshana Zuboff"
+        },
+        {
+            "texto": "Vivimos en la ilusión de conectividad, cuando en realidad estamos más aislados que nunca.",
+            "autor": "Nicholas Carr"
+        }
+    ]
+}
