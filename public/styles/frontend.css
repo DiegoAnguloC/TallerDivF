@@ -35,12 +35,7 @@
 /*---------------------------SOPHIE--------------------------------*/
 /* ===================== Log in =============================== */
 
-body .movil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 16px;
+body {
     background-color: var(--azulOscuro);
 }
 
@@ -69,11 +64,13 @@ body .movil {
     display: block;
     width: 100%;
     height: 48px;
-    padding: 0 12px;
-    background-color: var(--aqua);
-    border: none;
     margin-bottom: 30px;
-    font-size: var(--p);
+    background-color: var(--rosa);
+    background-image: url('../assets/imagenes/Vector 226.png');
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 ::placeholder {
@@ -83,14 +80,15 @@ body .movil {
 button[type="submit"] {
     width: 100%;
     height: 48px;
-    background-color: var(--amarillo);
+    background-color: var(--rosa);
+    background-image: url('../assets/imagenes/Vector 227.png');
+    background-repeat: no-repeat;
     border: none;
+    outline: none;
+    box-shadow: none;
     font-size: 14px;
     color: var(--azulOscuro);
-
 }
-
-
 .recordar {
     display: flex;
     align-items: center;
@@ -155,7 +153,10 @@ button[type="submit"] {
 }
 
 /* ===================== sing =============================== */
+/* se hicieron cambios desde esat linea para aagreragr los fondos pero como pngs
+ tambien se cenro el formulario de manera horizontal Sophie 19/11/24 */
 .singin {
+    margin: 0 auto ;
     width: 100%;
     max-width: 360px;
     background-color: var(--rosa);
@@ -168,11 +169,72 @@ button[type="submit"] {
 .singin input[type="text"],
 .singin input[type="password"] {
     display: block;
-    width: 284px;
+    width: 100%;
     height: 48px;
     margin-bottom: 30px;
-    background-color: var(--aqua);
+    background-color: var(--rosa);
+    background-image: url('../assets/imagenes/Vector 226.png');
+    background-repeat: no-repeat;
     border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.singin input[type="email"]::placeholder,
+.singin input[type="tel"]::placeholder,
+.singin input[type="text"]::placeholder,
+.singin input[type="password"]::placeholder {
+    color: var(--azulOscuro);
+}
+
+.singin input[type="email"]:focus,
+.singin input[type="tel"]:focus,
+.singin input[type="text"]:focus,
+.singin input[type="password"]:focus,
+.singin input[type="email"]:hover,
+.singin input[type="tel"]:hover,
+.singin input[type="text"]:hover,
+.singin input[type="password"]:hover {
+    background-color: var(--rosa);
+    background-image: url('../assets/imagenes/Vector 226.png');
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 30px;
+}
+
+.password-container input[type="password"] {
+    width: 100%;
+    padding-right: 40px; 
+    background-color: var(--rosa);
+    background-image: url('../assets/imagenes/Vector 226.png');
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.password-container button {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    background-image: url('../assets/imagenes/eye password logo (1).png');
+    background-size: 21px 21px; 
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    color: var(--blanco);
+    background-color: transparent; 
 }
 
 .singin .orwith {
@@ -181,7 +243,7 @@ button[type="submit"] {
 }
 
 .singin #show-password {
-    margin-left: -70px;
+    display: none;
 }
 
 .singin label[for="show-password"] {
@@ -190,152 +252,170 @@ button[type="submit"] {
     color: var(--blanco);
     font-size: 14px;
 }
-    /* ===================== info movil =============================== */
-    .h-info {
-        height: 90px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 16px;
-        background-color: var(--azulOscuro);
-        color: var(--blanco);
-        margin: 0;
-        margin-top: 16px;
-    }
 
-    .f-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 16px;
-        background-color: var(--azulOscuro);
-        color:var(--blanco);
-        margin: 0;
-        margin-bottom: 16px;
-    }
 
-    .h-info img {
-        height: 35px;
-        background-color: var(--aqua);
-    }
-    .f-info img {
-        width: 212px;
-        background-color: var(--aqua);
-    }
-    .h-info nav ul, .f-info nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 10px;
-    }
+/* ===================== info movil =============================== */
+.h-info {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    margin: 0;
+    margin-top: 16px;
+}
 
-    .h-info nav ul li a, .f-info nav ul li a {
-        text-decoration: none;
-        color: var(--blanco);
-        font-size: 14px;
-        font-weight: bold;
-    }
+.f-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: var(--azulOscuro);
+    color:var(--blanco);
+    margin: 0;
+    margin-bottom: 16px;
+}
 
-    main.main-info {
-        padding: 0 16px;
-        margin: 0;
-        background-color: var(--azulOscuro);
-    }
+.h-info img {
+    height: 35px;
+}
+.f-info img {
+    width: 212px;
+}
+.h-info nav ul, .f-info nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
 
-    main.main-info .info {
-        padding: 16px;
-        background-color: var(--aqua);
-        border-radius: 0;
-        max-width: 100%;
-        margin: 0;
-    }
+.h-info nav ul li a, .f-info nav ul li a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 14px;
+    font-weight: bold;
+}
 
-    main.main-info  h1 {
-        color: var(--blanco);
-        font-size: 28px;
-        margin: 0;
-    }
+main.main-info {
+    padding: 0 16px;
+    margin: 0;
+    background-color: var(--azulOscuro);
+}
 
-    main.main-info .info img {
-        max-width: 100%;
-        margin: 20px 0;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+main.main-info .info {
+    padding: 16px;
+    border-radius: 0;
+    width: 330px;
+    max-width: 100%;
+    margin: 0;
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Vector 24 (1).png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: auto;
+    min-height: 100vh; 
+  }
+  
+  
 
-    main.main-info .info p {
-        line-height: 1.6;
-        color: var(--negro);
-        font-size: 14px;
-        margin: 0;
-    }
+main.main-info  h1 {
+    color: var(--blanco);
+    font-size: 28px;
+    margin: 0;
+}
 
-    .grupos-info {
-        margin: 0 auto;
-        width: 328px;
-        padding: 20px 0;
-        background-color: var(--azulOscuro);
-    }
+main.main-info .info img {
+    max-width: 100%;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .grupo-info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        width: 100%;
-        background-color: var(--azulOscuro);
-        margin: 0 auto;
-        padding: 0;
-        margin-bottom: 29px;
-    }
+main.main-info .info p {
+    line-height: 1.6;
+    color: var(--negro);
+    font-size: 14px;
+    margin: 0 ;
+    margin-top:230px;
+}
 
-    .grupo-info figure {
-        grid-column: 1/2;
-        width: 140px;
-        height: 137px;
-        border-radius: 50%;
-        object-fit: cover;
-        background-color: var(--amarillo);
-        display: flex; justify-content: center; 
-        align-items: center; 
-        margin: auto;
-    }
+.grupos-info {
+    margin: 0 auto;
+    width: 328px;
+    padding: 20px 0;
+    background-color: var(--azulOscuro);
+}
 
-    .grupo-info h2 {
-        width: 115px;
-        color: var(--blanco);
-        background-color: var(--rosa);
-        margin: 0;
-        padding: 20px;
-        font-size: 16px;
-        text-align: center;
-        justify-self: end;
-    }
+.grupo-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 100%;
+    background-color: var(--azulOscuro);
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 29px;
+}
 
-    .f-info {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.grupo-info figure {
+    grid-column: 1/2;
+    width: 140px;
+    height: 137px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--amarillo);
+    display: flex; justify-content: center; 
+    align-items: center; 
+    margin: auto;
+}
 
-    .f-info article {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
+.grupo-info h2 {
+    width: 100%;
+    color: var(--blanco);
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Vector 18.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-self: end;
+    height: auto; 
+  }
+  
+  
 
-    .f-info a {
-        color: var(--blanco);
-        text-decoration: none;
-        margin: 0 10px;
-    }
-    .f-info .iconos-info img{
-        width: 18px;
-        background-color: transparent;
-    }
+.f-info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-info article {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.f-info a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.f-info .iconos-info img{
+    width: 18px;
+    background-color: transparent;
+}
+/* tambien quite el tabulado extra que habia en toda la seccion de info (Sophie  19/11/24) */
 /*-----------------------------------------------------------------*/
 /*---------------------------PEDRO---------------------------------*/
 .index {
