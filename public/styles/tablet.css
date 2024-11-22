@@ -37,7 +37,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 28px;
-        margin: 16px 16px;
+        /*margin: 16px 16px;*/
     }
     h1, h2, h6, p{
         color: var(--blanco);
@@ -59,6 +59,9 @@ main {
         height: 100%;
     }
 /*INDEX - NO TERMINADO*/
+.index main{
+    margin: 16px 16px;
+}
 
 .index {
     display: block;
@@ -97,7 +100,7 @@ background-color: var(--rosa);
 
 
 .index .articulo_principal .contenido_articulo {
-margin-top: 30px;
+margin-top: 65px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -108,7 +111,8 @@ width: 393px;
 .index .articulo_principal {
     width: 738px;
     height: 538px;
-    background-image: url(../assets/imagenes/prueba-horizontal.jpeg);
+    object-fit: cover;
+    background-image: url(/assets/imagenes/tuto-escrito.png);
 }
 
 .index .articulo_principal h1{
@@ -1230,7 +1234,7 @@ footer {
     right: -100%;
     width: 250px;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: var(--azulOscuro);
     color: #fff;
     transition: right 0.3s ease;
     z-index: 100;
@@ -1345,4 +1349,267 @@ footer {
     width: 190px;
     height: auto;
 }
+
+/*     ==================================================================== */
+/*------------------------------------------------------------------------*/
+.index .articulos_carrusel,
+.index .artistas_carrusel {
+    display: block;
+    width: 100%;
+    max-width: 1572px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+}
+
+.index .articulos_carrusel .articulo,
+.index .artistas_carrusel .artista {
+    width: 283.058px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--9, 9px);
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.swiper-pagination-bullet {
+    background: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
+}
+
+
+
+
+
+/*============================ Animaciones Igna ======================================== */
+/*----------------------------------Scroll Trigger Sections--------------------------------------*/
+.index{
+    section {
+        opacity: 0;
+        /* Empezarán invisibles */
+        transform: translateX(100%);
+        /* Salen de la derecha por defecto */
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    
+    /* Alterna entre entrar desde la izquierda y desde la derecha */
+    .section-left {
+        transform: translateX(-100%);
+    }
+    
+    .section-right {
+        transform: translateX(100%);
+    }
+}
+/*----------------------------------Estilos de Prueba Header y Footer--------------------------------------*/
+header .logo {
+    width: 20vh;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 109%;
+    padding: 10px;
+    background-color: var(--blanco);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 200px;
+    width: 109%;
+    background-color: var(--blanco);
+}
+
+.foot-logo {
+    width: 200px;
+    height: 50px;
+}
+
+/*----------------------------------Hover Video--------------------------------------*/
+.index .tutorial_video .video video {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+
+
+/* ================== Animaciones Gabo ============ */
+
+/* ================== adn-style =================== */
+
+#animated-svg {
+    position: fixed; /* Fijo para que siempre esté visible */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%; 
+    z-index: -1;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+/* ================== Estilos del menú hamburguesa =================== */
+.contenido-bar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--azulOscuro); /* Fondo azul oscuro */
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.contenido-bar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.contenido-bar ul li {
+    display: flex;
+    flex-direction: column; /* Submenú debajo del texto */
+    padding: 10px 0;
+    position: relative;
+}
+
+.contenido-bar ul li > div {
+    display: flex; /* Texto y botón en línea */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Separar texto y botón */
+}
+
+.contenido-bar ul li > div > a {
+    flex: 1; /* El enlace ocupa todo el espacio disponible */
+    display: inline-block;
+    color: var(--blanco); /* Color blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contenido-bar ul li > div > a:hover {
+    color: #00E676; /* Color verde en hover */
+}
+
+.contenido-bar ul li .toggle-submenu {
+    margin-left: 15px; /* Separar el botón del texto */
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--blanco);
+    transition: transform 0.3s ease;
+    align-self: flex-end; /* Mantener alineación con el texto */
+}
+
+.contenido-bar ul li:hover .toggle-submenu {
+    transform: scale(1.2); /* Efecto al pasar el ratón */
+}
+
+.linea-dinamica {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0; /* Ocultar inicialmente */
+    height: 2px;
+    background-color: #FF4081;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.contenido-bar ul li:hover .linea-dinamica {
+    width: 100%;
+    background-color: #00E676;
+}
+
+.submenu {
+    display: none; /* Ocultar submenú por defecto */
+    margin-top: 10px; /* Espacio para que aparezca debajo del enlace */
+    padding-left: 20px; /* Desplazamiento hacia la derecha */
+    border-left: 2px solid #FF4081; /*linea de la derecha*/
+}
+
+.submenu a {
+    color: var(--blanco); /* Color blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 14px; /* Tamaño de fuente ligeramente menor si es necesario */
+}
+
+.submenu a:hover {
+    color: #00E676; /* Cambiar a verde en hover */
+    text-decoration: underline; /* Subrayado solo en hover si lo deseas */
+    text-decoration: none;
+}
+
+.submenu.open {
+    display: block; /* Mostrar submenú al activar */
+}
+
+.btn-barra-lateral {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.hamburguesa {
+    width: 30px;
+    height: auto;
+    background-color: transparent;
+    display: block;
+}
+
+.btn-cerrar-menu {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--azulOscuro);
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 100;
+    padding: 20px;
+}
+
+#menu.active {
+    right: 0;
+}
+
+
+
 }
