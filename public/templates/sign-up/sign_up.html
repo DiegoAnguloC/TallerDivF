@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="../../styles/frontend.css">-->
-    <link rel="stylesheet" href="../../styles/tablet.css">
-    <!--<link rel="stylesheet" href="../../styles/desktop.css">-->
+    <link rel="stylesheet" href="../../styles/frontend.css">
     <title>Registro</title>
 </head>
 <body >
@@ -14,10 +12,9 @@
             <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre">
             <input type="email" id="email" name="email" placeholder="Introduce tu email">
             <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono">
-            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña">
-            <div class="check">
-                <input type="checkbox" id="show-password" name="show-password">
-                <label for="show-password">Mostrar contraseña</label>
+            <!-- se añadio un div para que al  mostrar contraseña este dentro "dentro del placeholder" sophie 19/11/24 -->
+            <div class="password-container"> <input type="password" id="password" name="password" placeholder="Introduce tu contraseña">
+                <button type="button" id="toggle-password"></button> 
             </div>
             <button type="submit">Sign Up</button>
             <p class="orwith">or with</p>
