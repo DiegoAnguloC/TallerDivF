@@ -1015,6 +1015,175 @@ footer {
             width: 100%;
             height: 311px;
         }
+
+/* ========================= TUTORIAL ================================= */
+.bodytuto {
+    display: flex;
+    width: 100%;/**/
+    height: auto;/**/
+    padding: var(--16, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--16, 16px);
+    background: #11243F;
+}
+.bodytuto .tuto_container{
+    display: flex;
+}
+.bodytuto .maintuto {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--16, 16px);
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.bodytuto .maintuto .sectiontuto {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--12, 12px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto video {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background-image: url(../assets/imagenes/Group\ 16.png);
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--9, 9px);
+    flex-shrink: 0;
+}
+.bodytuto .maintuto .tuto_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr)); /* Configuración para columnas dinámicas */
+    gap: 16px;
+    width: 100%;
+    align-items: start;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
+    background-color: red;
+    /* CAMBIARLO POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto h6 {
+    color: var(--blanco);
+    font-size: var(--h6);
+    font-style: normal;
+    font-weight: 600px;
+    line-height: normal;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h2_tuto {
+    background-color: green;
+    /* CAMBIARLO POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .h2_tuto h2 {
+    color: var(--blanco);
+    font-size: var(--h2);
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto {
+    background-color: lightblue;
+    /* CAMBIARLO POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto p {
+    color: var(--blanco);
+    font-size: var(--p);
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+.bodytuto .maintuto .sectiontuto2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--12, 12px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto2 video {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background-image: url(../assets/imagenes/Group\ 16.png);
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
+    display: flex;
+    width: 100%;
+    height: auto;  
+    flex-direction: column;
+    align-items: unset;
+    gap: var(--9, 9px);
+    flex-shrink: 0;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
+    background-color: aqua;
+    /*  CAMBIAR POR SVG */
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
+    color: var(--negro);
+    text-align: left;
+    font-size: var(--h6);
+    font-style: normal;
+    font-weight: 600px;
+    line-height: normal;
+    width: 100%;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
+    background-color: chartreuse;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 h2 {
+    color: var(--negro);
+    text-align: left;
+    font-size: var(--h2);
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 {
+    background-color: gold;
+}
+
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 p {
+    color: var(--blanco);
+    text-align: left;
+    font-size: var(--p);
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+    width: 100%;
+}       
+
 /* ================== Estilos del menú hamburguesa =================== */
 .contenido-bar {
     position: fixed;
