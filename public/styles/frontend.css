@@ -418,219 +418,221 @@ main.main-info .info p {
 /* tambien quite el tabulado extra que habia en toda la seccion de info (Sophie  19/11/24) */
 /*-----------------------------------------------------------------*/
 /*---------------------------PEDRO---------------------------------*/
-.index {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 0 16px;
-        background-color: var(--azulOscuro);
-        overflow-x: hidden;
-        width: 100%; /* Ancho completo del viewport */
-        max-width: 480px; /* Tamaño máximo móvil */
+index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 16px;
+    background-color: var(--azulOscuro);
+    overflow-x: hidden;
+    width: 100%; /* Ancho completo del viewport */
+    max-width: 480px; /* Tamaño máximo móvil */
 }
 
 .index main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 16px;
-    justify-content: center;
-    padding-right: 16px;
-    width: 100%; /* Ajusta al ancho del contenedor */
-    padding: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 16px;
+justify-content: center;
+padding-right: 16px;
+width: 100%; /* Ajusta al ancho del contenedor */
+padding: 16px;
 
 }
 
 
 
 
+.index .articulo_principal img{
+width: 327px;
+height: 230px;
+}
+
 .index .articulo_principal{
-    display: flex;
-    height: 708px;
-    padding: 16px;
-    flex-direction: column;
-    background-image: url(/assets/imagenes/tuto-escrito.png);
+display: flex;
+min-height: 708px;
+padding: 16px;
+flex-direction: column;
 }
 
 
 .index .articulo_principal .contenido_articulo {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding:16px 0;
+margin-top: 21px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding-bottom:16px;
 }
 
 
 .index .articulo_principal h1{
-    padding: 16px;
-    color: var(--blanco);
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 16px;
-    background-color: var(--azulOscuro);
-    line-height: normal;
+padding-bottom: 16px;
+color: var(--blanco);
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+background-color: var(--azulOscuro);
+line-height: normal;
 }
 
 
 .index .articulo_principal p{
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: var(--azulOscuro);
-    margin-top: 16px;
-    margin-bottom: 16px;
+color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: var(--azulOscuro);
+margin-bottom: 16px;
 }
 
 .index .articulo_principal button{
-    padding: 10px 16px;
-    background-color: var(--amarillo);
-    border: none;
-    font-size: var(--h6);
-    color: var(--azulOscuro);
-    align-self: flex-start;
-    
+padding: 10px 16px;
+background-color: var(--aqua);
+border: none;
+font-size: var(--h6);
+color: var(--azulOscuro);
+align-self: flex-start;
+
 }
 
 .barra_de_separacion{
-    display: flex;
-    width: 213px;
-    padding: 12px;
-    align-items: center;
-    gap: 156px;
-    color: var(--azulOscuro);
-    font-family: Goldman;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background-color: var(--rosa);
-    margin-top: 16px;
-    margin-bottom: 16px;
+display: flex;
+width: 213px;
+padding: 12px;
+align-self: flex-start;
+gap: 156px;
+color: var(--rosa);
+font-family: Goldman;
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 16px;
+margin-bottom: 16px;
 }
 
 
 .index .articulos_carrusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 21px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 21px;
 }
 .index .articulos_carrusel .articulo img{
-    width: 150px;
-    height: 150px;
-    margin-top: 16px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+width: 150px;
+height: 150px;
+margin-top: 16px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 .index .articulos_carrusel .articulo {
-    display: flex;
-    width: 213px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--9, 9px);
+display: flex;
+width: 213px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--9, 9px);
 }
 
 
 .index .articulos_carrusel .articulo h3{
-    background-color: var(--aqua);
-    color: var(--negro);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+color: var(--blanco);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+align-self: flex-start;
 }
 
 
 .index .articulos_carrusel .articulo p{
-    background-color: var(--aqua);
-    color: var(--negro);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+color: var(--blanco);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 .index .tutorial_video{
-    display: flex;
-    width: 328px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--12, 12px);
+display: flex;
+width: 328px;
+flex-direction: column;
+align-items: flex-start;
+padding-top: 12px;
+padding-bottom: 12px;
 }
 
 
 .index .tutorial_video .video{
-    justify-content: center;
-    height: 183px;
+justify-content: center;
+height: 183px;
+margin-bottom: 12px;
 }
 
 
 .index .tutorial_video .contenido h3{
-    color: #FFF;
-    background-color: var(--azulMedio);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 12px;
-    margin-bottom: 12px;
+color: var(--blanco);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 12px;
+margin-bottom: 12px;
 }
 
 
 .index .tutorial_video .contenido p:nth-child(1){
-    background-color: var(--rosa);
-    color: #FFF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+background-color: var(--rosa);
+color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 12px;
 }
 
 .index .tutorial_video .contenido p:nth-child(3){
-    background-color: var(--aqua);
-    color: #FFF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+color: var(--blanco);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 
 .index .artistas_carrusel{
-    display: flex;
-    align-items: center;
-    gap: var(--16, 16px);
+display: flex;
+align-items: center;
+gap: var(--16, 16px);
 }
+
 .index .artistas_carrusel .artista{
-    width: 99px;
-    height: 125.5px;
+width: 99px;
+height: 125.5px;
 }
 
 
 .index .artistas_carrusel .artista h3{
-    color: var(--negro);
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: var(--aqua);
+color: var(--negro);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: var(--aqua);
 }
 
 
 .index .artistas_carrusel .artista img{
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+width: 150px;
+height: 150px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 /* leer_tutorial_video-mobile */
 
@@ -1523,3 +1525,4 @@ footer {
 #menu.active {
     right: 0;
 }
+
