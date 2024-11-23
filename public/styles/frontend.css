@@ -1181,11 +1181,11 @@ margin-right: auto;
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto video {
+
+.bodytuto .maintuto .sectiontuto .videotuto video {
     width: 328px;
     height: 183px;
     flex-shrink: 0;
-    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto {
@@ -1251,7 +1251,6 @@ margin-right: auto;
     width: 328px;
     height: 183px;
     flex-shrink: 0;
-    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
