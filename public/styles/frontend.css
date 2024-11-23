@@ -1199,8 +1199,14 @@ margin-right: auto;
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
-    background-color: red;
-    /* CAMBIARLO POR SVG */
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    width: 330px;
+    background-position: -838px -453px;
+
+    
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto h6 {
@@ -1258,15 +1264,20 @@ margin-right: auto;
     width: 328px;
     height: 152px;  
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: var(--9, 9px);
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
-    background-color: aqua;
-    /*  CAMBIAR POR SVG */
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 { 
+    background-color: transparent; 
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    height: auto; 
+    background-position: -755px -624px; 
 }
+
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
     color: var(--negro);
