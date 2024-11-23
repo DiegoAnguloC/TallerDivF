@@ -71,7 +71,7 @@ body {
     height: 50px;
     margin-bottom: 30px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     background-position: -835px -1152px; 
@@ -89,7 +89,7 @@ button[type="submit"] {
     width: 100%;
     height: 48px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     background-position: -835px -812px; 
@@ -195,7 +195,7 @@ button[type="submit"] {
     height: 50px;
     margin-bottom: 30px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     background-position: -835px -1152px; 
@@ -220,7 +220,7 @@ button[type="submit"] {
 .singin input[type="text"]:hover,
 .singin input[type="password"]:hover {
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     background-position: -835px -1152px; 
@@ -240,7 +240,7 @@ button[type="submit"] {
     width: 100%;
     padding-right: 40px; 
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     background-position: -835px -1152px; 
@@ -343,7 +343,7 @@ main.main-info .info {
     max-width: 100%;
     margin: 0 auto;
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     height: auto; 
@@ -419,7 +419,7 @@ main.main-info .info p {
     width: 190px;
     color: var(--blanco);
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat;
     height: auto; 
@@ -720,7 +720,7 @@ margin-right: auto;
 
 .leer_tutorial_video-mobile .tutorial_principal p:nth-child(1){
     background-color: transparent; 
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
     background-size: auto; 
     background-repeat: no-repeat; 
     height: 23px; 
@@ -763,7 +763,7 @@ margin-right: auto;
 
 .leer_tutorial_video-mobile .subtitulo_tutorial p{
     background-color: transparent; 
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
     background-size: auto; 
     background-repeat: no-repeat; 
     width: 260px;
@@ -888,7 +888,7 @@ margin-right: auto;
             width: 249px;
             height: 32px;
             background-color: transparent; 
-            background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+            background-image: url('../assets/imagenes/Contenedores.svg'); 
             background-size: auto;
             background-repeat: no-repeat; 
             background-position: -738px -254px;
@@ -918,7 +918,7 @@ margin-right: auto;
         align-items: center;
         h6{
             background-color: transparent; 
-            background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+            background-image: url('../assets/imagenes/Contenedores.svg'); 
             background-size: auto; background-repeat: no-repeat; 
             background-position: -838px -707px;;
             width: 178px;
@@ -1115,7 +1115,7 @@ margin-right: auto;
 
 .mainLectura .articulo_leer_prim .prim_contenido {
     background-color: transparent; 
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
     background-size: auto; 
     background-repeat: no-repeat; 
     height: 360px; 
@@ -1166,7 +1166,7 @@ margin-right: auto;
     gap: var(--12, 12px);
     flex-shrink: 0;
     background-color: transparent; 
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
     background-size: auto; 
     background-repeat: no-repeat; 
     background-position: -52px -557px;
@@ -1259,7 +1259,7 @@ margin-right: auto;
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
     background-color: transparent;
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
     background-repeat: no-repeat; 
     width: 330px;
@@ -1330,7 +1330,7 @@ margin-right: auto;
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 { 
     background-color: transparent; 
-    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
     background-size: auto; 
     background-repeat: no-repeat; 
     height: auto; 
