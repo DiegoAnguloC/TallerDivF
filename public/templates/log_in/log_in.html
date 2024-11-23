@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--<link rel="stylesheet" href="../../styles/frontend.css">-->
-    <link rel="stylesheet" href="../../styles/tablet.css">
+    <link rel="stylesheet" href="../../styles/frontend.css">
+    <!-- <link rel="stylesheet" href="../../styles/tablet.css"> -->
     <!--<link rel="stylesheet" href="../../styles/desktop.css">-->
 
     <title>Formulario de Inicio de Sesión</title>
@@ -18,6 +18,7 @@
     <main class="login">
         <section class="email">
             <form>
+                <h1>LOGIN</h1>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com">
                 
@@ -25,9 +26,11 @@
                 <input type="password" id="password" name="password" placeholder="Contraseña">
                 
                 <div class="recordar">
-                    <input type="checkbox" id="remember" name="remember">
-                    <label for="remember">Recordar contraseña</label>
-                    <a href="#">¿Olvidó su Contraseña?</a>
+                        <a href="#">¿Olvidó su Contraseña?</a>
+                    <div class="boton_texto">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recordar contraseña</label>
+                    </div>
                 </div>
                 
                 <button type="submit">Iniciar Sesión</button>
