@@ -4,7 +4,7 @@
     --blanco: #ffff;
     --blanco: #ffff;
     --rosa: #f20f7a;
-    --azulOscuro: #11243f;
+    --azulOscuro: #081426;
     --azulMedio: #1e6c70;
     --aqua: #0ff294;
     --amarillo: #ecf213;
@@ -935,106 +935,144 @@ margin-right: auto;
         }
     }
 }
-
-/*-----------------------------------------------------------------*/
-/*---------------------GUILLE---------------------------------------------*/
+/* Se hizo css de artículos (Gianis 23/11) */
 /*============================ARTICULOS=================================*/
-.main_articulos .primerapart_articulos {
-    display: flex;
-    flex-direction: column;
-    width: 725px;
-    height: 465px;
-    justify-content: center;
-    margin: 0;
-    background-color: grey;
+.body_articulos{
+    width: var(--movil);
+    min-height: 100vh;
+    padding: 16px;
+    .main_articulos{
+        margin-top: 15px;
+        padding: 12px;
+        .primerapart_articulos{
+            /* background-color: gray; */
+            h1{
+                font-size: var(--h4);
+                margin-bottom: 9px;
+                color: var(--blanco);
+            }
+            .imagen_articulos{
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    background-color: var(--rosa);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            p{
+                margin-top: 9px;
+                font-size: var(--p);
+                margin-bottom: 20px;
+                padding: 9px;
+                color: var(--blanco);
+            }
+            .boton_LeerMas {
+                background-color: var(--aqua);
+                border: none;
+                padding: 9px 21px 9px 21px;
+                margin-left: 9px;
+                font-size: 16px;
+            }
+        }
+        .tercerapart_articulos{
+            /* background-color: gray; */
+            h1{
+                font-size: var(--h4);
+                margin-bottom: 9px;
+                color: var(--blanco);
+            }
+            .imagen_articulos{
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    background-color: var(--rosa);
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            p{
+                margin-top: 9px;
+                font-size: var(--p);
+                margin-bottom: 20px;
+                padding: 9px;
+                color: var(--blanco);
+            }
+            .boton_LeerMas {
+                background-color: var(--aqua);
+                border: none;
+                padding: 9px 21px 9px 21px;
+                margin-left: 9px;
+                font-size: 16px;
+            }
+        }
+    }
 }
-
-.main_articulos .primerapart_articulos .contenido1 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 66px;
-}
-
-.main_articulos .primerapart_articulos .contenido1 h2 {
-    font-size: var(--h2);
-}
-
-.segundapart_articulos {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-}
-
-
-.segundapart_articulos article h2 {
-    font-size: var(--h6);
-    margin-bottom: 28px;
-    background-color: grey;
-    padding: 9px 12px;
-}
-
-
-.segundapart_articulos article .contenedor {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-}
-
-
-.segundapart_articulos article .contenedor .contenido {
-    width: 296px;
-    display: flex;
-    flex-direction: column;
-    /* /align-items: center;/ */
-}
-
-
-.segundapart_articulos article .contenedor .contenido p {
-    margin: 0;
-}
-
-
-.segundapart_articulos article .contenedor .contenido img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-}
-
-.tercerapart_articulos figure img {
-    display: none;
-}
-
-/* /DISPLAY DE ARTICULOS CON IMAGEN DE FONDO/ */
-.tercerapart_articulos {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-
-.tercerapart_articulos .contenedor {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    background-color: lightgreen;
+.body_articulos .articulos_carrusel {
+    display: block;
     width: 100%;
-    height: 465px;
+    max-width: 375px; /* Adaptado para móvil */
+    margin: auto;
     justify-content: center;
+    align-items: center;
+    gap: 16px; /* Ajustado para móvil */
+    margin-bottom: 19px;
+    h2{
+        font-size: var(--h3);
+        margin-top: 12px;
+        margin-bottom: 19px;
+        color: var(--amarillo);
+        text-align: center;
+    }
+}
+
+.body_articulos .articulos_carrusel .articulo {
+    width: 100%; /* Ajustado para móvil */
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 9px;
+    background-color: var(--azulOscuro); /* Fondo de la tarjeta */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
 }
 
-
-.tercerapart_articulos .contenedor .contenido {
-    width: 396px;
-    margin-left: 65px;
+.body_articulos .articulos_carrusel .articulo img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    border-radius: 8px;
+    margin-bottom: 8px;
 }
 
+.body_articulos .articulos_carrusel .articulo h3 {
+    font-size: var(--h6); /* Título del artículo */
+    margin-bottom: 8px;
+    color: var(--blanco);
+}
 
-.tercerapart_articulos .contenedor .contenido h2 {
-    font-size: var(--h2);
+.body_articulos .articulos_carrusel .articulo p {
+    font-size: var(--p); /* Descripción del artículo */
+    color: var(--blanco);
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.swiper-pagination-bullet {
+    background: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
 }
 /*========================================================================*/
 /*------------------------------------------------------------------------*/
