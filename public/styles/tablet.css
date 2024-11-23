@@ -200,7 +200,6 @@ gap: var(--9, 9px);
 
 
 .index .articulos_carrusel .articulo h3{
-background-color: unset;
 color: var(--blanco);
 font-size: 16px;
 font-style: normal;
@@ -210,7 +209,7 @@ line-height: normal;
 
 
 .index .articulos_carrusel .articulo p{
-background-color: var(--aqua);
+background-color: unset;
 color: var(--negro);
 font-size: var(--p);
 font-style: normal;
@@ -241,7 +240,6 @@ gap: var(--12, 12px);
 
 .index .tutorial_video .contenido h3{
 color: #FFF;
-background-color: var(--azulMedio);
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -261,7 +259,6 @@ line-height: normal;
 }
 
 .index .tutorial_video .contenido p:nth-child(3){
-background-color: var(--aqua);
 color: #FFF;
 font-size: 12px;
 font-style: normal;
@@ -305,7 +302,7 @@ object-fit: cover;
     min-height: 100vh;
     padding: 16px;
     .main_articulos{
-        margin-top: 15px;
+        margin-top: 0;
         padding: 12px;
         .primerapart_articulos{
             display: flex;
@@ -352,11 +349,12 @@ object-fit: cover;
             display: flex;
             flex-direction: column;
             gap: 18px;
-            /* background-color: gray; */
+
             h1{
                 font-size: var(--h4);
                 margin-bottom: 9px;
                 color: var(--blanco);
+                padding: 20px;
             }
             .imagen_articulos{
                 margin: 0 auto;
@@ -457,6 +455,7 @@ object-fit: cover;
 .swiper-button-prev {
     color: #333;
 }
+
 /*==========LEER ARTÍCULOS: TABLET===========*/
 .Lectura_articulos {
     display: inline-flex;
@@ -480,6 +479,9 @@ object-fit: cover;
 }
 
 .mainLectura .articulo_leer_prim {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     width: 728px;
     height: auto;
 
@@ -591,6 +593,110 @@ object-fit: cover;
     font-weight: 400;
     line-height: normal;
 }
+/*=======leer_tutorial_video-mobile*=======*/
+.leer_tutorial_video-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 16 0 16;
+    background-color: var(--azulOscuro);
+    overflow-x: hidden;
+    width: 100%; /* Ancho completo del viewport */
+    max-width: 100%; /* Tamaño máximo móvil */
+}
+
+.leer_tutorial_video-mobile main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 0 16px;
+    width: 100%; /* Ajusta al ancho del contenedor */
+}
+
+.leer_tutorial_video-mobile .tutorial_principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+    gap: 26px;
+}
+.leer_tutorial_video-mobile .tutorial_principal .contenido_tutorial_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+.leer_tutorial_video-mobile .tutorial_principal img{
+    width: 728px;
+    height: 406px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal p:nth-child(1){
+    background-color: transparent; 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    height: 23px; 
+    background-position: -838px -456px;
+    color: var(--blanco);
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal h1{
+    color: var(--blanco);
+    font-size: 32px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.leer_tutorial_video-mobile .tutorial_principal p:nth-child(3){
+    color: var(--blanco);
+    font-size: 16px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.leer_tutorial_video-mobile .subtitulo_tutorial{
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leer_tutorial_video-mobile .subtitulo_tutorial h2{
+    color: var(--amarillo);
+    font-size: 24px;
+    width: 65%;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+
+.leer_tutorial_video-mobile .subtitulo_tutorial p{
+    background-color: transparent; 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    width: 657px;
+    height: 331px;
+    background-position: -434px -103px;
+    color: var(--azulOscuro);
+    font-size: 16px;
+    padding: 45px 62px;
+}
+
+
 /*==========AUTORES: TABLET===========*/
 .body_autores {
     background-color: var(--azulOscuro);
@@ -1086,65 +1192,61 @@ footer {
 /* ========================= TUTORIAL ================================= */
 .bodytuto {
     display: flex;
-    width: 100%;/**/
-    height: auto;/**/
+    width: 360px;
+    height: 2600px;
     padding: var(--16, 16px);
     flex-direction: column;
     align-items: flex-start;
     gap: var(--16, 16px);
     background: #11243F;
 }
-.bodytuto .tuto_container{
-    display: flex;
-}
+
 .bodytuto .maintuto {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 2165px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--16, 16px);
     flex-shrink: 0;
-    margin: 0;
 }
 
 .bodytuto .maintuto .sectiontuto {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 347px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--12, 12px);
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto video {
-    width: 100%;
-    height: auto;
+
+.bodytuto .maintuto .sectiontuto .videotuto video {
+    width: 328px;
+    height: 183px;
     flex-shrink: 0;
-    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 152px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--9, 9px);
     flex-shrink: 0;
 }
-.bodytuto .maintuto .tuto_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr)); /* Configuración para columnas dinámicas */
-    gap: 16px;
-    width: 100%;
-    align-items: start;
-}
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
-    background-color: red;
-    /* CAMBIARLO POR SVG */
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Contenedores.svg');
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    width: 330px;
+    background-position: -838px -453px;
+
+    
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto h6 {
@@ -1183,8 +1285,8 @@ footer {
 
 .bodytuto .maintuto .sectiontuto2 {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 347px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--12, 12px);
@@ -1192,35 +1294,39 @@ footer {
 }
 
 .bodytuto .maintuto .sectiontuto2 video {
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 183px;
     flex-shrink: 0;
-    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
     display: flex;
-    width: 100%;
-    height: auto;  
+    width: 328px;
+    height: 152px;  
     flex-direction: column;
-    align-items: unset;
+    align-items: flex-end;
     gap: var(--9, 9px);
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
-    background-color: aqua;
-    /*  CAMBIAR POR SVG */
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 { 
+    background-color: transparent; 
+    background-image: url('../assets/imagenes/Contenedores.svg'); 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    height: auto; 
+    background-position: -755px -624px; 
 }
+
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
     color: var(--negro);
-    text-align: left;
+    text-align: right;
     font-size: var(--h6);
     font-style: normal;
     font-weight: 600px;
     line-height: normal;
-    width: 100%;
+    width: 232px;
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
@@ -1229,7 +1335,7 @@ footer {
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 h2 {
     color: var(--negro);
-    text-align: left;
+    text-align: right;
     font-size: var(--h2);
     font-style: normal;
     font-weight: 700px;
@@ -1243,13 +1349,15 @@ footer {
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 p {
     color: var(--blanco);
-    text-align: left;
+    text-align: right;
     font-size: var(--p);
     font-style: normal;
     font-weight: 400px;
     line-height: normal;
-    width: 100%;
-}       
+    width: 328px;
+}
+
+
 
 /* ================== Estilos del menú hamburguesa =================== */
 .contenido-bar {
