@@ -339,16 +339,16 @@ main.main-info {
 main.main-info .info {
     padding: 16px;
     border-radius: 0;
-    width: 425px; 
+    width: 425px;
     max-width: 100%;
     margin: 0 auto;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
-    background-size: auto; 
+    background-image: url(../assets/imagenes/Contenedores.svg);
+    background-size: auto;
     background-repeat: no-repeat;
-    height: auto; 
-    /* min-height: 742px;  */
-    background-position: -390px -600px; 
+    height: 560px;
+    background-position: -398px -571px;
+    margin-top: 16px;
 }
 
 
@@ -359,22 +359,6 @@ main.main-info h1 {
     font-size: 28px;
     margin: 0 auto;
     background-color: var(--aqua);
-}
-
-.imgprincipal_info {
-    display: flex;          
-    justify-content: center; 
-    align-items: center;     
-    width: 100%;            
-    width: 328px;
-    height: 260px;        
-    margin: 16px 0;         
-    background-color: var(--aqua);
-}
-
-.imgprincipal_info img {
-    max-width: 100%;      
-    height: auto;       
 }
 
 main.main-info .info p {
