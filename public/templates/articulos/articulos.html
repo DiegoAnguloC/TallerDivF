@@ -10,13 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script type="module" src="../../scripts/scrolltrigger.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Se añadió el link para el carruse -->
 </head>
-<body>
+<body class="body_articulos">
     <header>
         <img src="./assets/imagenes/logo fondo claro.png" alt="portada" class="logo">
         <div class="navbar_container"></div>
     </header>
-    <main class="main_articulos">
+    <main class="main_articulos"> <!-- Se añadió clase al body para los styles del carrusel (Gianis) -->
         <figure class="adn_container">
             <svg id="animated-svg" width="37" height="220" viewBox="0 250 37 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5917 282.522C13.8678 289.171 7.82701 291.019 4.00449 300.597C3.50934 301.837 3.11323 303.122 2.81614 304.384C2.12294 307.359 1.92488 310.356 2.02391 313.219C2.14274 316.239 2.59828 319.101 3.17265 321.58C4.26197 326.426 5.787 329.829 5.94545 330.167C7.58933 333.705 9.45108 336.23 11.4119 338.281C13.7886 340.76 16.2841 342.585 18.641 344.772C21.2751 347.161 23.7311 350.023 25.7116 354.666C25.8503 354.981 25.9691 355.319 26.1078 355.635C26.5435 356.762 27.712 359.872 28.3854 364.041C28.8014 366.633 29.0192 369.631 28.7617 372.854C28.6825 373.755 28.5835 374.679 28.425 375.603C28.0289 377.902 27.4149 379.953 26.6425 381.801" stroke="#1D1D1B" stroke-width="2.18" stroke-miterlimit="10"/>
@@ -41,83 +43,67 @@
                 <path d="M28.7622 372.854L13.5117 368.369" stroke="#1D1D1B" stroke-width="1.16" stroke-miterlimit="10"/>
             </svg>
         </figure>
-        <article class="primerapart_articulos">
-            <section class="contenido1">
-                <h2>FANTASMAS DE JAPÓN</h2>
-                <p>Este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas
-                    2010 benjamin lacombe este libro trata sobra la tragica vida que sufren personas.
-                    este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas
-                    2010 benjamin lacombe este libro trata sobra la tragica vida que sufren personas.
-                    este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas.
-                </p>
-            </section>
-
-        </article>
-        <section class="segundapart_articulos">
+        <!-- Se actualizó la información y la estructura en base a los nuevos frames -->
+        <section class="primerapart_articulos">
+            <h1>La Biblioteca de Babel: Borges el internet y 
+                el abismo informacional según byung-chul-han</h1>
+            <article class="imagen_articulos">
+                <img src="#" alt="">
+            </article>
             <article>
-                <h2>Casos de éxito</h2>
-                <div class="contenedor"> <!-- inicio cambios -->
-                    <div class="contenido">
-                        <img src="../../assets/imagenes/Group 16.png" alt="Imagen">
-                        <h5>Título</h5>
-                        <p>Descripcion: Lorem ipsum dolor sit amet adipiscing elit ligula cubilia, quam volutpat dui fames enim magnis augue. </p>
-                    </div>
-                    <div class="contenido">
-                        <img src="../../assets/imagenes/Group 16.png" alt="Imagen">
-                        <h5>Título</h5>
-                        <p>Descripcion: Lorem ipsum dolor sit amet adipiscing elit ligula cubilia, quam volutpat dui fames enim magnis augue. </p>
-                    </div>
-                    <div class="contenido">
-                        <img src="../../assets/imagenes/Group 16.png" alt="Imagen">
-                        <h5>Título</h5>
-                        <p>Descripcion: Lorem ipsum dolor sit amet adipiscing elit ligula cubilia, quam volutpat dui fames enim magnis augue. </p>
-                    </div>
-                </div><!-- final cambios -->
+                <p>La “Biblioteca de Babel” de Jorge Luis Borges no 
+                    solo es un relato de ficción, sino una alegoría 
+                    atemporal de la acumulación de información sin sentido. 
+                    En un mundo interconectado como el nuestro, la obra de Borges 
+                    y las reflexiones filosóficas de Byung-Chul Han sobre la sobrecarga 
+                    de información nos llevan a cuestionarnos si el acceso ilimitado al 
+                    conocimiento nos acerca más a la verdad o nos hunde en el sinsentido.</p>
             </article>
-        </section> 
-        <section class="tercerapart_articulos">
-            <article class="contenedor"><!-- se añadió la clase contenedor -->
-                <figure><img src="https://via.placeholder.com/150" alt=""></figure>
-                <section class="contenido">
-                    <h2>Título</h2>
-                    <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
-                </section>
-            </article>
-            <article class="contenedor"><!-- se añadió la clase contenedor -->
-                <figure><img src="https://via.placeholder.com/150" alt=""></figure>
-                <section class="contenido">
-                    <h2>Título</h2>
-                    <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
-                </section>
-            </article>
-
-            
+            <button class="boton_LeerMas">Leer Más</button>
         </section>
-        <section class="cuartapart_articulos">
-            <article>
-                <h2>Título</h2>
-                este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas.</p>
-                <p></p>
-            </article>
-            <article>
+        <section class="articulos_carrusel swiper">
+            <h2>Casos de exito</h2>
+            <div class="swiper-wrapper">
+                <div class="articulo swiper-slide">
+                    <img src="../../assets/imagenes/img_arti.png" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se vuelve castigo</h3>
+                    <p>Descripción: es una de las metáforas más crudas del esfuerzo humano 
+                        condenado a lo absurdo, una narrativa que se recicla en la vida 
+                        cotidiana de quienes repiten la misma rutina hasta el hartazgo.</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="../../assets/imagenes/img_arti.png" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se vuelve castigo</h3>
+                    <p>Descripción: es una de las metáforas más crudas del esfuerzo humano 
+                        condenado a lo absurdo, una narrativa que se recicla en la vida 
+                        cotidiana de quienes repiten la misma rutina hasta el hartazgo.</p>
+                </div>
+                <div class="articulo swiper-slide">
+                    <img src="../../assets/imagenes/img_arti.png" alt="placeholder image">
+                    <h3>El Mito de Sísifo: Cuando la Rutina se vuelve castigo</h3>
+                    <p>Descripción: es una de las metáforas más crudas del esfuerzo humano 
+                        condenado a lo absurdo, una narrativa que se recicla en la vida 
+                        cotidiana de quienes repiten la misma rutina hasta el hartazgo.</p>
+                </div>
 
-                <h2>Título</h2>
-                este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas.</p>
-                <p></p>
+            </div>
+        </section>
+        <section class="tercerapart_articulos">
+            <h1>La Biblioteca de Babel: Borges el internet y 
+                el abismo informacional según byung-chul-han</h1>
+            <article class="imagen_articulos">
+                <img src="#" alt="">
             </article>
             <article>
-                <h2>Título</h2>
-                este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas.</p>
-                <p></p>
+                <p>La “Biblioteca de Babel” de Jorge Luis Borges no 
+                    solo es un relato de ficción, sino una alegoría 
+                    atemporal de la acumulación de información sin sentido. 
+                    En un mundo interconectado como el nuestro, la obra de Borges 
+                    y las reflexiones filosóficas de Byung-Chul Han sobre la sobrecarga 
+                    de información nos llevan a cuestionarnos si el acceso ilimitado al 
+                    conocimiento nos acerca más a la verdad o nos hunde en el sinsentido.</p>
             </article>
-            <article>
-                <h2>Título</h2>
-                este libro trata sobra la tragica vida que sufren personas antes de morir y convertirse en fantasmas.</p>
-                <p></p>
-            </article>
-
+            <button class="boton_LeerMas">Leer Más</button>
         </section>
     </main>
 
@@ -127,5 +113,6 @@
     <script src="../../scripts/burguer.js"></script>
     <script src="../../scripts/fter.js"></script>
     <script src="../../scripts/adn.js"></script>
+    <script src="../../scripts/carrusel.js"></script> <!-- Se agregó el script del carrusel -->
 </body>
 </html>
