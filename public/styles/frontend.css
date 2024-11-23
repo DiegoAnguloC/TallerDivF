@@ -533,7 +533,11 @@ margin-bottom: 16px;
 
 .index .articulo_principal button{
 padding: 10px 16px;
-background-color: var(--aqua);
+background-color: transparent;
+background-image: url('../assets/imagenes/Contenedores.svg');
+background-size: auto; 
+background-repeat: no-repeat; 
+background-position: -830px -51px;
 border: none;
 font-size: var(--h6);
 color: var(--azulOscuro);
@@ -593,6 +597,13 @@ align-self: flex-start;
 
 
 .index .articulos_carrusel .articulo p{
+background-color: transparent;
+background-image: url('../assets/imagenes/Contenedores.svg');
+background-size: auto; 
+background-repeat: no-repeat; 
+width: 330px;
+background-position: -838px -453px;
+
 color: var(--blanco);
 font-size: 16px;
 font-style: normal;
