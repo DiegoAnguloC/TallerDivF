@@ -3,7 +3,7 @@
     --blanco: #ffff;
     --blanco: #ffff;
     --rosa: #f20f7a;
-    --azulOscuro: #11243f;
+    --azulOscuro: #081426;
     --azulMedio: #1e6c70;
     --aqua: #0ff294;
     --amarillo: #ecf213;
@@ -58,7 +58,7 @@ main {
         width: 25vh;
         height: 100%;
     }
-/*INDEX - NO TERMINADO*/
+/*----------INDEX----------*/
 .index main{
     margin: 16px 16px;
 }
@@ -68,7 +68,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 0 16px;
+    padding: 0;
     background-color: var(--azulOscuro);
     overflow-x: hidden;
     width: 100%; /* Ancho completo del viewport */
@@ -87,38 +87,36 @@ padding: 0;
 
 }
 
-
-
-
 .index .articulo_principal{
 display: flex;
-height: 461px;
-padding: 0 67px;
+height: auto;
+padding: 0 20px;
 flex-direction: column;
-background-color: var(--rosa);
+gap: 12px;
 }
 
-
 .index .articulo_principal .contenido_articulo {
-margin-top: 65px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding:16px 0;
-width: 393px;
+width: 100%;
 }
 
-.index .articulo_principal {
+/* .index .articulo_principal {
     width: 738px;
     height: 538px;
     object-fit: cover;
-    background-image: url(/assets/imagenes/tuto-escrito.png);
-}
+} */
 
+.index .articulo_principal img{
+    width: 100%;
+    height: auto;
+}
 .index .articulo_principal h1{
-padding: 16px;
+padding: 20px;
 color: var(--blanco);
-font-size: 21px;
+font-size: 47px;
 font-style: normal;
 font-weight: 700;
 margin-bottom: 16px;
@@ -129,7 +127,7 @@ line-height: normal;
 
 .index .articulo_principal p{
 color: #FFF;
-font-size: var(--p);
+font-size: 33px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -140,9 +138,9 @@ margin-bottom: 0;
 
 .index .articulo_principal button{
 padding: 10px 16px;
-background-color: var(--amarillo);
+background-color: var(--aqua);
 border: none;
-font-size: var(--p);
+font-size: 33px;
 color: var(--azulOscuro);
 align-self: flex-start;
 
@@ -161,8 +159,8 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 background-color: var(--rosa);
-margin-top: 16px;
-margin-bottom: 16px;
+margin-top: 0;
+margin-bottom: 0;
 }
 /*contenedor carrusel================================
 */.index .articulos_carrusel .contenedor{
@@ -197,8 +195,8 @@ gap: var(--9, 9px);
 
 
 .index .articulos_carrusel .articulo h3{
-background-color: var(--aqua);
-color: var(--negro);
+background-color: unset;
+color: var(--blanco);
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -222,6 +220,9 @@ align-items: flex-start;
 gap: var(--12, 12px);
 }
 
+.index .tutorial_video{
+    padding: 0;
+}
 
 .index .tutorial_video .video{
     width: 100%;
@@ -238,7 +239,6 @@ gap: var(--12, 12px);
 
 .index .tutorial_video .contenido h3{
 color: #FFF;
-background-color: var(--azulMedio);
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
@@ -258,7 +258,6 @@ line-height: normal;
 }
 
 .index .tutorial_video .contenido p:nth-child(3){
-background-color: var(--aqua);
 color: #FFF;
 font-size: 12px;
 font-style: normal;
@@ -1023,65 +1022,61 @@ footer {
 /* ========================= TUTORIAL ================================= */
 .bodytuto {
     display: flex;
-    width: 100%;/**/
-    height: auto;/**/
+    width: 100%;
+    height: auto;
     padding: var(--16, 16px);
     flex-direction: column;
     align-items: flex-start;
     gap: var(--16, 16px);
     background: #11243F;
 }
-.bodytuto .tuto_container{
-    display: flex;
-}
+
 .bodytuto .maintuto {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 2165px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--16, 16px);
     flex-shrink: 0;
-    margin: 0;
 }
 
 .bodytuto .maintuto .sectiontuto {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 347px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--12, 12px);
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto video {
-    width: 100%;
-    height: auto;
+
+.bodytuto .maintuto .sectiontuto .videotuto video {
+    width: 328px;
+    height: 183px;
     flex-shrink: 0;
-    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 152px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--9, 9px);
     flex-shrink: 0;
 }
-.bodytuto .maintuto .tuto_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr)); /* Configuración para columnas dinámicas */
-    gap: 16px;
-    width: 100%;
-    align-items: start;
-}
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
-    background-color: red;
-    /* CAMBIARLO POR SVG */
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    width: 330px;
+    background-position: -838px -453px;
+
+    
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto h6 {
@@ -1120,8 +1115,8 @@ footer {
 
 .bodytuto .maintuto .sectiontuto2 {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 347px;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--12, 12px);
@@ -1129,35 +1124,39 @@ footer {
 }
 
 .bodytuto .maintuto .sectiontuto2 video {
-    width: 100%;
-    height: auto;
+    width: 328px;
+    height: 183px;
     flex-shrink: 0;
-    background-image: url(../assets/imagenes/Group\ 16.png);
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
     display: flex;
-    width: 100%;
-    height: auto;  
+    width: 328px;
+    height: 152px;  
     flex-direction: column;
-    align-items: unset;
+    align-items: flex-end;
     gap: var(--9, 9px);
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
-    background-color: aqua;
-    /*  CAMBIAR POR SVG */
+.bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 { 
+    background-color: transparent; 
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    height: auto; 
+    background-position: -755px -624px; 
 }
+
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
     color: var(--negro);
-    text-align: left;
+    text-align: right;
     font-size: var(--h6);
     font-style: normal;
     font-weight: 600px;
     line-height: normal;
-    width: 100%;
+    width: 232px;
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
@@ -1166,7 +1165,7 @@ footer {
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 h2 {
     color: var(--negro);
-    text-align: left;
+    text-align: right;
     font-size: var(--h2);
     font-style: normal;
     font-weight: 700px;
@@ -1180,123 +1179,17 @@ footer {
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 p {
     color: var(--blanco);
-    text-align: left;
+    text-align: right;
     font-size: var(--p);
     font-style: normal;
     font-weight: 400px;
     line-height: normal;
-    width: 100%;
-}       
-
-/* ================== Estilos del menú hamburguesa =================== */
-.contenido-bar {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100vh;
-    background-color: white;
-    transition: right 0.3s ease;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 100;
+    width: 328px;
 }
-
-.contenido-bar ul {
-    list-style: none;
-    padding: 20px;
-}
-
-.contenido-bar ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.contenido-bar ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-.contenido-bar.open {
-    right: 0;
-}
-
-.btn-barra-lateral {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 101;
-    cursor: pointer;
-}
-
-#menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 250px;
-    height: 100vh;
-    background-color: var(--azulOscuro);
-    color: #fff;
-    transition: right 0.3s ease;
-    z-index: 100;
-    padding: 20px;
-}
-
-#menu.active {
-    right: 0;
-}
-
-.btn-cerrar-menu {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-#btn-menu {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.hamburguesa {
-    width: 30px;
-    height: auto;
-    background-color: transparent;
-    display: block;
-}
-
-.btn-cerrar-menu {
-    background-color: transparent;
-    border: none;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.submenu {
-    display: none;
-}
-
-.submenu.open {
-    display: block;
-}
-
-.toggle-submenu {
-    background: none;
-    border: none;
-    color: black;
-    font-size: inherit;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    float: right;
-}
+       
 
 
-/*===========TUTORIAL GENERAL=========*/
+/*===========TUTORIAL GENERAL=========
 
 .bodytuto>header>.logo{
     width: 25vh;
