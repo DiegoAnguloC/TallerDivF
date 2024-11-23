@@ -48,53 +48,70 @@ body {
 .login form {
     width: 100%;
     max-width: 360px;
-    background-color: var(--rosa);
+    background-color: var(--azulOscuro);
     padding-left: 16px;
     padding-right: 16px;
+}
+.login h1{
+    text-align: center;
+    color: var(--rosa);
 }
 
 .login label {
     display: block;
     font-size: var(--p);
     margin-bottom: 8px;
+    color: white;
 }
 
 .login input[type="email"],
 .login input[type="password"] {
     display: block;
     width: 100%;
-    height: 48px;
+    height: 50px;
     margin-bottom: 30px;
-    background-color: var(--rosa);
-    background-image: url('../assets/imagenes/Vector 226.png');
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
     background-repeat: no-repeat;
+    background-position: -835px -1152px; 
     border: none;
     outline: none;
     box-shadow: none;
 }
 
 ::placeholder {
-    color: var(--azulOscuro);
+    padding-left:22px;
+    color: white;
 }
 
 button[type="submit"] {
     width: 100%;
     height: 48px;
-    background-color: var(--rosa);
-    background-image: url('../assets/imagenes/Vector 227.png');
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
     background-repeat: no-repeat;
+    background-position: -835px -812px; 
     border: none;
     outline: none;
     box-shadow: none;
-    font-size: 14px;
+    font-size: var(--h6);
     color: var(--azulOscuro);
 }
 .recordar {
-    display: flex;
+    text-align: center;
     align-items: center;
     width: 100%;
     margin-bottom: 16px;
     color: var(--blanco);
+}
+.boton_texto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 16px;
 }
 
 .recordar a {
@@ -159,8 +176,13 @@ button[type="submit"] {
     margin: 0 auto ;
     width: 100%;
     max-width: 360px;
-    background-color: var(--rosa);
+    background-color: var(--azulOscuro);
     padding: 16px 24px;
+    text-align: center;
+}
+.singin h1{
+    color: var(--rosa);
+    margin-bottom: 35px;
     text-align: center;
 }
 
@@ -170,11 +192,13 @@ button[type="submit"] {
 .singin input[type="password"] {
     display: block;
     width: 100%;
-    height: 48px;
+    height: 50px;
     margin-bottom: 30px;
-    background-color: var(--rosa);
-    background-image: url('../assets/imagenes/Vector 226.png');
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
     background-repeat: no-repeat;
+    background-position: -835px -1152px; 
     border: none;
     outline: none;
     box-shadow: none;
@@ -184,7 +208,7 @@ button[type="submit"] {
 .singin input[type="tel"]::placeholder,
 .singin input[type="text"]::placeholder,
 .singin input[type="password"]::placeholder {
-    color: var(--azulOscuro);
+    color: white;
 }
 
 .singin input[type="email"]:focus,
@@ -195,9 +219,11 @@ button[type="submit"] {
 .singin input[type="tel"]:hover,
 .singin input[type="text"]:hover,
 .singin input[type="password"]:hover {
-    background-color: var(--rosa);
-    background-image: url('../assets/imagenes/Vector 226.png');
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
     background-repeat: no-repeat;
+    background-position: -835px -1152px; 
     border: none;
     outline: none;
     box-shadow: none;
@@ -213,9 +239,11 @@ button[type="submit"] {
 .password-container input[type="password"] {
     width: 100%;
     padding-right: 40px; 
-    background-color: var(--rosa);
-    background-image: url('../assets/imagenes/Vector 226.png');
+    background-color: transparent;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
     background-repeat: no-repeat;
+    background-position: -835px -1152px; 
     border: none;
     outline: none;
     box-shadow: none;
@@ -300,40 +328,53 @@ button[type="submit"] {
 }
 
 main.main-info {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro se coloquen en columna */
+    align-items: center;    
     padding: 0 16px;
-    margin: 0;
     background-color: var(--azulOscuro);
+    min-height: 100vh;      
 }
 
 main.main-info .info {
     padding: 16px;
     border-radius: 0;
-    width: 330px;
+    width: 425px; 
     max-width: 100%;
-    margin: 0;
+    margin: 0 auto;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Vector 24 (1).png');
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    height: auto;
-    min-height: 100vh; 
-  }
-  
-  
-
-main.main-info  h1 {
-    color: var(--blanco);
-    font-size: 28px;
-    margin: 0;
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
+    background-repeat: no-repeat;
+    height: auto; 
+    /* min-height: 742px;  */
+    background-position: -390px -600px; 
 }
 
-main.main-info .info img {
-    max-width: 100%;
-    margin: 20px 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+
+main.main-info h1 {
+    color: var(--azulOscuro);
+    font-size: 28px;
+    margin: 0 auto;
+    background-color: var(--aqua);
+}
+
+.imgprincipal_info {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;            
+    width: 328px;
+    height: 260px;        
+    margin: 16px 0;         
+    background-color: var(--aqua);
+}
+
+.imgprincipal_info img {
+    max-width: 100%;      
+    height: auto;       
 }
 
 main.main-info .info p {
@@ -341,7 +382,7 @@ main.main-info .info p {
     color: var(--negro);
     font-size: 14px;
     margin: 0 ;
-    margin-top:230px;
+    margin-top:50px;
 }
 
 .grupos-info {
@@ -375,22 +416,21 @@ main.main-info .info p {
 }
 
 .grupo-info h2 {
-    width: 100%;
+    width: 190px;
     color: var(--blanco);
     background-color: transparent;
-    background-image: url('../assets/imagenes/Vector 18.png');
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png');
+    background-size: auto; 
+    background-repeat: no-repeat;
+    height: auto; 
+    background-position: -800px -520px; 
     margin: 0;
     padding: 20px;
     font-size: 16px;
     text-align: center;
     justify-self: end;
     height: auto; 
-  }
-  
-  
+}
 
 .f-info {
     margin: 0;
@@ -411,10 +451,12 @@ main.main-info .info p {
     text-decoration: none;
     margin: 0 10px;
 }
-.f-info .iconos-info img{
+
+.f-info .iconos-info img {
     width: 18px;
     background-color: transparent;
 }
+
 /* tambien quite el tabulado extra que habia en toda la seccion de info (Sophie  19/11/24) */
 /*-----------------------------------------------------------------*/
 /*---------------------------PEDRO---------------------------------*/
