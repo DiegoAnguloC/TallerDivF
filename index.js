@@ -75,7 +75,7 @@ app.get('/articulos/:id', (req, res) => {
     const articulo = articulos.find(a => a.id === articuloId);
 
     if (articulo) {
-        res.json(articulo); // Devuelve el artículo como JSON
+        res.sendFile(path.join(__dirname, 'public', routes.readArticles)); // Devuelve el artículo como JSON
     } else {
         res.status(404).send('Artículo no encontrado');
     }
