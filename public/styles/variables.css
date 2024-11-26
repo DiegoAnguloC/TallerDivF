@@ -1,0 +1,21 @@
+:root {
+    --font: ;
+    --blanco: #ffff;
+    --blanco: #ffff;
+    --rosa: #f20f7a;
+    --azulOscuro: #081426;
+    --azulMedio: #1e6c70;
+    --aqua: #0ff294;
+    --amarillo: #ecf213;
+    --negro: black;
+    --h1: 5.610rem;
+    --h2: 4.209rem;
+    --h3: 3.157rem;
+    --h4: 2.369rem;
+    --h5: 1.777rem;
+    --h6: 1.333rem;
+    --p: 1rem;
+    --movil: 375px;
+    --tablet: 768px;
+    --desktop: 1600px;
+}
