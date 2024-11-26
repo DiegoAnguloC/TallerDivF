@@ -13,6 +13,8 @@ header{
     --rosa: rgb(183, 0, 86);
     --naranja: #F26D3D;
     --amarillo: #ECF213;
+    --verde: #0ff294;
+    --azul_oscuro: #081426;
 
     --movil: 375px;
     --tablet: 768px;
@@ -26,77 +28,22 @@ a{
     text-decoration: none;
     color: var(--blanco);
 }
-/*estilo por defecto menu de navegacion*/
-/* .main_index{
-    margin: 16px 16px;
-}
-header nav{
-    nuevo
-
-    display: none;
-    height: 100vh;
-    width: 150px;
-    position: fixed;
-
-    top: 0;
-    right: 0;
-    background: var(--negro);
-    color: var(--blanco);
-    padding-top: 20px;
-}
-header > nav > ul{
-    list-style: none;
-    padding: 0;
-}
-header > nav > ul > li{
-    margin: 10px 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-header > nav > ul > li > a{
-    padding: 10px;
-}
-header > nav > ul > li > a:hover{
-    background-color: #cb176b;
-} */
-/*sections*/
-/*section{
-    background-color: lightgray;
-}
-
-section article{
-    background-color: var(--negro);
-    color: var(--blanco);
-}*/
-/*botton general*/
-/*button{
-    background-color: var(--naranja);
-    border: none;
-    padding: 7 14px ;
-}
-img{
-    background-color: lightgreen;
-} */
-
-
-
-
-
-
-
 
 
 /*//////////////////MOBILE/////////////////////////
 /*Mobile menu responsive 1*/
 @media screen and (min-width: 1600px) {
     body {
-        background-color: #10243F;
+        background-color: var(--azul_oscuro);
         color: var(--blanco);
         width: 100%;
         justify-items: center;
         align-items: center;
         margin: auto;
+    }
+    h1{
+        font-family: "Norteam";
+        font-style: normal;
     }
     header{
         position: fixed;
@@ -107,11 +54,12 @@ img{
         justify-content: space-between;
         background-image: url(../assets/imagenes/Vector\ 14.png), url(../assets/imagenes/Vector\ 15.png);
         background-repeat: no-repeat;
-        background-size: 100% 356px, 100% 356px;
+        background-size: 100% 356px, 50% 356px;
         background-position: top left, top right;
         z-index: 1000;
         top: 0;
         left: 0;
+        margin: 0;
     }
 
     header > img{
@@ -161,9 +109,114 @@ img{
     }
 
 
+    .contenido-bar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+    
+    .contenido-bar ul {
+        list-style: none;
+        padding: 20px;
+    }
+    
+    .contenido-bar ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .contenido-bar ul li a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .contenido-bar.open {
+        right: 0;
+    }
+    
+    .btn-barra-lateral {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 101;
+        cursor: pointer;
+    }
+    
+    #menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--azulOscuro);
+        color: #fff;
+        transition: right 0.3s ease;
+        z-index: 100;
+        padding: 20px;
+    }
+    
+    #menu.active {
+        right: 0;
+    }
+    
+    .btn-cerrar-menu {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    
+    #btn-menu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .hamburguesa {
+        width: 30px;
+        height: auto;
+        background-color: transparent;
+        display: block;
+    }
+    
+    .btn-cerrar-menu {
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    
+    .submenu {
+        display: none;
+    }
+    
+    .submenu.open {
+        display: block;
+    }
+    
+    .toggle-submenu {
+        background: none;
+        border: none;
+        color: black;
+        font-size: inherit;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        float: right;
+    }
+
     
     main{
-        background-color: var(--negro);
         width: 70%;
         justify-items: center;
         align-items: center;
@@ -172,37 +225,39 @@ img{
     }
 
 
-
     footer{
+        width: 100%;
+    }
+    footer > .fter_container{
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
         width: 100%;
     }
-    footer > img{
+    footer > .fter_container > .foot-logo{
         position: relative;
         left: 60px;
         width: 30%;
         height: 221px;
     }
-    footer > .info{
+    footer > .fter_container > .info{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 30%;
     }
-    footer > .info > h4{
+    footer > .fter_container > .info > h4{
         margin-left: 20px;
         margin-right: 20px;
         font-size: 25px;
     }
-    footer > .canales{
+    footer > .fter_container > .canales{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    footer > .canales > img{
+    footer > .fter_container > .canales > img{
         margin-right: 50px;
         border-radius: 50%;
         width: 39.47px;
@@ -217,56 +272,37 @@ img{
 
     /* Index */
 
-    .index > main > .articulo_principal > .imagen_de_fondo{
-        height: 1130px;
+    .index > main > .articulo_principal > .imagen_de_fondo > img{
+        height: 906px;
         width: 100%;
-        background-image: url(../assets/imagenes/prueba-perfil.jpeg);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
     }
     .index > main > .articulo_principal{
         text-align: center;
-        height: 1132px;
+        height: 1403.76px;
         margin-bottom: 40px;
         width: 100%;
     }
-    .index > main > .articulo_principal > .contenido_articulo{
-        position: relative;
-        top: -70%;
-    }
     .index > main > .articulo_principal > .contenido_articulo > p{
-        /* position: absolute; */
-        background-color: #10243F;
-        /* top: -280px;
-        right: 150px; */
         width: 90%;
         font-size: 30px;
         text-align: left;
         padding-bottom: 40px;
+        font-family: "FiraSans";
+        font-style: normal;
     }
     .index > main > .articulo_principal > .contenido_articulo > h1{
-        /* position: relative;
-        top: -600px;
-        right: -10px; */
         width: 100%;
-        background-image: url(../assets/imagenes/Vector\ 20.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        font-size: 85px;
+        font-size: 45px;
         text-align: left;
         margin-bottom: 30px;
     }
     .index > main > .articulo_principal > button{
-        position: relative;
-        top: -68%;
-        right: 35%;
-        font-size: 40px;
+        display: flex;
+        font-size: 30px;
         background: none;
         border: none;
-        background-image: url(../assets/imagenes/Vector\ 21.png);
-        background-repeat: no-repeat;
+        background-color: var(--verde);
         background-size: 100% auto;
-        height: 65px;
         width: 253px;
     }
 
@@ -278,24 +314,20 @@ img{
         position: relative;
         left: 0;
         width: 100%;
-        background-image: url(../assets/imagenes/Vector\ 18.png);
-        background-repeat: no-repeat;
-        background-size: 50% auto;
     }
     .index > main > .barra_de_separacion > h2{
         color: var(--blanco);
-        font-size: 130px;
+        font-size: 100px;
         display: flex;
         justify-content: start;
         align-items: center;
+        left: 0;
+        color: var(--rosa);
     }
     .index > main > .barra_de_separacion:nth-child(4){
         position: relative;
         left: 0;
         width: 100%;
-        background-image: url(../assets/imagenes/Vector\ 18.png);
-        background-repeat: no-repeat;
-        background-size: 50% auto;
     }
 
 
@@ -303,29 +335,27 @@ img{
 
 
 
-    .index > main > .articulos_carrusel > .contenedor{
+    .index > main > .articulos_carrusel.swiper > .swiper-wrapper{
         display: flex;
         text-align: center;
         overflow-y: hidden;
         width: 100%;
         height: 586px;
-        justify-content: center;
-        align-items: center;
     }
-    .index > main > .articulos_carrusel > .contenedor > .articulo{
+    .index > main > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide{
         display: flex;
         flex-direction: column;
-        margin-right: 50px;
+        width: 50%;
     }
-    .index > main > .articulos_carrusel > .contenedor > .articulo > img{
+    .index > main > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide > img{
         height: 205px;
         width: 97%;
         margin-bottom: 15px;
     }
-    .index > main > .articulos_carrusel > .contenedor > .articulo > h3{
+    .index > main > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide > h3{
         margin-bottom: 15px;
     }
-    .index > main > .articulos_carrusel > .contenedor > .articulo > p{
+    .index > main > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide > p{
         padding-bottom: 15px;
     }
 
@@ -344,44 +374,47 @@ img{
     .index > main > .tutorial_video > .contenido{
         width: 100%;
         height: auto;
-        background-image: url(../assets/imagenes/Vector\ 24.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
         margin-top: 40px;
+    }
+    .index > main > .tutorial_video > .contenido > p:nth-child(1){
+        margin-bottom: 15px;
+        font-size: 25px;
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm3.png);
+        background-repeat: no-repeat;
+        background-size: 30% 40px;
+    }
+    .index > main > .tutorial_video > .contenido > h3{
+        margin-bottom: 15px;
+        font-size: 45px;
+        width: 100%;
     }
     .index > main > .tutorial_video > .contenido > p{
         margin-bottom: 15px;
         font-size: 25px;
     }
-    .index > main > .tutorial_video > .contenido > h3{
-        margin-bottom: 15px;
-        font-size: 100px;
-        width: 100%;
-    }
 
 
 
 
 
-    .index > main > .artistas_carrusel{
+    .index > main > .artistas_carrusel.swiper > .swiper-wrapper{
         display: flex;
         margin: 50px;
-        overflow: hidden;
         width: 100%;
         height: auto;
 
     }
-    .index > main > .artistas_carrusel > .artista{
+    .index > main > .artistas_carrusel.swiper > .swiper-wrapper > .artista.swiper-slide{
         display: flex;
         flex-direction: column;
         margin: 40px;
     }
-    .index > main > .artistas_carrusel > .artista > img{
-        height: auto;
+    .index > main > .artistas_carrusel.swiper > .swiper-wrapper > .artista.swiper-slide > img{
+        height: 391px;
         width: 100%;
         margin-bottom: 40px;
     }
-    .index > main > .artistas_carrusel > .artista > h3{
+    .index > main > .artistas_carrusel.swiper > .swiper-wrapper > .artista.swiper-slide > h3{
         text-align: center;
         font-size: 40px;
         width: 100%;
@@ -397,118 +430,105 @@ img{
 
     /* Casos de Exito - Articulos*/
     
-    .articulos > main > .barra_de_separacion{
+    .main_articulos > .articulos_carrusel.swiper{
         position: relative;
         left: 0;
         width: 100%;
         height: auto;
-        background-image: url(../assets/imagenes/Vector\ 18.png);
-        background-repeat: no-repeat;
-        background-size: 70% auto;
     }
-    .articulos > main > .barra_de_separacion > h2{
-        color: var(--blanco);
+    .main_articulos > .articulos_carrusel.swiper > h2{
+        color: var(--rosa);
         font-size: 130px;
         display: flex;
         justify-content: start;
         align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 40px 0;
     }
-    .articulos > main{
-        height: 100%;
-    }
-    .articulos > main > section > .excelsiur{
+    .main_articulos > .articulos_carrusel.swiper > .swiper-wrapper{
         display: flex;
         width: 100%;
-        height: 858px;
-        overflow: hidden;
     }
-    .articulos > main > section > .excelsiur > .ce1{
+    .main_articulos > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide{
         display: flex;
         flex-direction: column;
-        margin: 20px;
-        width: 100%;
-        height: auto;
-    }
-    .articulos > main > section > .excelsiur > .ce1 > img{
-        width: 100%;
-        height: 40%;
-        border-radius: 50%;
-    }
-    .articulos > main > section > .excelsiur > .ce1 > .cnt{
         margin-top: 25px;
+        margin-bottom: 25px;
         width: 100%;
         height: auto;
-        background-image: url(../assets/imagenes/Vector\ 24.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
+        text-align: center;
     }
-    .articulos > main > section > .excelsiur > .ce1 > .cnt > .txt > h3{
-        font-size: 40px;
+    .main_articulos > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide > img{
+        width: 100%;
+        height: 434px;
     }
-    .articulos > main > section > .excelsiur > .ce1 > .cnt > .txt > p{
+    .main_articulos > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide > h3{
+        font-size: 35px;
+        margin: 20px 0;
+    }
+    .main_articulos > .articulos_carrusel.swiper > .swiper-wrapper > .articulo.swiper-slide > p{
         font-size: 30px;
     }
-    .articulos > main > section > .ce{
-        padding-top: 30px;
+    .main_articulos > .primerapart_articulos > h1{
         justify-items: center;
         align-items: center;
-        height: 1307px;
         width: 100%;
+        font-size: 35px;
     }
-    .articulos > main > section > .ce > img{
+    .main_articulos > .primerapart_articulos > .imagen_articulos > img{
         width: 100%;
         height: 1282px;
     }
-    .articulos > main > section > .ce > .txt{
-        position: relative;
-        top: -1300px;
-    }
-    .articulos > main > section > .ce > .txt > h3{
-        font-size: 85px;
+    .main_articulos > .primerapart_articulos > article > p{
+        font-size: 30px;
         width: 100%;
         padding: 15px;
-        background-image: url(../assets/imagenes/Vector\ 20.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        margin-bottom: 30px;
     }
-    .articulos > main > section > .ce > .txt > p{
-        font-size: 45px;
-        width: 100%;
-        padding: 15px;
-        background-color: #10243F;
-    }
-    .articulos > main > section > .ce > button{
-        position: relative;
-        top: -1280px;
-        right: 430px;
+    .main_articulos > .primerapart_articulos > button{
         font-size: 40px;
         background: none;
         border: none;
-        background-image: url(../assets/imagenes/Vector\ 21.png);
-        background-repeat: no-repeat;
+        background-color: var(--verde);
         background-size: 100% auto;
-        height: 65px;
-        width: 253px;
+        padding: 0 30px;
+        margin: 40px 0;
     }
-
-
-
-    /* Leer Articulo Video */
-
-    .leer_articulos > img{
-        height: 1455px;
+    .main_articulos > .tercerapart_articulos{
+        margin-top: 40px;
+    }
+    .main_articulos > .tercerapart_articulos > h1{
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    .main_articulos > .tercerapart_articulos > .imagen_articulos > img{
         width: 100%;
-        margin-top: 396px;
+        height: 1205px;
     }
-    .leer_articulos > main > .primerapart_articulos{
-        background-color: var(--negro);
-        color: var(--blanco);
+    .main_articulos > .tercerapart_articulos > article > p{
+        font-size: 30px;
         width: 100%;
-        height: 1022px;
-        text-align: center;
+        padding: 15px;
     }
-    .leer_articulos > main > .primerapart_articulos > .contenido1 > h2{
+    .main_articulos > .tercerapart_articulos > button{
+        font-size: 40px;
+        background: none;
+        border: none;
+        background-color: var(--verde);
+        background-size: 100% auto;
+        padding: 0 30px;
+        margin: 40px 0;
+    }
+
+
+
+    /* Leer Articulo */
+
+    .mainLectura > .articulo_leer_prim > img{
+        height: 972px;
+        width: 100%;
+    }
+    .mainLectura > .articulo_leer_prim > .prim_contenido > h5{
         margin-bottom: 20px;
         font-size: 70px;
         width: 100%;
@@ -516,300 +536,213 @@ img{
         margin: auto;
         padding-top: 20px;
     }
-    .leer_articulos > main > .primerapart_articulos > .contenido1 > h3{
+    .mainLectura > .articulo_leer_prim > .prim_contenido > h6{
+        margin-top: 40px;
         padding-bottom: 20px;
         padding-top: 20px;
-        height: 196px;
         width: 100%;
         font-size: 55px;
     }
-    .leer_articulos > main > .primerapart_articulos > .contenido1 > p{
-        height: 413px;
+    .mainLectura > .articulo_leer_prim > .prim_contenido > p{
+        margin-top: 70px;
         width: 100%;
         padding-bottom: 20px;
         font-size: 40px;
     }
 
 
-    .leer_articulos > main > img{
-        width: 1574px;
-        height: 944px;
+    .mainLectura > .articulo_leer > img{
+        width: 100%;
+        height: auto;
         margin-top: 60px;
         margin-bottom: 60px;
     }
-    .leer_articulos > main > .segundapart_articulos{
-        width: 1574px;
-        height: 1990px;
+    .mainLectura > .articulo_leer > .articulo_parrafo_lect > .subtitulo_articulo_lect > h6{
         margin-bottom: 60px;
-        
-    }
-    .leer_articulos > main > .segundapart_articulos > .amarillo{
-        width: 1574px;
-        height: 409.02px;
-        position: relative;
-        top: 60px;
-    }
-    .leer_articulos > main > .segundapart_articulos > .verde{
-        width: 1574px;
-        height: 1574px;
-    }
-    .leer_articulos > main > .segundapart_articulos > .txt{
-        margin-bottom: 60px;
-        position: relative;
-        top: -1500px;
         justify-content: center;
         align-items: center;
-        color: var(--negro);
+        font-size: 55px;
     }
-    .leer_articulos > main > .segundapart_articulos > .txt > h3{
-        font-size: 70px;
-        width: 1198px;
-        height: 150px;
-    }
-    .leer_articulos > main > .segundapart_articulos > .txt > p{
+    .mainLectura > .articulo_leer > .articulo_parrafo_lect > .parrafo_articulo_lect > p{
         font-size: 40px;
-        width: 1161px;
-        height: 1356px;
-    }
-    .leer_articulos > main > .tercerapart_articulos > .rosa{
-        width: 1524px;
-        height: 141.27px;
-        position: relative;
-        top: 50px;
-    }
-    .leer_articulos > main > .tercerapart_articulos{
-        width: 1524px;
-        height: 902px;
-        position: relative;
-        top: -300px;
-    }
-    .leer_articulos > main > .tercerapart_articulos > .txt{
-        position: relative;
-        top: 350px;
-        left: 100px;
-        z-index: 10;
-        color: var(--negro);
-    }
-    .leer_articulos > main > .tercerapart_articulos > .txt > .subti{
-        width: 328px;
-        margin-bottom: 20px;
-        background-color: #D9D9D9;
-        background-image: url(../assets/imagenes/Vector\ 116.png);
+        width: 100%;
+        height: auto;
+        background-image: url(../assets/imagenes/Vector\ 33-4.png);
         background-repeat: no-repeat;
-        background-size: 100px 100%;
-        background-position: top right;
-    }
-    .leer_articulos > main > .tercerapart_articulos > .txt > .parrafo{
-        width: 328px;
-        padding: 10px;
-        background-color: #D9D9D9;
-        background-image: url(../assets/imagenes/Vector\ 117.png);
-        background-repeat: no-repeat;
-        background-size: 100px 20px;
-        background-position: bottom right;
+        background-size: 100% auto;
     }
     
 
 
 
     /*Tutorial*/
-    .tutorial > main{
-        margin-top: 396px;
+    .bodytuto > .maintuto > .sectiontuto2{
+        width: 100%;
+        margin-bottom: 40px;
     }
-    .tutorial > main > .escrito > img{
-        width: 1524px;
-        height: 914px;
+    .bodytuto > .maintuto > .sectiontuto2 > .videotuto > video{
+        width: 100%;
+        height: auto;
+        margin-bottom: -100px;
     }
-    .tutorial > main > .escrito > .barra-separadora{
-        margin: 50px 0px;
-        height: 129px;
-        background-image: url(../assets/imagenes/Vector\ 18.png);
-        background-repeat: no-repeat;
-        background-size: 648px 129px;
-    }
-    .tutorial > main > .escrito > .barra-separadora > h3{
-        margin: 50px 0px;
-        font-size: 50px;
-        height: 50px;
+    .bodytuto > .maintuto > .sectiontuto2 > .videotuto > .accesibilidad_tuto{
+        width: 50%;
+        background-color: var(--azul_oscuro);
         position: relative;
-        left: 10px;
-        top: 30px;
+        top: -200px;
+        font-size: 45px;
+        left: 300px;
     }
-    .tutorial > main > .escrito > .cont > h2{
-        margin-bottom: 50px;
-        font-size: 70px;
-        background-image: url(../assets/imagenes/Vector\ 49.png);
+    .bodytuto > .maintuto > .sectiontuto2 > .contenidotuto2 > .h6_tuto2{
+        font-size: 45px;
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm4.png);
         background-repeat: no-repeat;
-        background-size: 1387px 153px;
-        height: 153px;
+        background-size: 30% auto;
     }
-    .tutorial > main > .escrito > .cont > p{
-        margin-bottom: 50px;
-        font-size: 50px;
-        background-image: url(../assets/imagenes/Vector\ 51.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        height: 269px;
-        width: 1523px;
-    }
-    .tutorial > main > .video > video{
-        width: 1524px;
-        height: 914px;
-    }
-    .tutorial > main > .video > .barra-separadora{
-        margin: 50px 0px;
-        height: 127px;
-        background-image: url(../assets/imagenes/barrita\ fechas\ cawm.png);
-        background-repeat: no-repeat;
-        background-size: 894px 127pxpx;
-    }
-    .tutorial > main > .video > .barra-separadora > h3{
-        margin: 50px 0px;
-        font-size: 50px;
-        height: 50px;
+    .bodytuto > .maintuto > .sectiontuto2 > .contenidotuto2 > .h6_tuto2 > h6{
         color: var(--negro);
-        position: relative;
-        left: 350px;
-        top: 35px;
     }
-    .tutorial > main > .video > .cont > h2{
-        margin-bottom: 50px;
-        font-size: 70px;
-        background-image: url(../assets/imagenes/Vector\ 49.png);
-        background-repeat: no-repeat;
-        background-size: 1387px 153px;
-        height: 153px;
-        text-align: center;
+    .bodytuto > .maintuto > .sectiontuto2 > .contenidotuto2 > .h2_tuto2{
+        font-size: 65px;
     }
-    .tutorial > main > .video > .cont > p{
-        margin-bottom: 50px;
-        font-size: 50px;
-        background-image: url(../assets/imagenes/Vector\ 51.png);
+    .bodytuto > .maintuto > .sectiontuto2 > .contenidotuto2 > .p_tuto2{
+        font-size: 25px;
+        background-image: url(../assets/imagenes/Vector\ 52.png);
         background-repeat: no-repeat;
         background-size: 100% auto;
-        height: 269px;
-        width: 1523px;
     }
+    .bodytuto > .maintuto > .sectiontuto{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .videotuto > video{
+        width: 100%;
+        height: auto;
+        margin-bottom: -100px;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .videotuto > .accesibilidad_tuto{
+        width: 50%;
+        background-color: var(--azul_oscuro);
+        position: relative;
+        top: -200px;
+        font-size: 45px;
+        left: 300px;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .contenidotuto{
+        text-align: right;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .contenidotuto > .h6_tuto{
+        font-size: 45px;
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm3.png);
+        background-repeat: no-repeat;
+        background-size: 30% auto;
+        background-position: right;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .contenidotuto > .h6_tuto > h6{
+        position: relative;
+        right: 50px;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .contenidotuto > .h2_tuto{
+        font-size: 65px;
+    }
+    .bodytuto > .maintuto > .sectiontuto > .contenidotuto > .p_tuto{
+        font-size: 25px;
+        background-image: url(../assets/imagenes/Vector\ 52.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
 
 
 
 
     /*Leer-Tutoriales-Video*/
-    .leer_tutorial_video > main > article > video{
-        width: 1529px;
+    .leer_tutorial_video-mobile > main > .tutorial_principal > img{
+        width: 100%;
         height: 914px;
     }
-    .leer_tutorial_video > main > article > .barra-separadora{
-        margin: 50px 0px;
-        height: 127px;
-        background-image: url(../assets/imagenes/Vector\ 18.png);
+    .leer_tutorial_video-mobile > main > .tutorial_principal > .contenido_tutorial_principal{
+        margin-top: 40px;
+    }
+    .leer_tutorial_video-mobile > main > .tutorial_principal > .contenido_tutorial_principal > p:nth-child(1){
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm3.png);
         background-repeat: no-repeat;
-        background-size: 894px 127px;
+        background-size: 20% 30px;
+        font-size: 25px;
     }
-    .leer_tutorial_video > main > article > .barra-separadora > h3{
-        margin: 50px 0px;
-        font-size: 50px;
-        height: 50px;
-        position: relative;
-        left: 10px;
-        top: 35px;
+    .leer_tutorial_video-mobile > main > .tutorial_principal > .contenido_tutorial_principal > h1{
+        margin-top: 20px;
+        font-size: 45px;
     }
-    .leer_tutorial_video > main > article > .cont > h2{
-        margin-bottom: 50px;
-        font-size: 70px;
-        background-image: url(../assets/imagenes/Vector\ 49.png);
-        background-repeat: no-repeat;
-        background-size: 894px 153px;
-        height: 153px;
+    .leer_tutorial_video-mobile > main > .tutorial_principal > .contenido_tutorial_principal > p{
+        margin-top: 20px;
+        font-size: 25px;
     }
-    .leer_tutorial_video > main > article > .cont > p{
-        margin-bottom: 50px;
-        font-size: 50px;
-        background-image: url(../assets/imagenes/Vector\ 51.png);
+    .leer_tutorial_video-mobile > main > .subtitulo_tutorial{
+        margin-top: 40px;
+    }
+    .leer_tutorial_video-mobile > main > .subtitulo_tutorial > h2{
+        font-size: 35px;
+        color: var(--amarillo);
+    }
+    .leer_tutorial_video-mobile > main > .subtitulo_tutorial > p{
+        font-size: 25px;
+        margin-top: 20px;
+        background-image: url(../assets/imagenes/Vector\ 33-4.png);
         background-repeat: no-repeat;
         background-size: 100% auto;
-        height: 570px;
-        width: 1518px;
-    }
-    .leer_tutorial_video > main > article > .sub > h2{
-        margin-bottom: 50px;
-        font-size: 70px;
-        background-image: url(../assets/imagenes/Vector\ 53.png);
-        background-repeat: no-repeat;
-        background-size: 1000px 153px;
-        height: 153px;
-        color: var(--rosa);
-    }
-    .leer_tutorial_video > main > article > .parrafo > p{
-        margin-bottom: 50px;
-        font-size: 50px;
-        background-color: var(--rosa);
-        height: 396px;
-        width: 1521px;
-        padding-top: 100px;
-        padding-bottom: 100px;
     }
 
 
 
     /*Leer-Tutorial-Escrito*/
-    .leer_tutorial_escrito > main > article > figure > img{
-        width: 1524px;
+    .main_leer_tut_escrit_mob > .primera_parte_leer_tut_escritomob > .imagen_leer_tut_escritomob > img{
+        width: 100%;
         height: 899px;
     }
-    .leer_tutorial_escrito > main > article > figure > figcaption{
-        width: 1095px;
-        height: 118px;
-        background-image: url(../assets/imagenes/barrita\ fechas\ cawm2.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        margin: 40px 0px;
+    .main_leer_tut_escrit_mob > .primera_parte_leer_tut_escritomob > .fecha{
+        text-align: center;
+        width: 100%;
     }
-    .leer_tutorial_escrito > main > article > figure > figcaption > time{
-        font-size: 55px;
-        position: relative;
-        top: 20px;
-        left: 450px;
-    }
-    .leer_tutorial_escrito > main > article > section > h1{
-        background-image: url(../assets/imagenes/Vector\ 18.png);
+    .main_leer_tut_escrit_mob > .primera_parte_leer_tut_escritomob > .fecha > h6{
+        background-image: url(../assets/imagenes/barrita\ fechas\ cawm5.png);
         background-repeat: no-repeat;
-        background-size: 100% 162px;
+        background-size: 50% auto;
         background-position: bottom;
-        width: 1524px;
-        height: 162px;
-        font-size: 85px;
+        width: 100%;
+        height: auto;
+        font-size: 45px;
+        text-align: center;
+        color: var(--negro);
     }
-    .leer_tutorial_escrito > main > article > section > p{
+    .main_leer_tut_escrit_mob > .primera_parte_leer_tut_escritomob > .barra_artistas > h4{
         font-size: 50px;
         margin-top: 20px;
         margin-bottom: 40px;
+        text-align: center;
     }
-    .leer_tutorial_escrito > main > article > .sub > .contenido > h2{
+    .main_leer_tut_escrit_mob > .primera_parte_leer_tut_escritomob > article > p{
+        font-size: 45px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .main_leer_tut_escrit_mob > .subtitulo_Leer_tut_escritomob{
+        margin: 40px;
+    }
+    .main_leer_tut_escrit_mob > .subtitulo_Leer_tut_escritomob > .tutorial.contenedor > article > h6{
         background-image: url(../assets/imagenes/Vector\ 55.png);
         background-repeat: no-repeat;
-        background-size: 100% auto;
-        font-size: 60px;
-        width: 756px;
-        height: 240px;
-        align-content: center;
+        background-size: 70% 50px;
+        width: 100%;
+        height: auto;
+        font-size: 45px;
         color: var(--negro);
+        align-items: center;
     }
-    .leer_tutorial_escrito > main > article > .sub > .contenido > .sub-cont{
-        display: flex;
-        background-image: url(../assets/imagenes/Vector\ 58.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-    }
-    .leer_tutorial_escrito > main > article > .sub > .contenido > .sub-cont > img{
-        height: 1188px;
-        width: 593px;
-        margin-top: 110px;
-    }
-    .leer_tutorial_escrito > main > article > .sub > .contenido > .sub-cont > p{
-        font-size: 50px;
-        align-content: center;
-        margin: 40px 40px;
+    .main_leer_tut_escrit_mob > .subtitulo_Leer_tut_escritomob > .tutorial.contenedor > article > p{
+        font-size: 25px;
+        margin-top: 30px;
     }
 
 
@@ -820,6 +753,9 @@ img{
 
     .body_autores > main > .autores_contenedor{
         display: flex;
+    }
+    .body_autores > main > .autores_contenedor > .autor_grupo_autores_mobile{
+        padding: 60px;
     }
     .body_autores > main > .autores_contenedor > .autor_grupo_autores_mobile > .img_autores > .elipse_amarillo_autores{
         background-color: var(--amarillo);
@@ -835,10 +771,7 @@ img{
         align-items: center;
     }
     .body_autores > main > .autores_contenedor > .autor_grupo_autores_mobile > .barra_artistas{
-        background-image: url(../assets/imagenes/Vector\ 18.png);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-position: bottom left;
+        color: var(--rosa);
         width: 485px;
         height: 87px;
     }
@@ -848,15 +781,37 @@ img{
         position: relative;
         top: 10px;
     }
-    .body_autores > main > .autor_descripcion{
-        width: 1524px;
-        height: 948px;
+
+
+
+
+    /* Informacion */
+
+    .main-info > h1{
+        font-size: 55px;
+        margin-bottom: 40px;
     }
-    .body_autores > main > .autor_descripcion > .autor_grupo_autores_mobile{
-        position: relative;
-        right: 0px;
+    .main-info > .info{
+        background-color: var(--verde);
+        background-size: 100% auto;
+        margin-bottom: 40px;
     }
-    .body_autores > main > .autor_descripcion > .autor_grupo_autores_mobile > .img_autores > .elipse_amarillo_autores{
+    .main-info > .info > p{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    .main-info > .info > img{
+        height: 1098px;
+        width: 100%;
+    }
+    .main-info > .grupos-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-info > .grupos-info > .grupo-info{
+        margin-bottom: 40px;
+    }
+    .main-info > .grupos-info > .grupo-info > figure{
         background-color: var(--amarillo);
         width: 485px;
         height: 470px;
@@ -864,24 +819,130 @@ img{
         align-content: center;
         margin: 10px 25px 50px 25px;
     }
-    .body_autores > main > .autor_descripcion > .autor_grupo_autores_mobile > .img_autores > .elipse_amarillo_autores > img{
-        font-size: 50px;
-        text-align: center;
-        position: relative;
-        top: 10px;
-    }
-    .body_autores > main > .autor_descripcion > .autor_grupo_autores_mobile > .barra_artistas{
+    .main-info > .grupos-info > .grupo-info > h2{
         background-image: url(../assets/imagenes/Vector\ 18.png);
         background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-position: bottom left;
-        width: 485px;
-        height: 87px;
+        background-size: 100% 50px;
+        font-size: 35px;
     }
-    .body_autores > main > .autor_descripcion > .autor_grupo_autores_mobile > .barra_artistas > h6{
-        font-size: 50px;
+
+
+
+    /* Sign-up */
+
+    .singin {
+        width: 100%;
+        max-width: 360px; 
+        padding: 16px 24px;
         text-align: center;
-        position: relative;
-        top: 10px;
+        margin: 0 180px;
     }
+    .singin > form > h1{
+        color: var(--rosa);
+        margin-bottom: 40px;
+    }
+    
+    
+    .singin input[type="email"],
+    .singin input[type="tel"],
+    .singin input[type="text"],
+    .singin input[type="password"] {
+        display: block;
+        width: 300px;
+        height: 60px;
+        margin-bottom: 30px;
+        background: none;
+        background-image: url(../assets/imagenes/Vector\ 62.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        border: none;
+    }
+    
+    .singin .orwith {
+        color: var(--blanco);
+        text-align: center;
+    }
+    
+    .singin #show-password {
+        margin-left: -70px;
+    }
+    
+    .singin label[for="show-password"] {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: var(--blanco);
+        font-size: 14px;
+    }
+    .singin> form > .check{
+            
+    }
+    .singin .orwith{
+        font-size: 17px;
+    }
+    .singin button{
+        margin: 8px;
+    }
+    .singin .center{
+        font-size: 15px;
+    }
+    .singin> form > button{
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        font-size: 17px;
+        background: none;
+        border: none;
+        background-image: url(../assets/imagenes/Vector\ 21.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+
+
+    /* Log-in */
+
+    .login .email form button{
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        font-size: 17px;
+        background: none;
+        border: none;
+        background-image: url(../assets/imagenes/Vector\ 21.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        margin-bottom: 20px;
+    }
+    .login {
+        padding: 16px;
+        width: 100%;
+        margin: 10px;
+    }
+    .login > .email > form > h1{
+        text-align: center;
+        color: var(--rosa);
+        margin-bottom: 40px;
+    }
+    .login > .email > form > p{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .login > .email > form > .recordar{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .login input[type="email"],
+    .login input[type="password"] {
+        display: block;
+        width: 300px;
+        height: 60px;
+        margin-bottom: 30px;
+        background: none;
+        background-image: url(../assets/imagenes/Vector\ 62.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        border: none;
+    }
+
 }
