@@ -22,3 +22,30 @@
     --tablet: 768px;
     --desktop: 1600px;
 }
+.cyan1{
+    background-color: var(--aqua);
+}
+.cyan2{
+    background-color: var(--aqua);
+}
+.cyan3{
+    background-color: var(--aqua);
+}
+.cyan4{
+    background-color: var(--aqua);
+}
+.cyan5{
+    background-color: var(--aqua);
+}
+.cyan6{
+    background-color: var(--aqua);
+}
+.magenta1{
+    background-color: var(--rosa);
+}
+.magenta2{
+    background-color: var(--rosa);
+}
+.magenta3{
+    background-color: var(--rosa);
+}
