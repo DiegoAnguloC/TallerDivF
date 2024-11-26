@@ -27,13 +27,14 @@
     --aqua: #0ff294;
     --amarillo: #ecf213;
     --negro: black;
-    --h1: 89.76px;
+    --h1t: 89.76px;
     --h2: 67.34px;
     --h3: 50.52px;
     --h4: 37.9px;
     --h5: 28.43px;
     --h6: 21.33px;
-    --p: 16px;
+    --pt: 16px;
+    --lheightTitle: 1.5;
 
     --movil: 375px;
     --tablet: 768px;
@@ -53,9 +54,9 @@
 {
 /*SETEO PARA MÁRGENES GENERALES*/    
 :root{
-    --h1: 47px;
+    --h1t: 47px;
     --h3: 26px;
-    --p: 33px;
+    --pt: 33px;
 }
 main {
         display: flex;
@@ -78,9 +79,14 @@ main {
     font-size: var(--h6);
     color: var(--azulOscuro);
 }
-    header>.logo{
-        width: 25vh;
-        height: 100%;
+    header{
+        width: 100%;
+        height: 218px;
+
+    }
+header>.logo{
+        width: 228px;
+        height: auto;
     }
 /*INDEX*/
 .index main{
@@ -145,21 +151,20 @@ width: 100%;
 .index .articulo_principal h1{
 padding: 20px;
 color: var(--blanco);
-font-size: var(--h1);
-line-height: 1.5;
+font-size: var(--h1t);
+line-height: var(--lheightTitle);
 font-family: var(--fontTitle);
 font-style: normal;
 font-weight: 400;
 margin-bottom: 16px;
 background-color: var(--azulOscuro);
-line-height: normal;
 }
 
 
 .index .articulo_principal p{
 color: #FFF;
 font-family: var(--fontText);
-font-size: var(--p);
+font-size: var(--pt);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -172,7 +177,7 @@ margin-bottom: 0;
 padding: 10px 16px;
 border: none;
 font-family: var(--fontText);
-font-size: var(--p);
+font-size: var(--pt);
 font-style: normal;
 font-weight: 400;
 color: var(--azulOscuro);
@@ -242,7 +247,7 @@ line-height: normal;
 .index .articulos_carrusel .articulo p{
 background-color: unset;
 color: var(--negro);
-/*font-size: var(--p);*/
+/*font-size: var(--pt);*/
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -273,7 +278,7 @@ gap: var(--12, 12px);
 color: #FFF;
 padding: 20px;
 font-family: var(--fontTitle);
-font-size: var(--h1);
+font-size: var(--h1t);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -295,7 +300,7 @@ line-height: normal;
 .index .tutorial_video .contenido p:nth-child(3){
 color: #FFF;
 font-family: var(--fontText);
-font-size: var(--p);
+font-size: var(--pt);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -347,7 +352,8 @@ object-fit: cover;
             /* background-color: gray; */
             h1{
                 font-family: var(--fontTitle);
-                font-size: 58px;
+                font-size: var(--h1t);
+                line-height: var(--lheightTitle);
                 font-weight: 400;
                 margin-bottom: 9px;
                 color: var(--blanco);
@@ -365,7 +371,7 @@ object-fit: cover;
             p{
                 margin-top: 9px;
                 font-family: var(--fontText);
-                font-size: var(--p);
+                font-size: var(--pt);
                 font-weight: 400;
                 margin-bottom: 20px;
                 padding: 9px;
@@ -383,7 +389,7 @@ object-fit: cover;
                 border: none;
                 padding: 9px 21px 9px 21px;
                 margin-left: 9px;
-                font-size: var(--p);
+                font-size: var(--pt);
                 font-family: var(--fontText);
                 font-weight: 400;
             }
@@ -395,7 +401,7 @@ object-fit: cover;
 
             h1{
                 font-family: var(--fontTitle);
-                font-size: var(--h1);
+                font-size: var(--h1t);
                 margin-bottom: 9px;
                 color: var(--blanco);
                 padding: 20px;
@@ -412,7 +418,7 @@ object-fit: cover;
             p{
                 margin-top: 9px;
                 font-family: var(--fontText);
-                font-size: var(--p);
+                font-size: var(--pt);
                 margin-bottom: 20px;
                 padding: 9px;
                 color: var(--blanco);
@@ -431,7 +437,7 @@ object-fit: cover;
                 padding: 9px 21px 9px 21px;
                 margin-left: 9px;
                 font-family: var(--fontText);
-                font-size: var(--p);
+                font-size: var(--pt);
 
             }
         }
@@ -447,7 +453,7 @@ object-fit: cover;
     gap: 16px; /* Ajustado para móvil */
     margin-bottom: 19px;
     h2{
-        font-size: var(--h1);
+        font-size: var(--h1t);
         font-family: var(--fontTitle);
         margin-top: 12px;
         margin-bottom: 19px;
@@ -483,7 +489,7 @@ object-fit: cover;
 }
 
 .body_articulos .articulos_carrusel .articulo p {
-    font-size: var(--p); /* Descripción del artículo */
+    font-size: var(--pt); /* Descripción del artículo */
     color: var(--blanco);
 }
 
@@ -583,7 +589,7 @@ object-fit: cover;
     flex-shrink: 0;
     color: #10243F;
     font-family: var(--fontText);
-    font-size: var(--p);
+    font-size: var(--pt);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -647,7 +653,7 @@ object-fit: cover;
 
 .mainLectura .articulo_leer .articulo_parrafo_lect .parrafo_articulo_lect p {
     color: var(--negro);
-    font-size: var(--p);
+    font-size: var(--pt);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -715,7 +721,7 @@ object-fit: cover;
 
 .leer_tutorial_video-mobile .tutorial_principal h1{
     color: var(--blanco);
-    font-size: var(--h1);
+    font-size: var(--h1t);
     font-family: var(--fontTitle);
     width: 100%;
     margin-top: 0px;
@@ -723,7 +729,7 @@ object-fit: cover;
 
 .leer_tutorial_video-mobile .tutorial_principal p:nth-child(3){
     color: var(--blanco);
-    font-size: var(--p);
+    font-size: var(--pt);
     font-family: var(--fontText);
     width: 100%;
     margin-top: 0px;
@@ -754,7 +760,7 @@ object-fit: cover;
     height: auto;
     background-position: -434px -103px;
     color: var(--azulOscuro);
-    font-size: var(--p);
+    font-size: var(--pt);
     font-family: var(--fontText);
     padding: 45px 62px;
 }
@@ -835,7 +841,7 @@ object-fit: cover;
                 padding-right: 12;
 
                 h6 {
-                    font-size: var(--h1);
+                    font-size: var(--h1t);
                     color: var(--rosa);
                     font-family: var(--fontTitle);
                     margin-bottom: 16px;
@@ -866,7 +872,7 @@ object-fit: cover;
 
 .login label {
     display: block;
-    font-size: var(--p);
+    font-size: var(--pt);
     margin-bottom: 8px; 
 }
 
@@ -879,7 +885,7 @@ object-fit: cover;
     background-color: var(--aqua);
     border: none;
     margin-bottom: 30px; 
-    font-size: var(--p);
+    font-size: var(--pt);
 }
 ::placeholder{
     color: var(--azulOscuro);
@@ -1069,7 +1075,7 @@ main.main-info h1 {
     color: var(--blanco);
     margin: 20px auto;
     background-color: unset;
-    font-size: var(--h1);
+    font-size: var(--h1t);
     font-family: var(--fontTitle);
 }
 
@@ -1079,7 +1085,7 @@ main.main-info .info p {
     font-size: 14px;
     margin: 0 ;
     margin-top:50px;
-    font-size: var(--p);
+    font-size: var(--pt);
     font-family: var(--fontText);
 }
 
@@ -1216,14 +1222,14 @@ main.main-info .info p {
             align-items: center;
             gap: 10px;
             margin-bottom: 12px;
-            font-size: var(--p);
+            font-size: var(--pt);
         }
 
         p {
             background-color: unset;
             font-style: normal;
             font-family: var(--fontText);
-            font-size: var(--p);
+            font-size: var(--pt);
             font-weight: 400;
             line-height: normal;
             width: 100%;
@@ -1241,7 +1247,7 @@ main.main-info .info p {
             background-repeat: no-repeat;
             background-position: -838px -707px;
             font-family: var(--fontTitle);
-            font-size: var(--h1);
+            font-size: var(--h1t);
             width: 300px;
             padding: 10px;
             height: auto;
@@ -1252,7 +1258,7 @@ main.main-info .info p {
             background-color: unset;
             font-style: normal;
             font-family: var(--fontText);
-            font-size: var(--p);
+            font-size: var(--pt);
             font-weight: 400;
             line-height: normal;
             width: 100%;
@@ -1351,7 +1357,7 @@ main.main-info .info p {
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .p_tuto p {
     color: var(--blanco);
-    font-size: var(--p);
+    font-size: var(--pt);
     font-style: normal;
     font-weight: 400px;
     line-height: normal;
@@ -1424,7 +1430,7 @@ main.main-info .info p {
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .p_tuto2 p {
     color: var(--blanco);
     text-align: right;
-    font-size: var(--p);
+    font-size: var(--pt);
     font-style: normal;
     font-weight: 400px;
     line-height: normal;
@@ -1573,7 +1579,7 @@ main.main-info .info p {
 }
 .maintuto>.sectiontuto>.contenidotuto2>.p_tuto{
     background-color: #8e0949;
-    font-size: var(--p);
+    font-size: var(--pt);
 }
 .maintuto>.sectiontuto2{
     margin: 0 50px;
