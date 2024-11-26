@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(data => {
             navbarContainer.innerHTML = data;
-
             // Menú principal hamburguesa
             const menuBtn = navbarContainer.querySelector(".hamburguesa");
             const menuBar = navbarContainer.querySelector("#menu");
