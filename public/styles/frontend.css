@@ -77,6 +77,15 @@ body {
 .login h1 {
     text-align: center;
     color: var(--rosa);
+    font-size: 28px;
+    margin: 0 auto;
+    background-color: var(--azulOscuro);
+    line-height: normal;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 16px;
 }
 
 .login label {
@@ -119,6 +128,7 @@ button[type="submit"] {
     outline: none;
     box-shadow: none;
     font-size: var(--h6);
+    font-weight: bold;
     color: var(--azulOscuro);
 }
 
@@ -212,8 +222,17 @@ button[type="submit"] {
 
 .singin h1 {
     color: var(--rosa);
-    margin-bottom: 35px;
     text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    background-color: var(--azulOscuro);
+    line-height: normal;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 16px;
+    margin-bottom: 35px;
 }
 
 .singin input[type="email"],
@@ -390,18 +409,31 @@ main.main-info .info {
 
 
 main.main-info h1 {
-    color: var(--azulOscuro);
+    color: var(--blanco);
     font-size: 28px;
     margin: 0 auto;
-    background-color: var(--aqua);
+    background-color: var(--azulOscuro);
+    line-height: normal;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 16px;
 }
-
+main.main-info .img-info{
+    margin-top: 35px;
+    height: 195px;
+}
 main.main-info .info p {
     line-height: 1.6;
-    color: var(--negro);
-    font-size: 14px;
+    color: var(--azulOscuro);
+    font-family: 'FiraSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .grupos-info {
@@ -437,7 +469,7 @@ main.main-info .info p {
 
 .grupo-info h2 {
     width: 190px;
-    color: var(--blanco);
+    color: var(--negro);
     background-color: transparent;
     background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
