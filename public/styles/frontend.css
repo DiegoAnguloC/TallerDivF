@@ -1729,18 +1729,23 @@ index {
 
 /*----------------------------------Estilos de Prueba Header y Footer--------------------------------------*/
 header .logo {
-    width: 20vh;
-    height: 100%;
+    width: 100px;
+    height: 50px;
+    padding-bottom: 15px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    width: 109%;
+header{
+    position: fixed;
+    display: inline-block;
     padding: 10px;
-    background-color: var(--blanco);
+    height: 99px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-image: url("../assets/imagenes/fondoHeader.svg#svgView(preserveAspectRatio(none))");
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
 
 footer {
@@ -1750,7 +1755,7 @@ footer {
     align-items: center;
     gap: 16px;
     height: 200px;
-    width: 109%;
+    width: 100%;
     background-color: var(--blanco);
 }
 
@@ -1792,7 +1797,6 @@ footer {
     width: 250px;
     height: 100vh;
     background-color: var(--azulOscuro);
-    /* Fondo azul oscuro */
     transition: right 0.3s ease;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 100;
@@ -1907,9 +1911,8 @@ footer {
 }
 
 .btn-barra-lateral {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
     z-index: 101;
     cursor: pointer;
 }
@@ -1945,4 +1948,9 @@ footer {
 
 #menu.active {
     right: 0;
+}
+
+.header_final{
+    display: flex;
+    justify-content: space-between;
 }
