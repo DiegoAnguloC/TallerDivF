@@ -6,9 +6,11 @@
     "fecha": "2024-11-08",
     "categoria": "Articulos",
     "lead": "El castigo de Sisifo es una de las metaforas mas crudas del esfuerzo humano condenado a lo absurdo, una narrativa que se recicla en la vida cotidiana de quienes repiten la misma rutina hasta el hartazgo. ¿Que nos dice este mito sobre el trabajo y la existencia en el siglo XXI? En este analisis, exploramos como autores como Albert Camus y otros han abordado esta historia ancestral y le han dado un giro contemporaneo para enfrentarnos con la rutina desgastante del dia a dia.",
+    "portada": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595734/Punishment_sisyph_mljlds.png",
     "contenido": [
       {
         "titulo_seccion": "Sisifo y el Trabajo Inutil",
+        "img_seccion": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595734/0_cc9imE_WoJ-TenB6_ug6070.png", 
         "texto": "La imagen de Sisifo no es simplemente la de un condenado en el inframundo, sino la de cualquier individuo atrapado en una rutina monotona e interminable. Este mito encarna el esfuerzo humano que, en lugar de conducir a una realizacion, regresa siempre al punto de partida, una experiencia tan comun en el contexto laboral moderno. La piedra de Sisifo es, en la actualidad, la rutina de trabajo que nos demanda levantarla cada dia, sabiendo que nada de lo que hacemos parece llevarnos a un progreso real.",
         "cita": {
           "texto": "La lucha hacia la cima basta para llenar el corazon de un hombre. Hay que imaginarse a Sisifo feliz.",
@@ -22,6 +24,7 @@
       },
       {
         "titulo_seccion": "La Rutina y el Trabajo Moderno: ¿Sisifos del Siglo XXI?",
+        "img_seccion": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595732/Working_At_Night_mmkfyl.png",
         "texto": "El trabajo moderno, especialmente bajo el capitalismo, tiene un potencial deshumanizador. El concepto de trabajo como fuente de sentido se va perdiendo en la medida en que las personas quedan atrapadas en estructuras de empleo rigidas y alienantes. Asi, la historia de Sisifo resuena en las oficinas y fabricas, donde la mayoria de los trabajadores repiten tareas monotonas sin ver el fruto de su esfuerzo. Su vida se convierte en un ciclo similar al de Sisifo, una condena que parece carecer de logica o proposito mas alla de la mera subsistencia.",
         "cita": {
           "texto": "Hay una soledad tan grande en ese golpe de piedra subiendo la pendiente, tan inmensa como el horizonte que, aunque el destino parece cruel, lo seguimos cumpliendo.",
@@ -62,15 +65,18 @@
     "citas_autores": [
       {
         "texto": "La lucha hacia la cima basta para llenar el corazon de un hombre. Hay que imaginarse a Sisifo feliz.",
-        "autor": "Albert Camus"
+        "autor": "Albert Camus",
+        "autor_img": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595735/albert-camus_gchi27.png"
       },
       {
         "texto": "La vida comienza al otro lado de la desesperacion.",
-        "autor": "Jean-Paul Sartre"
+        "autor": "Jean-Paul Sartre",
+        "autor_img": "../imagenes/sisifo/jean_paul_sartre.jpg"
       },
       {
         "texto": "El peor castigo de los dioses es condenar a Sisifo a una eternidad de esfuerzo inutil; pero quizas sea su mayor libertad.",
         "autor": "Samuel Beckett",
+        "autor_img": "../imagenes/sisifo/samuel_beckett.jpg",
         "fuente": "Parafraseo en _Esperando a Godot_"
       }
     ]
