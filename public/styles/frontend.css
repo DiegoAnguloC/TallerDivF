@@ -935,6 +935,8 @@ margin-right: auto;
 .body_articulos{
     width: var(--movil);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     .main_articulos{
         margin-top: 15px;
@@ -942,17 +944,18 @@ margin-right: auto;
         .primerapart_articulos{
             /* background-color: gray; */
             h1{
-                font-size: var(--h4);
+                font-size: var(--h6);
                 margin-bottom: 9px;
                 color: var(--blanco);
+                height: auto;
+                text-transform: uppercase;
             }
             .imagen_articulos{
-                margin: 0 auto;
-                text-align: center;
+                margin: 28px auto;
                 img{
-                    background-color: var(--rosa);
-                    width: 200px;
-                    height: 200px;
+                    width: 264px;
+                    height: 169px;
+                    align-self: flex-start;
                 }
             }
             p{
@@ -977,17 +980,18 @@ margin-right: auto;
         .tercerapart_articulos{
             /* background-color: gray; */
             h1{
-                font-size: var(--h4);
+                font-size: var(--h6);
                 margin-bottom: 9px;
                 color: var(--blanco);
+                height: auto;
+                text-transform: uppercase;
             }
             .imagen_articulos{
-                margin: 0 auto;
-                text-align: center;
+                margin: 28px auto;
                 img{
-                    background-color: var(--rosa);
-                    width: 200px;
-                    height: 200px;
+                    width: 264px;
+                    height: 169px;
+                    align-self: flex-start;
                 }
             }
             p{
@@ -1023,7 +1027,7 @@ margin-right: auto;
     margin-bottom: 19px;
     h2{
         font-size: var(--h3);
-        margin-top: 12px;
+        margin-top: 25px;
         margin-bottom: 19px;
         color: var(--amarillo);
         text-align: center;
