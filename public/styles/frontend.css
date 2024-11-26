@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+p{
+    font-family: "firasans";
 }
 
 
@@ -54,7 +58,6 @@ body {
     height: 50px;
     margin-bottom: 30px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -835px -1152px;
@@ -72,7 +75,6 @@ button[type="submit"] {
     width: 100%;
     height: 48px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -835px -812px;
@@ -196,7 +198,6 @@ button[type="submit"] {
     height: 50px;
     margin-bottom: 30px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -835px -1152px;
@@ -221,7 +222,6 @@ button[type="submit"] {
 .singin input[type="text"]:hover,
 .singin input[type="password"]:hover {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -835px -1152px;
@@ -241,7 +241,6 @@ button[type="submit"] {
     width: 100%;
     padding-right: 40px;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -835px -1152px;
@@ -367,7 +366,6 @@ main.main-info h1 {
     background-color: var(--azulOscuro);
     line-height: normal;
     font-family: 'Norteam';
-    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
     font-weight: normal;
     font-style: normal;
     margin-top: 16px;
@@ -378,7 +376,7 @@ main.main-info .img-info {
     height: 195px;
 }
 
-main.main-info .info p {
+main.main-info .cyan6 p {
     line-height: 1.6;
     color: var(--azulOscuro);
     font-family: 'FiraSans';
@@ -422,20 +420,19 @@ main.main-info .info p {
 }
 
 .grupo-info h2 {
-    width: 190px;
     color: var(--negro);
-    background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     height: auto;
     background-position: -800px -520px;
     margin: 0;
+    margin-left:22px;
     padding: 20px;
     font-size: 16px;
     text-align: center;
     justify-self: end;
     height: auto;
+    font-family: "firasans";
 }
 
 .f-info {
@@ -521,7 +518,7 @@ index {
 
 .index .articulo_principal h1 {
     padding-bottom: 16px;
-    color: var(--blanco);
+
     font-size: var(--h6);
     font-style: normal;
     font-weight: normal;
@@ -549,27 +546,6 @@ index {
     font-weight: normal;
     font-style: normal;
 }
-
-
-.index .articulo_principal button {
-    padding: 10px 16px;
-    background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: -830px -51px;
-    border: none;
-    font-size: var(--h6);
-    color: var(--azulOscuro);
-    align-self: flex-start;
-    font-family: 'FiraSans';
-    src: url(../assets/fonts/FiraSans-SemiBold.ttf);
-    font-weight: bold;
-    font-style: bold;
-
-
-}
-
 
 .barra_de_separacion {
     display: flex;
@@ -629,7 +605,6 @@ index {
 
 .index .articulos_carrusel .articulo p {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     width: 330px;
@@ -779,7 +754,6 @@ index {
 
 .leer_tutorial_video-mobile .tutorial_principal p:nth-child(1) {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     height: 23px;
@@ -822,7 +796,6 @@ index {
 
 .leer_tutorial_video-mobile .subtitulo_tutorial p {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     width: 260px;
@@ -846,77 +819,76 @@ index {
     /* Ocupa toda la altura de la pantalla */
     display: flex;
     flex-direction: column;
+}
 
-    header {
-        background-color: #FFF;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 60px;
+.body_autores header {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    /* li {
+        display: inline;
+    } */
+}
 
-        /* li {
-            display: inline;
-        } */
-    }
+.body_autores footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 262px;
+}
 
-    footer {
-        background-color: black;
-        bottom: 0;
-        width: 100%;
-        height: 262px;
-    }
+.body_autores main {
+    flex: 1;
+    /* Permite que main ocupe el espacio restante entre el header y footer */
+    margin-top: 70px;
+    background-color: var(--azulOscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 9px;
+}
 
-    main {
-        flex: 1;
-        /* Permite que main ocupe el espacio restante entre el header y footer */
-        margin-top: 70px;
-        background-color: var(--azulOscuro);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: 9px;
+.body_autores .autor_grupo_autores_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
 
-        .autor_grupo_autores_mobile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 16px;
+.body_autores .elipse_amarillo_autores {
+    display: flex;
+    background-color: var(--amarillo);
+    justify-content: center;
+    align-items: center;
+    width: 213px;
+    height: 213px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
-            .elipse_amarillo_autores {
-                display: flex;
-                background-color: var(--amarillo);
-                justify-content: center;
-                align-items: center;
-                width: 213px;
-                height: 213px;
-                border-radius: 50%;
-                margin-bottom: 10px;
+.body_autores .elipse_amarillo_autores img {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
 
-                img {
-                    background-color: gray;
-                    width: 100px;
-                    height: 100px;
-                    display: flex;
-                }
-            }
+.body_autores .barra_artistas {
+    color: var(--rosa);
+    width: 160px;
+    height: 34px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
-            .barra_artistas {
-                color: var(--rosa);
-                width: 160px;
-                height: 34px;
-                padding-top: 9;
-                padding-bottom: 9;
-                padding-left: 12;
-                padding-right: 12;
-
-                h6 {
-                    font-size: var(--h6);
-                }
-            }
-        }
-    }
+.body_autores .barra_artistas h6 {
+    font-size: var(--h6);
 }
 
 /*=================================LEER_TUTOTIAL_ESCRITO_MOBILE=========================*/
@@ -925,221 +897,179 @@ index {
     width: 360px;
     height: 2049px;
     padding: 16px;
-
-    header {
-        background-color: #FFF;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 60px;
-
-        li {
-            display: inline;
-        }
-    }
-
-    footer {
-        background-color: black;
-        bottom: 0;
-        width: 100%;
-        height: 262px;
-    }
-
-    .primera_parte_leer_tut_escritomob {
-        margin-bottom: 16px;
-
-        .imagen_leer_tut_escritomob {
-            img {
-                width: 200px;
-                height: 200px;
-            }
-        }
-
-        .fecha {
-            width: 249px;
-            height: 32px;
-            background-color: transparent;
-            background-image: url('../assets/imagenes/Contenedores.svg');
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position: -738px -254px;
-            font-size: var(--h6);
-            text-align: right;
-            margin-bottom: 12px;
-        }
-
-        .barra_artistas {
-            background-color: var(--rosa);
-            width: 213px;
-            height: 42px;
-            padding: var(--9, 9px) 12px;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-        }
-
-        p {
-            background-color: var(--aqua);
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 332px;
-            height: 129px;
-        }
-    }
-
-    .subtitulo_Leer_tut_escritomob {
-        align-items: center;
-
-        h6 {
-            background-color: transparent;
-            background-image: url('../assets/imagenes/Contenedores.svg');
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position: -838px -707px;
-            ;
-            width: 178px;
-            height: 49px;
-            margin-bottom: 12px;
-        }
-
-        p {
-            background-color: var(--aqua);
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 328px;
-            height: 311px;
-        }
-    }
 }
+
+.main_leer_tut_escrit_mob header {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.main_leer_tut_escrit_mob header li {
+    display: inline;
+}
+
+.main_leer_tut_escrit_mob footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 262px;
+}
+
+.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob {
+    margin-bottom: 16px;
+}
+
+.main_leer_tut_escrit_mob .imagen_leer_tut_escritomob img {
+    width: 200px;
+    height: 200px;
+}
+
+.main_leer_tut_escrit_mob .fecha {
+    width: 249px;
+    height: 32px;
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -738px -254px;
+    font-size: var(--h6);
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+.main_leer_tut_escrit_mob .barra_artistas {
+    background-color: var(--rosa);
+    width: 213px;
+    height: 42px;
+    padding: var(--9, 9px) 12px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.main_leer_tut_escrit_mob p {
+    background-color: var(--aqua);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 332px;
+    height: 129px;
+}
+
+.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob {
+    align-items: center;
+}
+
+.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob h6 {
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -838px -707px;
+    width: 178px;
+    height: 49px;
+    margin-bottom: 12px;
+}
+
+.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob p {
+    background-color: var(--aqua);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 328px;
+    height: 311px;
+}
+
 
 /* Se hizo css de artículos (Gianis 23/11) */
 /*============================ARTICULOS=================================*/
-.body_articulos {
-    width: var(--movil);
-    min-height: 100vh;
+.main_articulos {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: center;
+    padding-right: 16px;
+    width: 100%;
     padding: 16px;
-
-    .main_articulos {
-        margin-top: 15px;
-        padding: 12px;
-
-        .primerapart_articulos {
-
-            /* background-color: gray; */
-            h1 {
-                font-family: 'Norteam';
-                src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
-                font-weight: normal;
-                font-style: normal;
-                font-size: var(--h6);
-                margin-bottom: 9px;
-                color: var(--blanco);
-                height: auto;
-                text-transform: uppercase;
-            }
-
-            .imagen_articulos {
-                margin: 28px auto;
-
-                img {
-                    width: 264px;
-                    height: 169px;
-                    align-self: flex-start;
-                }
-            }
-
-            p {
-                margin-top: 9px;
-                font-size: var(--p);
-                margin-bottom: 20px;
-                padding: 9px;
-                color: var(--blanco);
-                font-family: 'FiraSans';
-                src: url(../assets/fonts/FiraSans-Regular.ttf);
-                font-weight: normal;
-                font-style: normal;
-            }
-
-
-            .boton_LeerMas {
-                background-color: transparent;
-                background-image: url('../assets/imagenes/Contenedores.svg');
-                background-size: auto;
-                background-repeat: no-repeat;
-                background-position: -833px -55px;
-                border: none;
-                padding: 9px 21px 9px 21px;
-                margin-left: 9px;
-                font-size: 16px;
-                font-family: 'FiraSans';
-                src: url(../assets/fonts/FiraSans-SemiBold.ttf);
-                font-weight: bold;
-                font-style: bold;
-            }
-        }
-
-
-        .tercerapart_articulos {
-
-
-            /* background-color: gray; */
-            h1 {
-                font-family: 'Norteam';
-                src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
-                font-weight: normal;
-                font-style: normal;
-                font-size: var(--h6);
-                margin-bottom: 9px;
-                color: var(--blanco);
-                height: auto;
-                text-transform: uppercase;
-            }
-
-
-            .imagen_articulos {
-                margin: 28px auto;
-
-
-                img {
-                    width: 264px;
-                    height: 169px;
-                    align-self: flex-start;
-                }
-            }
-
-
-            p {
-                margin-top: 9px;
-                font-size: var(--p);
-                margin-bottom: 20px;
-                padding: 9px;
-                color: var(--blanco);
-                font-family: 'FiraSans';
-                src: url(../assets/fonts/FiraSans-Regular.ttf);
-                font-weight: normal;
-                font-style: normal;
-            }
-
-
-            .boton_LeerMas {
-                background-color: transparent;
-                background-image: url('../assets/imagenes/Contenedores.svg');
-                background-size: auto;
-                background-repeat: no-repeat;
-                background-position: -833px -55px;
-                border: none;
-                border: none;
-                padding: 9px 21px 9px 21px;
-                margin-left: 9px;
-                font-size: 16px;
-            }
-        }
-    }
 }
+.primerapart_articulos{
+    display: flex;
+    min-height: 708px;
+    padding: 16px;
+    flex-direction: column;
+}
+.primerapart_articulos h1 {
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--h6);
+    margin-bottom: 9px;
+    color: var(--blanco);
+    height: auto;
+    text-transform: uppercase;
+}
+
+.primerapart_articulos .imagen_articulos {
+    margin: 28px auto;
+}
+
+.primerapart_articulos .imagen_articulos img {
+    width: 264px;
+    height: 169px;
+    align-self: flex-start;
+}
+
+.main_articulos p {
+    margin-top: 9px;
+    font-size: var(--p);
+    margin-bottom: 20px;
+    /* padding: 9px; */
+    color: var(--blanco);
+    font-family: 'FiraSans';
+    src: url(../assets/fonts/FiraSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.boton_LeerMas {
+    background-color: var(--aqua);
+    padding: 10px 16px;
+    background-size: auto;
+    border: none;
+    font-size: var(--h6);
+    color: var(--azulOscuro);
+    align-self: flex-start;
+    font-family: 'FiraSans';
+}
+
+
+.tercerapart_articulos h1 {
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--h6);
+    margin-bottom: 9px;
+    color: var(--blanco);
+    height: auto;
+    text-transform: uppercase;
+}
+
+.tercerapart_articulos .imagen_articulos {
+    margin: 28px auto;
+}
+
+.tercerapart_articulos .imagen_articulos img {
+    width: 264px;
+    height: 169px;
+    align-self: flex-start;
+}
+
+
+
 
 .body_articulos .articulos_carrusel {
     display: block;
@@ -1152,14 +1082,14 @@ index {
     gap: 16px;
     /* Ajustado para móvil */
     margin-bottom: 19px;
+}
 
-    h2 {
-        font-size: var(--h3);
-        margin-top: 25px;
-        margin-bottom: 19px;
-        color: var(--amarillo);
-        text-align: center;
-    }
+.body_articulos .articulos_carrusel h2 {
+    font-size: var(--h3);
+    margin-top: 25px;
+    margin-bottom: 19px;
+    color: var(--amarillo);
+    text-align: center;
 }
 
 .body_articulos .articulos_carrusel .articulo {
@@ -1260,7 +1190,6 @@ index {
 
 .mainLectura .articulo_leer_prim .prim_contenido {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     height: 360px;
@@ -1330,7 +1259,6 @@ index {
     gap: var(--12, 12px);
     flex-shrink: 0;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -52px -530px;
@@ -1346,7 +1274,6 @@ index {
     gap: var(--12, 12px);
     flex-shrink: 0;
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -440px -90px;
@@ -1467,7 +1394,6 @@ index {
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     width: 330px;
@@ -1586,7 +1512,6 @@ index {
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     clip-path: inset(0px 0px 0px 80px);
@@ -1706,6 +1631,7 @@ index {
 
 
 
+
 /*============================ Animaciones Igna ======================================== */
 /*----------------------------------Scroll Trigger Sections--------------------------------------*/
 .index {
@@ -1729,18 +1655,23 @@ index {
 
 /*----------------------------------Estilos de Prueba Header y Footer--------------------------------------*/
 header .logo {
-    width: 20vh;
-    height: 100%;
+    width: 100px;
+    height: 50px;
+    padding-bottom: 15px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    width: 109%;
+header{
+    position: fixed;
+    display: inline-block;
     padding: 10px;
-    background-color: var(--blanco);
+    height: 99px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-image: url("../assets/imagenes/fondoHeader.svg#svgView(preserveAspectRatio(none))");
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
 
 footer {
@@ -1750,7 +1681,7 @@ footer {
     align-items: center;
     gap: 16px;
     height: 200px;
-    width: 109%;
+    width: 100%;
     background-color: var(--blanco);
 }
 
@@ -1792,7 +1723,6 @@ footer {
     width: 250px;
     height: 100vh;
     background-color: var(--azulOscuro);
-    /* Fondo azul oscuro */
     transition: right 0.3s ease;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 100;
@@ -1907,9 +1837,8 @@ footer {
 }
 
 .btn-barra-lateral {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
     z-index: 101;
     cursor: pointer;
 }
@@ -1945,4 +1874,9 @@ footer {
 
 #menu.active {
     right: 0;
+}
+
+.header_final{
+    display: flex;
+    justify-content: space-between;
 }

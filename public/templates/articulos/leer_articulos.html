@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leer Artículo</title>
+    <link rel="stylesheet" href="../../styles/tipogra.css">
+    <link rel="stylesheet" href="../../styles/variables.css">
     <link rel="stylesheet" href="../../styles/frontend.css">
     <!-- <link rel="stylesheet" href="../../styles/tablet.css"> -->
     <!--<link rel="stylesheet" href="../../styles/styles_desktop.css">-->
@@ -75,31 +77,20 @@
         </figure>
         <section class="articulo_leer_prim">
             <img src="../../assets/imagenes/Vector 192.png" alt="portada">
-            <h5>Más Allá del Humano:
-                El Valle Inquietante
-                como Estética y sus Ecos
-                en las Artes Gráficas</h5>
+            <h5></h5>
             <article class="magenta1">
-                <h6>Mutarte Editorial | 08/11/24</h6>
-                <p >El “Valle Inquietante” no solo es un término técnico, sino una estética que confronta la frontera
-                    entre lo humano y lo artificial. Hoy, este concepto pervade el cine, el arte digital y las gráficas
-                    contemporáneas, lanzándonos a un juego entre lo familiar y lo alienante. ¿Qué nos dice esta paradoja
-                    visual sobre nuestras propias percepciones y miedos?</p>
+                <h6></h6>
+                <p></p>
             </article>
         </section>
         <section class="articulo_leer">
             <img src="../../assets/imagenes/img_arti2.png" alt="Videojuegos">
             <article class="articulo_parrafo_lect">
                 <div class="subtitulo_articulo_lect">
-                    <h1>VIDEOJUEGOS</h1>
+                    <h1></h1>
                 </div>
                 <div class="parrafo_articulo_lect">
-                    <p class="aqua1"> Los videojuegos han encontrado en el Valle Inquietante una mina de oro para profundizar en la
-                        inmersión del usuario y llevar la narrativa visual hacia un terreno de incertidumbre. Detroit:
-                        Become Human o Silent Hill emplean personajes y entornos que, si bien son familiares en
-                        apariencia, albergan detalles que despiertan incomodidad y distanciamiento en el jugador. Silent
-                        Hill, en particular, se apoya en lo siniestro de lo humanoide pero inexacto: seres que parecen
-                        humanos pero actúan como autómatas.</p>
+                    <p class="aqua1"></p>
                 </div>
             </article>
         </section>
@@ -107,10 +98,7 @@
             <img src="../../assets/imagenes/rectanle_rosa.png" alt="rectanle_rosa">
             <article class="articulo_parrafo_lect2">
                 <div class="parrafo_articulo_lect">
-                    <p class="magenta2">¿Cual es la influencia del arte y la cultura en las materias STEM? En pocas palabras, a través de
-                        episodios como: "Con los lenguajes de programación... ¿Se puede hacer poesía?" o "El fin último
-                        de una profesión: ¿El paper científico?" se saca a la ciencia de su zona de confort, mientras el
-                        proceso se vuelve un viaje personal.</p>
+                    <p class="magenta2"></p>
                 </div>
             </article>
         </section>
@@ -153,49 +141,29 @@
                     }
 
                     // Actualiza el contenido dinámicamente
-                    document.querySelector(".prim_contenido h5").innerText = articulo.titulo;
-                    document.querySelector(".prim_contenido h6").innerText = `${articulo.autor} | ${articulo.fecha}`;
-                    document.querySelector(".prim_contenido p").innerText = articulo.lead;
-
-                    // Imagen principal
-                    document.querySelector(".articulo_leer_prim img").src = articulo.portada;
-                    // document.querySelector(".articulo_leer_prim img").alt = articulo.descripciones_imagenes[0];
-
-
-
-                    // Otros párrafos o secciones si están en el JSON
-                    const contentSections = articulo.contenido; // Array con los párrafos u otras imágenes
-                    if (contentSections && contentSections.length > 0) {
-                        const sectionsContainer = document.querySelector(".articulo_leer");
-                        sectionsContainer.innerHTML = ""; // Limpia el contenido por defecto
-                        contentSections.forEach((section) => {
-                            const sectionElement = document.createElement("section");
-                            sectionElement.className = "articulo_leer";
-                            sectionElement.innerHTML = `
-            ${section.img_seccion ? `<img src="${section.img_seccion}" alt="${section.titulo_seccion}">` : ''}
-            <article class="articulo_parrafo_lect">
-                <div class="subtitulo_articulo_lect">
-                    <h6>${section.titulo_seccion}</h6>
-                </div>
-                <div class="parrafo_articulo_lect">
-                    <p>${section.texto}</p>
-                </div>
-                ${section.cita ? `
-                <div class="cita_articulo_lect">
-                    <blockquote>
-                        <p>"${section.cita.texto}"</p>
-                        <div>— ${section.cita.autor}, <cite>${section.cita.fuente}</cite></div>
-                    </blockquote>
-                </div>` : ''}
-            </article>
-        `;
-                            sectionsContainer.appendChild(sectionElement);
-                        });
+                    const mainArticle = document.querySelector(".articulo_leer_prim");
+                    if (mainArticle) {
+                        mainArticle.querySelector("h5").innerText = articulo.titulo;
+                        mainArticle.querySelector(".magenta1 h6").innerText = `${articulo.autor} | ${articulo.fecha}`;
+                        mainArticle.querySelector(".magenta1 p").innerText = articulo.lead;
+                        mainArticle.querySelector("img").src = articulo.portada;
                     }
 
+                    // Actualiza otras secciones dinámicamente
+                    const additionalSections = articulo.contenido; // Array con los párrafos y detalles
+                    if (additionalSections && additionalSections.length > 0) {
+                        const sectionsContainer = document.querySelectorAll(".articulo_leer");
+                        sectionsContainer.forEach((section, index) => {
+                            if (additionalSections[index]) {
+                                section.querySelector("img").src = additionalSections[index].img_seccion;
+                                section.querySelector(".subtitulo_articulo_lect h1").innerText = additionalSections[index].titulo_seccion;
+                                section.querySelector(".parrafo_articulo_lect p").innerText = additionalSections[index].texto;
+                            }
+                        });
+                    }
                 })
                 .catch((error) => {
-                    console.error("Error al cargar los datos del artículo:", error);
+                    console.error("Error al cargar el contenido del artículo:", error);
                 });
         });
     </script>
