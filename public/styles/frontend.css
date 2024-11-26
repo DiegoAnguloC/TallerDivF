@@ -1,55 +1,7 @@
-/* E: SI VAN A SEPARAR CÓDIGO, ES NECESARIO REPETIR VARIABLES? */
-@font-face {
-    font-family: 'FiraSans';
-    src: url(../assets/fonts/FiraSans-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FiraSans';
-    src: url(../assets/fonts/FiraSans-SemiBold.ttf);
-    font-weight: bold;
-    font-style: bold;
-}
-
-@font-face {
-    font-family: 'Norteam';
-    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root {
-    --font: ;
-    --blanco: #ffff;
-    --blanco: #ffff;
-    --rosa: #f20f7a;
-    --azulOscuro: #081426;
-    --azulMedio: #1e6c70;
-    --aqua: #0ff294;
-    --amarillo: #ecf213;
-    --negro: black;
-    --h1: 5.610rem;
-    --h2: 4.209rem;
-    --h3: 3.157rem;
-    --h4: 2.369rem;
-    --h5: 1.777rem;
-    --h6: 1.333rem;
-    --p: 1rem;
-
-    --movil: 375px;
-    --tablet: 768px;
-    --desktop: 1600px;
-
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*E: QUE HAY DE LAS TIPOGRAFÍAS??*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -420,10 +372,12 @@ main.main-info h1 {
     font-style: normal;
     margin-top: 16px;
 }
-main.main-info .img-info{
+
+main.main-info .img-info {
     margin-top: 35px;
     height: 195px;
 }
+
 main.main-info .info p {
     line-height: 1.6;
     color: var(--azulOscuro);
@@ -1474,9 +1428,10 @@ index {
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto2 .videotuto{
+.bodytuto .maintuto .sectiontuto2 .videotuto {
     margin: 10px 0;
 }
+
 .bodytuto .maintuto .sectiontuto .videotuto video {
     width: 328px;
     height: 183px;
