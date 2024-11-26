@@ -1,55 +1,7 @@
-/* E: SI VAN A SEPARAR CÓDIGO, ES NECESARIO REPETIR VARIABLES? */
-@font-face {
-    font-family: 'FiraSans';
-    src: url(../assets/fonts/FiraSans-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FiraSans';
-    src: url(../assets/fonts/FiraSans-SemiBold.ttf);
-    font-weight: bold;
-    font-style: bold;
-}
-
-@font-face {
-    font-family: 'Norteam';
-    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root {
-    --font: ;
-    --blanco: #ffff;
-    --blanco: #ffff;
-    --rosa: #f20f7a;
-    --azulOscuro: #081426;
-    --azulMedio: #1e6c70;
-    --aqua: #0ff294;
-    --amarillo: #ecf213;
-    --negro: black;
-    --h1: 5.610rem;
-    --h2: 4.209rem;
-    --h3: 3.157rem;
-    --h4: 2.369rem;
-    --h5: 1.777rem;
-    --h6: 1.333rem;
-    --p: 1rem;
-
-    --movil: 375px;
-    --tablet: 768px;
-    --desktop: 1600px;
-
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*E: QUE HAY DE LAS TIPOGRAFÍAS??*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -420,10 +372,12 @@ main.main-info h1 {
     font-style: normal;
     margin-top: 16px;
 }
-main.main-info .img-info{
+
+main.main-info .img-info {
     margin-top: 35px;
     height: 195px;
 }
+
 main.main-info .info p {
     line-height: 1.6;
     color: var(--azulOscuro);
@@ -884,22 +838,25 @@ index {
 /*-----------------------------------------------------------------*/
 
 /*------------------------------GIANIS-----------------------------*/
-/*MODIFIQUE LOS ESTILOS DE AUTORES Y LEER TUT ESCRITO MOB (26/11)*/
 .body_autores {
     background-color: var(--azulOscuro);
     width: var(--movil);
     position: relative;
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
     display: flex;
     flex-direction: column;
-    
+
     header {
         background-color: #FFF;
         position: fixed;
         top: 0;
         width: 100%;
         height: 60px;
-        z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+
+        /* li {
+            display: inline;
+        } */
     }
 
     footer {
@@ -908,24 +865,25 @@ index {
         width: 100%;
         height: 262px;
     }
-    
+
     main {
-        flex: 1; /* Permite que main ocupe el espacio restante entre el header y footer */
+        flex: 1;
+        /* Permite que main ocupe el espacio restante entre el header y footer */
         margin-top: 70px;
-        padding-top: 60px; /* Asegura que el contenido no quede oculto bajo el header */
         background-color: var(--azulOscuro);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 16px;
+        padding-top: 9px;
+
         .autor_grupo_autores_mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 28px 72px 28px 72px;
-            margin-bottom: 50px;
+            margin-bottom: 16px;
+
             .elipse_amarillo_autores {
                 display: flex;
                 background-color: var(--amarillo);
@@ -934,26 +892,27 @@ index {
                 width: 213px;
                 height: 213px;
                 border-radius: 50%;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
+
                 img {
-                    /* background-color: gray; */
-                    width: 180px;
-                    height: 210px;
+                    background-color: gray;
+                    width: 100px;
+                    height: 100px;
                     display: flex;
                 }
             }
 
             .barra_artistas {
                 color: var(--rosa);
-                width: 500px;
-                height: fit-content;
+                width: 160px;
+                height: 34px;
                 padding-top: 9;
                 padding-bottom: 9;
                 padding-left: 12;
                 padding-right: 12;
-                h2 {
-                    font-size: var(--h5);
-                    font-family: 'Norteam';
+
+                h6 {
+                    font-size: var(--h6);
                 }
             }
         }
@@ -966,109 +925,91 @@ index {
     width: 360px;
     height: 2049px;
     padding: 16px;
-    text-align: center;
-    margin-bottom: 200px;
-    /* header {
+
+    header {
         background-color: #FFF;
         position: fixed;
         top: 0;
         width: 100%;
         height: 60px;
+
         li {
             display: inline;
         }
-    } */
-    /* footer {
+    }
+
+    footer {
         background-color: black;
         bottom: 0;
         width: 100%;
         height: 262px;
-    } */
+    }
+
     .primera_parte_leer_tut_escritomob {
-        margin-bottom: 20px;
-        text-align: center;
+        margin-bottom: 16px;
+
         .imagen_leer_tut_escritomob {
-            text-align: center;
             img {
-                width: fit-content;
+                width: 200px;
                 height: 200px;
-                margin-bottom: 31px;
             }
         }
-        .fecha{
+
+        .fecha {
+            width: 249px;
+            height: 32px;
             background-color: transparent;
-            background-image: url(../assets/imagenes/Contenedores.svg);
+            background-image: url('../assets/imagenes/Contenedores.svg');
             background-size: auto;
             background-repeat: no-repeat;
-            clip-path: inset(0px 0px 0px 80px);
-            height: auto;
-            background-position: -666px -254px;
-            display: flex;
-            height: 29px;
-            padding: 0px 6px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 10px;
-            flex-shrink: 0;
-            align-self: stretch;
+            background-position: -738px -254px;
             font-size: var(--h6);
-
+            text-align: right;
+            margin-bottom: 12px;
         }
-        .barra_artistas{
-            /* background-color: var(--rosa); */
-            width: fit-content;
+
+        .barra_artistas {
+            background-color: var(--rosa);
+            width: 213px;
             height: 42px;
-            font-size: 32px;
+            padding: var(--9, 9px) 12px;
             align-items: center;
             gap: 10px;
-            margin-bottom: 31px;
-            color: var(--blanco);
+            margin-bottom: 12px;
         }
-        .barra_artistas h4{
-            background-color: var(--azulOscuro);
-            line-height: normal;
-            font-family: 'Norteam';
-            src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
-            font-weight: normal;
-            font-style: normal;
-            font-weight: normal;
 
-        }
         p {
-            /* background-color: var(--aqua); */
+            background-color: var(--aqua);
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             width: 332px;
-            height: fit-content;
-            color: var(--blanco);
+            height: 129px;
         }
     }
-    .subtitulo_Leer_tut_escritomob{
+
+    .subtitulo_Leer_tut_escritomob {
         align-items: center;
-        h6{
-            background-color: transparent; 
-            background-image: url('../assets/imagenes/CONTENEDORES SPRITE.png'); 
-            background-size: auto; background-repeat: no-repeat; 
-            background-position: -838px -707px;;
+
+        h6 {
+            background-color: transparent;
+            background-image: url('../assets/imagenes/Contenedores.svg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: -838px -707px;
+            ;
             width: 178px;
             height: 49px;
             margin-bottom: 12px;
-            padding-top: 10px;
-            font-size: var(--h5);
-            margin-top: 20px;
         }
+
         p {
-            padding: 20px 12px 20px 12px;
-            /* background-color: var(--aqua); */
+            background-color: var(--aqua);
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             width: 328px;
             height: 311px;
-            text-align: left;
-            color: var(--blanco);
         }
     }
 }
@@ -1487,9 +1428,10 @@ index {
     flex-shrink: 0;
 }
 
-.bodytuto .maintuto .sectiontuto2 .videotuto{
+.bodytuto .maintuto .sectiontuto2 .videotuto {
     margin: 10px 0;
 }
+
 .bodytuto .maintuto .sectiontuto .videotuto video {
     width: 328px;
     height: 183px;
