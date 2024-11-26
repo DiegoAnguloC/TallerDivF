@@ -1188,8 +1188,9 @@ index {
 .mainLectura {
     display: flex;
     padding: 32px 0px;
+    padding-left: 50px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 21px;
     flex-shrink: 0;
 }
@@ -1216,7 +1217,7 @@ index {
     height: 360px;
     background-position: -52px -66px;
     width: 264px;
-    height: 631.5px;
+   
     flex-shrink: 0;
 
 }
@@ -1227,11 +1228,13 @@ index {
     flex-shrink: 0;
     color: var(--azulOscuro);
     text-align: center;
-    /* font-family: ; */
+    font-family: 'FiraSans';
     font-size: 21.33px;
-    font-style: normal;
+    font-style: bold;
     font-weight: 600;
     line-height: normal;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .mainLectura .articulo_leer_prim h5 {
@@ -1243,10 +1246,12 @@ index {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 20px 0;
+    padding-left: 10px;
 }
 
 .mainLectura .articulo_leer_prim .prim_contenido p {
-    width: 206.531px;
+    width: 220px;
     height: 261.441px;
     flex-shrink: 0;
     color: #10243F;
@@ -1255,7 +1260,8 @@ index {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .mainLectura .articulo_leer img {
@@ -1268,7 +1274,7 @@ index {
 .mainLectura .articulo_leer .articulo_parrafo_lect {
     display: flex;
     width: 254px;
-    height: 642px;
+    height: auto;
     padding: var(--12, 12px) 0px;
     flex-direction: column;
     align-items: flex-start;
@@ -1278,7 +1284,23 @@ index {
     background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: -52px -557px;
+    background-position: -52px -530px;
+}
+.mainLectura .articulo_leer .articulo_parrafo_lect2 {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: var(--12, 12px) 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--12, 12px);
+    flex-shrink: 0;
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Contenedores.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -440px -90px;
+    padding-bottom: 40px;
 }
 
 .mainLectura .articulo_leer .articulo_parrafo_lect .subtitulo_articulo_lect {
@@ -1289,12 +1311,14 @@ index {
     gap: 10px;
 }
 
-.mainLectura .articulo_leer .articulo_parrafo_lect .subtitulo_articulo_lect h6 {
-    color: var(--negro);
-    font-size: var(--h6);
+.mainLectura .articulo_leer .articulo_parrafo_lect .subtitulo_articulo_lect h1{
+    color: var(--amarillo);
+    font-size: 32px;
+    font-family: 'Norteam';
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 10px 0;
 }
 
 .mainLectura .articulo_leer .articulo_parrafo_lect .parrafo_articulo_lect {
@@ -1308,12 +1332,18 @@ index {
     flex-shrink: 0;
 }
 
-.mainLectura .articulo_leer .articulo_parrafo_lect .parrafo_articulo_lect p {
-    color: var(--negro);
-    font-size: var(--p);
+.mainLectura .articulo_leer .articulo_parrafo_lect2 .parrafo_articulo_lect p {
+    width: 220px;
+    height: 261.441px;
+    flex-shrink: 0;
+    color: #10243F;
+    font-family: 'FiraSans';
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 /* SE AGREGO EL CSS (SE HABIA PERDIDO JIJU) 19/11/2024 Mgl */
