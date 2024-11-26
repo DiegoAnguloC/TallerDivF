@@ -536,12 +536,18 @@ index {
 .index .articulo_principal h1 {
     padding-bottom: 16px;
     color: var(--blanco);
-    font-size: 21px;
+    font-size: var(--h6);
     font-style: normal;
-    font-weight: 700;
+    font-weight: normal;
     background-color: var(--azulOscuro);
     line-height: normal;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 
 
 .index .articulo_principal p {
@@ -552,7 +558,12 @@ index {
     line-height: normal;
     background-color: var(--azulOscuro);
     margin-bottom: 16px;
+    font-family: 'FiraSans';
+    src: url(../assets/fonts/FiraSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 .index .articulo_principal button {
     padding: 10px 16px;
@@ -565,8 +576,14 @@ index {
     font-size: var(--h6);
     color: var(--azulOscuro);
     align-self: flex-start;
+    font-family: 'FiraSans';
+    src: url(../assets/fonts/FiraSans-SemiBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+
 
 }
+
 
 .barra_de_separacion {
     display: flex;
@@ -582,6 +599,10 @@ index {
     line-height: normal;
     margin-top: 16px;
     margin-bottom: 16px;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -654,12 +675,16 @@ index {
 
 .index .tutorial_video .contenido h3 {
     color: var(--blanco);
-    font-size: 16px;
+    font-size: var(--h5);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-top: 12px;
     margin-bottom: 12px;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -671,6 +696,10 @@ index {
     font-weight: 400;
     line-height: normal;
     margin-top: 12px;
+    font-family: 'FiraSans';
+    src: url(../assets/fonts/FiraSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 .index .tutorial_video .contenido p:nth-child(3) {
@@ -679,6 +708,10 @@ index {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-family: 'FiraSans';
+    src: url(../assets/fonts/FiraSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -1012,6 +1045,10 @@ index {
 
             /* background-color: gray; */
             h1 {
+                font-family: 'Norteam';
+                src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+                font-weight: normal;
+                font-style: normal;
                 font-size: var(--h6);
                 margin-bottom: 9px;
                 color: var(--blanco);
@@ -1035,7 +1072,12 @@ index {
                 margin-bottom: 20px;
                 padding: 9px;
                 color: var(--blanco);
+                font-family: 'FiraSans';
+                src: url(../assets/fonts/FiraSans-Regular.ttf);
+                font-weight: normal;
+                font-style: normal;
             }
+
 
             .boton_LeerMas {
                 background-color: transparent;
@@ -1047,13 +1089,23 @@ index {
                 padding: 9px 21px 9px 21px;
                 margin-left: 9px;
                 font-size: 16px;
+                font-family: 'FiraSans';
+                src: url(../assets/fonts/FiraSans-SemiBold.ttf);
+                font-weight: bold;
+                font-style: bold;
             }
         }
 
+
         .tercerapart_articulos {
+
 
             /* background-color: gray; */
             h1 {
+                font-family: 'Norteam';
+                src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+                font-weight: normal;
+                font-style: normal;
                 font-size: var(--h6);
                 margin-bottom: 9px;
                 color: var(--blanco);
@@ -1061,8 +1113,10 @@ index {
                 text-transform: uppercase;
             }
 
+
             .imagen_articulos {
                 margin: 28px auto;
+
 
                 img {
                     width: 264px;
@@ -1071,13 +1125,19 @@ index {
                 }
             }
 
+
             p {
                 margin-top: 9px;
                 font-size: var(--p);
                 margin-bottom: 20px;
                 padding: 9px;
                 color: var(--blanco);
+                font-family: 'FiraSans';
+                src: url(../assets/fonts/FiraSans-Regular.ttf);
+                font-weight: normal;
+                font-style: normal;
             }
+
 
             .boton_LeerMas {
                 background-color: transparent;
