@@ -1187,7 +1187,6 @@ index {
 
 .mainLectura {
     display: flex;
-    height: 2188px;
     padding: 32px 0px;
     flex-direction: column;
     align-items: flex-end;
@@ -1228,7 +1227,7 @@ index {
     flex-shrink: 0;
     color: var(--azulOscuro);
     text-align: center;
-    font-family: ;
+    /* font-family: ; */
     font-size: 21.33px;
     font-style: normal;
     font-weight: 600;

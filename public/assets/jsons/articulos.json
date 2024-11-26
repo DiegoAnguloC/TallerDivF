@@ -6,9 +6,11 @@
     "fecha": "2024-11-08",
     "categoria": "Articulos",
     "lead": "El castigo de Sisifo es una de las metaforas mas crudas del esfuerzo humano condenado a lo absurdo, una narrativa que se recicla en la vida cotidiana de quienes repiten la misma rutina hasta el hartazgo. ¿Que nos dice este mito sobre el trabajo y la existencia en el siglo XXI? En este analisis, exploramos como autores como Albert Camus y otros han abordado esta historia ancestral y le han dado un giro contemporaneo para enfrentarnos con la rutina desgastante del dia a dia.",
+    "portada": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595734/Punishment_sisyph_mljlds.png",
     "contenido": [
       {
         "titulo_seccion": "Sisifo y el Trabajo Inutil",
+        "img_seccion": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595734/0_cc9imE_WoJ-TenB6_ug6070.png", 
         "texto": "La imagen de Sisifo no es simplemente la de un condenado en el inframundo, sino la de cualquier individuo atrapado en una rutina monotona e interminable. Este mito encarna el esfuerzo humano que, en lugar de conducir a una realizacion, regresa siempre al punto de partida, una experiencia tan comun en el contexto laboral moderno. La piedra de Sisifo es, en la actualidad, la rutina de trabajo que nos demanda levantarla cada dia, sabiendo que nada de lo que hacemos parece llevarnos a un progreso real.",
         "cita": {
           "texto": "La lucha hacia la cima basta para llenar el corazon de un hombre. Hay que imaginarse a Sisifo feliz.",
@@ -22,6 +24,7 @@
       },
       {
         "titulo_seccion": "La Rutina y el Trabajo Moderno: ¿Sisifos del Siglo XXI?",
+        "img_seccion": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595732/Working_At_Night_mmkfyl.png",
         "texto": "El trabajo moderno, especialmente bajo el capitalismo, tiene un potencial deshumanizador. El concepto de trabajo como fuente de sentido se va perdiendo en la medida en que las personas quedan atrapadas en estructuras de empleo rigidas y alienantes. Asi, la historia de Sisifo resuena en las oficinas y fabricas, donde la mayoria de los trabajadores repiten tareas monotonas sin ver el fruto de su esfuerzo. Su vida se convierte en un ciclo similar al de Sisifo, una condena que parece carecer de logica o proposito mas alla de la mera subsistencia.",
         "cita": {
           "texto": "Hay una soledad tan grande en ese golpe de piedra subiendo la pendiente, tan inmensa como el horizonte que, aunque el destino parece cruel, lo seguimos cumpliendo.",
@@ -62,15 +65,18 @@
     "citas_autores": [
       {
         "texto": "La lucha hacia la cima basta para llenar el corazon de un hombre. Hay que imaginarse a Sisifo feliz.",
-        "autor": "Albert Camus"
+        "autor": "Albert Camus",
+        "autor_img": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595735/albert-camus_gchi27.png"
       },
       {
         "texto": "La vida comienza al otro lado de la desesperacion.",
-        "autor": "Jean-Paul Sartre"
+        "autor": "Jean-Paul Sartre",
+        "autor_img": "../imagenes/sisifo/jean_paul_sartre.jpg"
       },
       {
         "texto": "El peor castigo de los dioses es condenar a Sisifo a una eternidad de esfuerzo inutil; pero quizas sea su mayor libertad.",
         "autor": "Samuel Beckett",
+        "autor_img": "../imagenes/sisifo/samuel_beckett.jpg",
         "fuente": "Parafraseo en _Esperando a Godot_"
       }
     ]
@@ -82,21 +88,22 @@
     "fecha": "08 de noviembre de 2024",
     "categoria": "Articulos",
     "lead": "La “Biblioteca de Babel” de Jorge Luis Borges no solo es un relato de ficción, sino una alegoría atemporal de la acumulación de información sin sentido. En un mundo interconectado como el nuestro, la obra de Borges y las reflexiones filosóficas de Byung-Chul Han sobre la sobrecarga de información nos llevan a cuestionarnos si el acceso ilimitado al conocimiento nos acerca más a la verdad o nos hunde en el sinsentido.",
+    "portada": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595734/Punishment_sisyph_mljlds.png",
     "contenido": [
       {
-        "seccion": "La Biblioteca de Babel y el Internet como Metafora del Conocimiento Sin Fin",
+        "titulo_seccion": "La Biblioteca de Babel y el Internet como Metafora del Conocimiento Sin Fin",
         "texto": "En la “Biblioteca de Babel”, Borges explora la paradoja de la accesibilidad a toda información posible. Los habitantes de la biblioteca, condenados a vagar eternamente, anhelan hallar libros que contengan revelaciones y verdades absolutas. Sin embargo, la naturaleza descomunal de esta biblioteca condena a los lectores a una búsqueda inútil en medio de una mayoría abrumadora de libros sin coherencia. La búsqueda de sentido en este laberinto inacabable se convierte en una tarea casi fútil y angustiante, similar a la experiencia de quienes intentan navegar el mar de información que ofrece el Internet, donde la abundancia dificulta la tarea de hallar conocimiento veraz y útil."
       },
       {
-        "seccion": "Byung-Chul Han y la Era de la Informacion",
+        "titulo_seccion": "Byung-Chul Han y la Era de la Informacion",
         "texto": "El filósofo coreano Byung-Chul Han plantea una crítica profunda al exceso de información de la era moderna, sugiriendo que esta sobrecarga en realidad nos aleja del conocimiento verdadero. Según Han, la información hoy en día es cuantiosa pero carente de profundidad y significado. Nos hemos convertido en consumidores pasivos de datos, donde la rapidez de la tecnología no deja espacio para la contemplación ni para la construcción de conocimientos sólidos. Esta visión, cercana a la de Borges, sugiere que el exceso de información puede ser tan pernicioso como su ausencia."
       },
       {
-        "seccion": "La Ansiedad del Conocimiento en el Mundo Digital",
+        "titulo_seccion": "La Ansiedad del Conocimiento en el Mundo Digital",
         "texto": "Borges describe a algunos habitantes de la biblioteca como buscadores obsesivos que están al borde de la desesperación. Estos lectores creen en la existencia de un 'catálogo' o de un 'libro de los libros', que contiene la verdad última y les dará una salida al laberinto. En el ámbito digital actual, esta búsqueda se refleja en la ansiedad informacional, donde el acceso a grandes cantidades de datos puede ser tan abrumador que genera más angustia que respuestas. La biblioteca de Borges es una trampa sin salida para aquellos que intentan encontrar algo definitivo en un sistema caótico, de la misma forma que Internet puede atrapar a los usuarios en un ciclo de consumo sin fin."
       },
       {
-        "seccion": "El Valor de la Informacion en Tiempos de Saturacion",
+        "titulo_seccion": "El Valor de la Informacion en Tiempos de Saturacion",
         "texto": "Borges y Han parecen coincidir en que la información por sí misma no es suficiente para otorgarnos comprensión. En su lugar, lo que se necesita es un filtro, un modo de discernir, en medio de tanta información, aquello que posee valor real. En el cuento de Borges, la esperanza de los bibliotecarios se mantiene en el mito de un “hombre del libro”, alguien capaz de interpretar el sentido de la biblioteca y desentrañar su secreto. En la era digital, esa esperanza podría compararse con el desarrollo de habilidades críticas que permitan evaluar y seleccionar la información relevante. Han postula que el acto de leer y consumir información debería ser un proceso activo, no solo una acumulación de datos. La experiencia del conocimiento requiere tiempo y reflexión, elementos que la era digital pone en riesgo."
       }
     ],
@@ -152,29 +159,30 @@
     "fecha": "8 de noviembre de 2024",
     "categoría": "Artículos",
     "lead": "La teoría del 'Internet Muerto' propone que buena parte de la actividad en la web está protagonizada por bots y algoritmos, y no por personas reales. Esta idea cuestiona si estamos interactuando genuinamente con otros usuarios o si somos presas de una manipulación sistemática en las redes sociales. ¿Hasta qué punto estamos rodeados de inteligencia artificial en lugar de humanidad? ¿Y quién se beneficia realmente de esta red fantasmal?",
+    "portada": "https://res.cloudinary.com/dmc1evc14/image/upload/v1732595734/Punishment_sisyph_mljlds.png",
     "contenido": [
       {
-        "subtitulo": "El Internet como un espacio fantasma",
+        "titulo_seccion": "El Internet como un espacio fantasma",
         "texto": "En 2021, comenzó a circular un rumor tan inquietante como provocador: la teoría del 'Internet Muerto'. Esta teoría sugiere que, desde hace varios años, buena parte del contenido y la interacción en Internet no proviene de usuarios humanos sino de bots, algoritmos y otras formas de inteligencia artificial. Bajo esta premisa, las redes sociales, foros, e incluso sitios de noticias estarían siendo 'poblados' artificialmente, creando una ilusión de actividad y de relevancia social que en realidad es ficticia."
       },
       {
-        "subtitulo": "La manipulación de las redes sociales: el arma perfecta de distracción masiva",
+        "titulo_seccion": "La manipulación de las redes sociales: el arma perfecta de distracción masiva",
         "texto": "Si consideramos la teoría del 'Internet Muerto' desde una perspectiva crítica, el propósito parece evidente: una red colmada de bots y de cuentas artificiales permite una manipulación de masas a una escala nunca antes vista. Las redes sociales se convierten así en máquinas perfectas para construir realidades a la medida de sus operadores. Al saturar el espacio digital con contenido prediseñado y respuestas automatizadas, los actores en control (sean gobiernos, corporaciones o grupos con intereses específicos) pueden manipular la percepción pública sobre cualquier tema."
       },
       {
-        "subtitulo": "Los bots y el contenido algorítmico: ¿quién está detrás?",
+        "titulo_seccion": "Los bots y el contenido algorítmico: ¿quién está detrás?",
         "texto": "Es fácil imaginar la cantidad de entidades que pueden beneficiarse de una Internet poblada mayoritariamente por bots. Corporaciones, gobiernos y otros grupos interesados pueden crear ejércitos de cuentas ficticias para saturar de contenido un espacio y ahogar voces disidentes. A diferencia de la manipulación publicitaria tradicional, la propaganda digital impulsada por bots pasa desapercibida y se percibe como un flujo natural de la conversación social, de ahí su efectividad."
       },
       {
-        "subtitulo": "¿Cómo afecta la teoría del 'Internet Muerto' nuestra percepción de la realidad?",
+        "titulo_seccion": "¿Cómo afecta la teoría del 'Internet Muerto' nuestra percepción de la realidad?",
         "texto": "La teoría del 'Internet Muerto' plantea una paradoja inquietante: si el Internet ha sido llenado de contenido falso, ¿cómo sabemos qué es real? Al no poder confiar en la autenticidad de lo que consumimos y con quién interactuamos, nuestra propia percepción de lo que constituye la realidad social y política se distorsiona. Nos volvemos más susceptibles a las noticias falsas, a los radicalismos, e incluso al aislamiento social, pues interactuar en redes sociales se convierte en un ejercicio de paranoia."
       },
       {
-        "subtitulo": "¿Qué podemos hacer? Estrategias para sobrevivir en una red de espejismos",
+        "titulo_seccion": "¿Qué podemos hacer? Estrategias para sobrevivir en una red de espejismos",
         "texto": "Si aceptamos la posibilidad de que parte de lo que vemos e interactuamos en Internet no es real, ¿cómo podemos navegar de forma consciente en un espacio tan manipulado? Cuestionar la autenticidad de la información, reducir la exposición a redes sociales, fomentar la interacción en la vida real, y adoptar una postura crítica y desapegada son formas de minimizar el impacto de la manipulación algorítmica."
       },
       {
-        "subtitulo": "Epílogo de una red muerta",
+        "titulo_seccion": "Epílogo de una red muerta",
         "texto": "La teoría del 'Internet Muerto' puede parecer exagerada o apocalíptica, pero hay algo en ella que resuena con la experiencia diaria de quienes pasan tiempo en las redes sociales. Cada vez es más común encontrar publicaciones repetitivas, respuestas idénticas y comportamientos extrañamente uniformes en la red. Si bien es poco probable que el 100% de Internet esté muerto, la presencia creciente de bots y algoritmos ha comenzado a teñir de gris el espacio virtual."
       }
     ],
