@@ -5,14 +5,14 @@ const articuloCarrusel = new Swiper('.articulos_carrusel', {
   navigation: {
     nextEl: '.articulos_carrusel .swiper-button-next',
     prevEl: '.articulos_carrusel .swiper-button-prev',
-    enabled: window.innerWidth >= 1024, // Navegación solo para pantallas grandes
+    enabled: window.innerWidth >= 1600, // Navegación solo para pantallas grandes
   },
   breakpoints: {
-    640: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    1024: {
+    1600: {
       slidesPerView: 4,
       spaceBetween: 30,
     },
@@ -20,7 +20,7 @@ const articuloCarrusel = new Swiper('.articulos_carrusel', {
   on: {
     // Ajusta la navegación al redimensionar la pantalla
     resize: function () {
-      const isLargeScreen = window.innerWidth >= 1024;
+      const isLargeScreen = window.innerWidth >= 1600;
       this.params.navigation.enabled = isLargeScreen; // Activa/desactiva navegación
       this.navigation.update(); // Actualiza el estado de las flechas
     },
@@ -34,14 +34,14 @@ const artistaCarrusel = new Swiper('.artistas_carrusel', {
   navigation: {
     nextEl: '.artistas_carrusel .swiper-button-next',
     prevEl: '.artistas_carrusel .swiper-button-prev',
-    enabled: window.innerWidth >= 1024, // Navegación solo para pantallas grandes
+    enabled: window.innerWidth >= 1600, // Navegación solo para pantallas grandes
   },
   breakpoints: {
-    640: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    1024: {
+    1600: {
       slidesPerView: 4,
       spaceBetween: 30,
     },
@@ -49,7 +49,7 @@ const artistaCarrusel = new Swiper('.artistas_carrusel', {
   on: {
     // Ajusta la navegación al redimensionar la pantalla
     resize: function () {
-      const isLargeScreen = window.innerWidth >= 1024;
+      const isLargeScreen = window.innerWidth >= 1600;
       this.params.navigation.enabled = isLargeScreen; // Activa/desactiva navegación
       this.navigation.update(); // Actualiza el estado de las flechas
     },
