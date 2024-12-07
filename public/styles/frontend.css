@@ -422,10 +422,10 @@ main.main-info .cyan6 p {
 }
 
 .grupo-info h2 {
-    height: 35px; /* Tamaño fijo del contenedor */
+    height: 35px;
     min-width: 150px;
-    color: var(--blanco);
-    width: auto; /* Esto permitirá que el ancho se adapte al contenido */
+    color: var(--negro);
+    width: auto; 
     background-color: transparent;
     background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto; 
@@ -433,12 +433,13 @@ main.main-info .cyan6 p {
     background-position: -837px -535px; 
     margin: 0;
     margin-left: 22px;
-    padding: 10px 0; /* 10px arriba y abajo */
+    padding: 10px 0; 
     font-size: 16px;
     text-align: center;
     justify-self: end;
     font-family: "firasans";
-    box-sizing: border-box; /* Incluye el padding dentro del tamaño del contenedor */
+    box-sizing: border-box; 
+    font-weight: bold;
 }
 
 
@@ -820,7 +821,7 @@ index {
 .body_autores main {
     flex: 1;
     /* Permite que main ocupe el espacio restante entre el header y footer */
-    margin-top: 70px;
+    margin-top: 100px;
     background-color: var(--azulOscuro);
     display: flex;
     flex-direction: column;
@@ -849,16 +850,13 @@ index {
 }
 
 .body_autores .elipse_amarillo_autores img {
-    background-color: gray;
-    width: 100px;
-    height: 100px;
     display: flex;
 }
 
 .body_autores .barra_artistas {
     background-color: var(--azulOscuro);
     color: var(--rosa);
-    font-size: var(--h6);
+    font-size: var(--h4);
     padding-top: 9px;
     padding-bottom: 9px;
     font-style: normal;
