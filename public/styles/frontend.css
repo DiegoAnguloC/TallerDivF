@@ -253,8 +253,9 @@ button[type="submit"] {
 }
 
 .password-container button {
+    position: fixed;
     position: absolute;
-    right: 40px;
+    right: 60px;
     top: 50%;
     transform: translateY(-50%);
     width: 35px;
