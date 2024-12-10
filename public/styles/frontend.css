@@ -878,106 +878,79 @@ index {
 
 /*=================================LEER_TUTOTIAL_ESCRITO_MOBILE=========================*/
 
-.main_leer_tut_escrit_mob {
-    background-color: var(--azulOscuro);
-    width: 360px;
-    min-height: 100vh; 
-    padding: 21px;
-    margin-bottom: 200px;
-    padding-top: 100px;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
-}
-
-.primera_parte_leer_tut_escritomob {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.imagen_leer_tut_escritomob {
-    text-align: center;
-}
-
+/*Se arregló los estilos, fuentes y backgrouds (Gianis 10/12)*/
 .imagen_leer_tut_escritomob img {
     width: fit-content;
     height: 200px;
     margin-bottom: 31px;
 }
 
-.fecha {
-    width: 249px;
-    height: 32px;
-    background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: -738px -254px;
-    font-size: var(--h6);
+.main_leer_tut_escrit_mob{
+    color: var(--blanco);
+    padding: 16px;
+    padding-top: 100px;
+    font-family: 'Fira Sans';
+}
+
+.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob{
+    text-align: center;
+}
+
+.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob .fecha{
     text-align: right;
-    margin-bottom: 12px;
-    font-family: 'FiraSans';
+    margin-bottom: 31px;
+    font-size: var(--h6);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-top: 5px;
 }
 
-.barra_artistas {
-    width: fit-content;
-    height: 42px;
-    font-size: 50px;
-    align-items: center;
-    gap: 10px;
+.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob .fecha h6{
+    padding: 5px;
+    padding-left: 50px;
+    background-color: var(--aqua);
+    display: inline;
+    color: var(--negro);
+}
+
+.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob .barra_artistas{
     margin-bottom: 31px;
+}
+
+.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob .barra_artistas h4{
     color: var(--blanco);
+    font-size: 50px;
+    margin: 0 auto;
     line-height: normal;
     font-family: 'Norteam';
     font-weight: normal;
     font-style: normal;
 }
 
-.primera_parte_leer_tut_escritomob p {
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 332px;
-    height: fit-content;
-    color: var(--blanco);
+.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob .tutorial{
+    margin-top: 40px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.subtitulo_Leer_tut_escritomob {
-    text-align: left;
-}
-
-.subtitulo_Leer_tut_escritomob h6 {
+.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob .tutorial h6{
     font-size: var(--h6);
-    font-family: 'FiraSans';
+    display: inline;
+    background-color: var(--amarillo);
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
-    background-size: auto; 
-    background-repeat: no-repeat;
-    background-position: -835px -715px; 
-    margin: 0;
-    padding: 10px; 
-    text-align: left; 
+    line-height: 35px;
+    padding: 7px 10px 7px 10px;
     color: var(--negro);
 }
 
-.subtitulo_Leer_tut_escritomob p {
-    padding: 20px 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 328px;
-    height: 311px;
-    text-align: left;
-    color: var(--blanco);
+
+.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob .tutorial p{
+    padding-top: 20px;
+    font-size: var(--p);
 }
+
 
 
 /* Se hizo css de artículos (Gianis 23/11) */
