@@ -9,7 +9,7 @@ const articuloCarrusel = new Swiper('.articulos_carrusel', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1600: {
