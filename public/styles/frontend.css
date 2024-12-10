@@ -877,93 +877,106 @@ index {
 }
 
 /*=================================LEER_TUTOTIAL_ESCRITO_MOBILE=========================*/
+
 .main_leer_tut_escrit_mob {
     background-color: var(--azulOscuro);
     width: 360px;
-    height: 2049px;
-    padding: 16px;
+    min-height: 100vh; 
+    padding: 21px;
+    margin-bottom: 200px;
+    padding-top: 100px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
 }
 
-.main_leer_tut_escrit_mob header {
-    background-color: #FFF;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
+.primera_parte_leer_tut_escritomob {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.main_leer_tut_escrit_mob header li {
-    display: inline;
+.imagen_leer_tut_escritomob {
+    text-align: center;
 }
 
-.main_leer_tut_escrit_mob footer {
-    background-color: black;
-    bottom: 0;
-    width: 100%;
-    height: 262px;
-}
-
-.main_leer_tut_escrit_mob .primera_parte_leer_tut_escritomob {
-    margin-bottom: 16px;
-}
-
-.main_leer_tut_escrit_mob .imagen_leer_tut_escritomob img {
-    width: 200px;
+.imagen_leer_tut_escritomob img {
+    width: fit-content;
     height: 200px;
+    margin-bottom: 31px;
 }
 
-.main_leer_tut_escrit_mob .fecha {
+.fecha {
     width: 249px;
     height: 32px;
     background-color: transparent;
+    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -738px -254px;
     font-size: var(--h6);
     text-align: right;
     margin-bottom: 12px;
+    font-family: 'FiraSans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 5px;
 }
 
-.main_leer_tut_escrit_mob .barra_artistas {
-    background-color: var(--rosa);
-    width: 213px;
+.barra_artistas {
+    width: fit-content;
     height: 42px;
-    padding: var(--9, 9px) 12px;
+    font-size: 50px;
     align-items: center;
     gap: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 31px;
+    color: var(--blanco);
+    line-height: normal;
+    font-family: 'Norteam';
+    font-weight: normal;
+    font-style: normal;
 }
 
-.main_leer_tut_escrit_mob p {
-    background-color: var(--aqua);
+.primera_parte_leer_tut_escritomob p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 332px;
-    height: 129px;
+    height: fit-content;
+    color: var(--blanco);
 }
 
-.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob {
-    align-items: center;
+.subtitulo_Leer_tut_escritomob {
+    text-align: left;
 }
 
-.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob h6 {
+.subtitulo_Leer_tut_escritomob h6 {
+    font-size: var(--h6);
+    font-family: 'FiraSans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     background-color: transparent;
-    background-size: auto;
+    background-image: url('../assets/imagenes/Contenedores.svg');
+    background-size: auto; 
     background-repeat: no-repeat;
-    background-position: -838px -707px;
-    width: 178px;
-    height: 49px;
-    margin-bottom: 12px;
+    background-position: -835px -715px; 
+    margin: 0;
+    padding: 10px; 
+    text-align: left; 
+    color: var(--negro);
 }
 
-.main_leer_tut_escrit_mob .subtitulo_Leer_tut_escritomob p {
-    background-color: var(--aqua);
+.subtitulo_Leer_tut_escritomob p {
+    padding: 20px 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 328px;
     height: 311px;
+    text-align: left;
+    color: var(--blanco);
 }
 
 
