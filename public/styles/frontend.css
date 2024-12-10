@@ -1195,26 +1195,22 @@ index {
 
 }
 
-.mainLectura .articulo_leer_prim .prim_contenido {
-    background-color: transparent;
-    background-size: auto;
-    background-repeat: no-repeat;
+.mainLectura .articulo_leer_prim .magenta1{
+    background-color: #f20f7a;
     height: 360px;
     background-position: -52px -66px;
     width: 264px;
-
     flex-shrink: 0;
-
 }
 
-.mainLectura .articulo_leer_prim .prim_contenido h6 {
+.mainLectura .articulo_leer_prim .magenta1 h6 {
     width: 225.343px;
     height: 38.55px;
     flex-shrink: 0;
     color: var(--azulOscuro);
     text-align: center;
-    font-family: 'FiraSans';
-    font-size: 21.33px;
+    font-family: 'Fira Sans';
+    font-size: var(--h6);
     font-style: bold;
     font-weight: 600;
     line-height: normal;
@@ -1227,7 +1223,7 @@ index {
     flex-shrink: 0;
     color: var(--blanco);
     font-family: 'Norteam';
-    font-size: 25px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1235,13 +1231,13 @@ index {
     padding-left: 10px;
 }
 
-.mainLectura .articulo_leer_prim .prim_contenido p {
+.mainLectura .articulo_leer_prim .magenta1 p {
     width: 220px;
     height: 261.441px;
     flex-shrink: 0;
     color: #10243F;
-    font-family: 'FiraSans';
-    font-size: 16px;
+    font-family: 'Fira Sans';
+    font-size: var(--p);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1297,7 +1293,7 @@ index {
 
 .mainLectura .articulo_leer .articulo_parrafo_lect .subtitulo_articulo_lect h1 {
     color: var(--amarillo);
-    font-size: 32px;
+    font-size: 50px;
     font-family: 'Norteam';
     font-style: normal;
     font-weight: 400;
@@ -1307,6 +1303,7 @@ index {
 
 .mainLectura .articulo_leer .articulo_parrafo_lect .parrafo_articulo_lect {
     display: flex;
+    background-color: var(--aqua);
     width: auto;
     height: auto;
     padding: var(--12, 12px);
@@ -1315,19 +1312,30 @@ index {
     gap: 10px;
     flex-shrink: 0;
 }
+.mainLectura .articulo_leer .articulo_parrafo_lect .parrafo_articulo_lect .aqua1{
+    font-family: 'Fira Sans';
+    font-size: var(--p);
+}
 
-.mainLectura .articulo_leer .articulo_parrafo_lect2 .parrafo_articulo_lect p {
+.mainLectura .articulo_leer .articulo_parrafo_lect2{
+    background-color: var(--rosa);
+    width: 80%;
+    height: auto;
+}
+
+.mainLectura .articulo_leer .articulo_parrafo_lect2 .parrafo_articulo_lect .magenta2{
     width: 220px;
     height: 261.441px;
     flex-shrink: 0;
     color: #10243F;
-    font-family: 'FiraSans';
-    font-size: 16px;
+    font-family: 'Fira Sans';
+    font-size: var(--p);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-top: 10px;
     padding-left: 20px;
+
 }
 
 /* SE AGREGO EL CSS (SE HABIA PERDIDO JIJU) 19/11/2024 Mgl */
@@ -1348,7 +1356,7 @@ index {
     height: 2202px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 60px;
+    gap: 40px;
     flex-shrink: 0;
 }
 
@@ -1362,6 +1370,14 @@ index {
     flex-shrink: 0;
 }
 
+.bodytuto .maintuto .sectiontuto2 .videotuto .accesibilidad_tuto {
+    margin-bottom: -80px;
+    
+}
+.bodytuto .maintuto .sectiontuto .videotuto .accesibilidad_tuto {
+    margin-bottom: -40px;
+    
+}
 .bodytuto .maintuto .sectiontuto2 .videotuto {
     margin: 10px 0;
 }
@@ -1378,7 +1394,7 @@ index {
     height: 33px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -1390,23 +1406,18 @@ index {
 
 .bodytuto .maintuto .sectiontuto .contenidotuto {
     display: flex;
-    width: 328px;
-    height: 388px;
+    width: auto;
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--9, 9px);
     flex-shrink: 0;
-    margin: 0 0;
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
-    background-color: transparent;
-    background-size: auto;
-    background-repeat: no-repeat;
-    width: 330px;
-    background-position: -838px -453px;
+    background-color: var(--rosa);
     display: flex;
-    width: 250px;
+    width: 130px;
     height: 24px;
     padding: 0px var(--9, 9px);
     flex-direction: column;
@@ -1421,7 +1432,7 @@ index {
     height: 20px;
     flex-shrink: 0;
     color: #081426;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -1440,7 +1451,7 @@ index {
     align-self: stretch;
     color: var(--blanco);
     font-family: 'Norteam';
-    font-size: 27.65px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1463,7 +1474,7 @@ index {
     width: 308px;
     color: var(--azulOscuro);
     text-align: left;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1489,13 +1500,13 @@ index {
 
 }
 
-.bodytuto .maintuto .sectiontuto2 .videotuto h5 {
+.bodytuto .maintuto .sectiontuto2 .videotuto .accesibilidad_tuto h5 {
     width: 267px;
     background-color: #081426;
     height: 33px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -1515,6 +1526,7 @@ index {
     gap: var(--9, 9px);
     flex-shrink: 0;
     margin: 20px 0;
+    padding-top: 70px;
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
@@ -1526,7 +1538,7 @@ index {
     background-position: -650px -624px;
     display: flex;
     height: 29px;
-    padding: 0px 6px;
+    margin-top: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
@@ -1537,16 +1549,18 @@ index {
 
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
-    width: 232px;
+    width: 130px;
     height: 23px;
     flex-shrink: 0;
     color: #000;
+    background-color: var(--amarillo);
     text-align: right;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    padding-right: 10px;
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
@@ -1562,7 +1576,7 @@ index {
     color: #FFF;
     text-align: right;
     font-family: 'Norteam';
-    font-size: 27.65px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1586,11 +1600,12 @@ index {
     width: 308px;
     color: var(--azulOscuro);
     text-align: right;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0 10px;
 }
 
 
