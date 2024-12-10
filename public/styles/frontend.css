@@ -476,15 +476,15 @@ index {
 }
 
 .index main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 16px;
-    justify-content: center;
-    padding-right: 16px;
-    width: 100%;
-    /* Ajusta al ancho del contenedor */
-    padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+        justify-content: center;
+        padding-right: 16px;
+        width: 100%;
+        /* Ajusta al ancho del contenedor */
+        padding: 16px;
 
 }
 
@@ -493,14 +493,14 @@ index {
 
 .index .articulo_principal img {
     width: 327px;
-    height: 230px;
+    height: auto;
 }
 
 .index .articulo_principal {
     display: flex;
     min-height: 708px;
-    padding: 16px;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 
@@ -515,8 +515,8 @@ index {
 
 .index .articulo_principal h1 {
     padding-bottom: 16px;
-
-    font-size: var(--h6);
+    color: var(--blanco);
+    font-size: var(--h3);
     font-style: normal;
     font-weight: normal;
     background-color: var(--azulOscuro);
@@ -542,6 +542,7 @@ index {
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+    line-height: 1.2;
 }
 
 .barra_de_separacion {
@@ -552,7 +553,7 @@ index {
     gap: 156px;
     color: var(--rosa);
     font-family: Goldman;
-    font-size: 21px;
+    font-size: var(--h2);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -563,6 +564,7 @@ index {
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 .index .articulos_carrusel {
@@ -633,7 +635,7 @@ index {
 
 .index .tutorial_video .contenido h3 {
     color: var(--blanco);
-    font-size: var(--h5);
+    font-size: var(--h3);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -662,7 +664,7 @@ index {
 
 .index .tutorial_video .contenido p:nth-child(3) {
     color: var(--blanco);
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -670,6 +672,7 @@ index {
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+    line-height: 1.2;
 }
 
 
@@ -970,7 +973,6 @@ index {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
     justify-content: center;
     padding-right: 16px;
     width: 100%;
@@ -979,41 +981,43 @@ index {
 .primerapart_articulos{
     display: flex;
     min-height: 708px;
-    padding: 16px;
     flex-direction: column;
 }
 .primerapart_articulos h1 {
+    margin-top: 90px;
     font-family: 'Norteam';
     src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
     font-weight: normal;
     font-style: normal;
-    font-size: var(--h6);
+    font-size: var(--h3);
     margin-bottom: 9px;
     color: var(--blanco);
     height: auto;
     text-transform: uppercase;
 }
 
-.primerapart_articulos .imagen_articulos {
-    margin: 28px auto;
-}
-
 .primerapart_articulos .imagen_articulos img {
+    display: flex;
     width: 264px;
     height: 169px;
     align-self: flex-start;
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .main_articulos p {
     margin-top: 9px;
     font-size: var(--p);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     /* padding: 9px; */
     color: var(--blanco);
     font-family: 'FiraSans';
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+    line-height: 1.2;
 }
 
 .boton_LeerMas {
@@ -1033,7 +1037,7 @@ index {
     src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
     font-weight: normal;
     font-style: normal;
-    font-size: var(--h6);
+    font-size: var(--h3);
     margin-bottom: 9px;
     color: var(--blanco);
     height: auto;
@@ -1064,14 +1068,20 @@ index {
     gap: 16px;
     /* Ajustado para móvil */
     margin-bottom: 19px;
+    margin-top: 30px;
 }
 
 .body_articulos .articulos_carrusel h2 {
-    font-size: var(--h3);
-    margin-top: 25px;
+    display: flex;
     margin-bottom: 19px;
     color: var(--amarillo);
     text-align: center;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--h3);
+    justify-content: center;
 }
 
 .body_articulos .articulos_carrusel .articulo {
@@ -1102,12 +1112,14 @@ index {
     /* Título del artículo */
     margin-bottom: 8px;
     color: var(--blanco);
+    margin-bottom: 25px;
 }
 
 .body_articulos .articulos_carrusel .articulo p {
     font-size: var(--p);
     /* Descripción del artículo */
     color: var(--blanco);
+    line-height: 1.2;
 }
 
 .swiper-wrapper {
