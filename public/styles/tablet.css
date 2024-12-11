@@ -579,10 +579,16 @@ object-fit: cover;
 
 }
 
-.mainLectura .articulo_leer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.mainLectura .articulo_leer .articulo_parrafo_lect2{
+    
+    width: 80%;
+    height: auto;
+}
+.mainLectura .articulo_leer .articulo_parrafo_lect2 .parrafo_articulo_lect .magenta2{
+   background-color: var(--rosa);
+    width: 90%;
+    color: var(--azulOscuro);
+    height: auto;
 }
 .mainLectura .articulo_leer img {
     width: 728px;
@@ -1250,30 +1256,36 @@ main.main-info .info p {
 .tutorial{
     padding: 44px 26px;
 }
-/* ========================= TUTORIAL ================================= */
+
+
+
+/*===============================TUTORIAL GENERAL====================================*/
+
+
 .bodytuto {
     display: flex;
-    width: 360px;
+    width: 80%;
     height: 2600px;
-    padding: var(--16, 16px);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--16, 16px);
-    background: var(--azulOscuro);
+    margin: -17px;
+    
 }
-
+.bodytuto>header{
+    padding: 0;
+    margin: 0 0 0 0;
+}
 .bodytuto .maintuto {
+    padding: 180px;
     display: flex;
-    height: 2202px;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 60px;
+    align-items: center;
+    gap: 40px;
     flex-shrink: 0;
 }
 
 .bodytuto .maintuto .sectiontuto {
     display: flex;
-    width: 328px;
+    width: 100%;
     height: 500px;
     flex-direction: column;
     align-items: flex-start;
@@ -1281,20 +1293,28 @@ main.main-info .info p {
     flex-shrink: 0;
 }
 
+.bodytuto .maintuto .sectiontuto2 .videotuto .accesibilidad_tuto {
+    margin-bottom: -80px;
+    
+}
+.bodytuto .maintuto .sectiontuto .videotuto .accesibilidad_tuto {
+    margin-bottom: -40px;
+    
+}
 .bodytuto .maintuto .sectiontuto2 .videotuto {
     margin: 10px 0;
 }
 
 .bodytuto .maintuto .sectiontuto .videotuto video {
-    width: 328px;
+    width: 100%px;
     height: 183px;
     flex-shrink: 0;
 }
 
 .bodytuto .maintuto .sectiontuto .videotuto h5 {
-    width: 267px;
+    width: 100%px;
     background-color: #081426;
-    height: 33px;
+    height: 100%;
     flex-shrink: 0;
     color: #FFF;
     font-family: 'Fira Sans';
@@ -1309,24 +1329,18 @@ main.main-info .info p {
 
 .bodytuto .maintuto .sectiontuto .contenidotuto {
     display: flex;
-    width: 328px;
-    height: 388px;
+    width: auto;
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--9, 9px);
     flex-shrink: 0;
-    margin: 0 0;
 }
 
 .bodytuto .maintuto .sectiontuto .contenidotuto .h6_tuto {
-    background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    width: 330px;
-    background-position: -838px -453px;
+    background-color: var(--rosa);
     display: flex;
-    width: 250px;
+    width: 130px;
     height: 24px;
     padding: 0px var(--9, 9px);
     flex-direction: column;
@@ -1360,7 +1374,7 @@ main.main-info .info p {
     align-self: stretch;
     color: var(--blanco);
     font-family: 'Norteam';
-    font-size: 27.65px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1403,13 +1417,11 @@ main.main-info .info p {
 }
 
 .bodytuto .maintuto .sectiontuto2 video {
-    width: 328px;
-    height: 183px;
-    flex-shrink: 0;
+  
 
 }
 
-.bodytuto .maintuto .sectiontuto2 .videotuto h5 {
+.bodytuto .maintuto .sectiontuto2 .videotuto .accesibilidad_tuto h5 {
     width: 267px;
     background-color: #081426;
     height: 33px;
@@ -1427,19 +1439,22 @@ main.main-info .info p {
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 {
     display: flex;
-    width: 328px;
-    height: 369px;
+    width: 100%;
+    height: 469px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     gap: var(--9, 9px);
     flex-shrink: 0;
     margin: 20px 0;
+    padding-top: 70px;
+}
+.bodytuto .maintuto .sectiontuto2 .videotuto video  {
+    width: 500px;
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 {
     background-color: transparent;
-    background-image: url('../assets/imagenes/Contenedores.svg');
     background-size: auto;
     background-repeat: no-repeat;
     clip-path: inset(0px 0px 0px 80px);
@@ -1447,7 +1462,7 @@ main.main-info .info p {
     background-position: -650px -624px;
     display: flex;
     height: 29px;
-    padding: 0px 6px;
+    margin-top: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
@@ -1458,16 +1473,18 @@ main.main-info .info p {
 
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h6_tuto2 h6 {
-    width: 232px;
+    width: 130px;
     height: 23px;
     flex-shrink: 0;
     color: #000;
+    background-color: var(--amarillo);
     text-align: right;
     font-family: 'Fira Sans';
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    padding-right: 10px;
 }
 
 .bodytuto .maintuto .sectiontuto2 .contenidotuto2 .h2_tuto2 {
@@ -1483,7 +1500,7 @@ main.main-info .info p {
     color: #FFF;
     text-align: right;
     font-family: 'Norteam';
-    font-size: 27.65px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1512,105 +1529,8 @@ main.main-info .info p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 0 10px;
 }
-
-
-
-/*===========TUTORIAL GENERAL=========*/
-
-.bodytuto>header>.logo{
-    width: 25vh;
-    height: 100%;
-}
-.maintuto{
-
-}
-
-.maintuto>.sectiontuto>video{
-    background-color:rgb(48, 58, 193);
-    height: 300px;
-    width: auto;
-}
-.maintuto>.sectiontuto{
-    text-align: center;
-}
-.maintuto>.sectiontuto>article{
-    text-align: left;
-}
-
-.maintuto>.sectiontuto>.contenidotuto2>.h6_tuto{
-    background-color: #1e6c70;
-    font-size: var(--h6);
-}
-.maintuto>.sectiontuto>.contenidotuto2>.h2_tuto{
-    background-color: #4c701e;
-    font-size: var(--h2);
-}
-.maintuto>.sectiontuto>.contenidotuto2>.p_tuto{
-    background-color: #8e0949;
-    font-size: var(--pt);
-}
-.maintuto>.sectiontuto2{
-    margin: 0 50px;
-}
-.maintuto>.sectiontuto2>.contenidotuto2>p{
-    border: solid white;
-    width: 320px;
-}
-.maintuto>.sectiontuto2>.contenidotuto>p{
-    border: solid white;
-    width: 320px;
-}
-.maintuto>.sectiontuto2>.contenidotuto2>p{
-    border: solid white;
-    width: 320px;
-}
-.maintuto>.sectiontuto2>video{
-    width: 190px;
-    height: auto;
-}
-
-/*     ==================================================================== */
-/*------------------------------------------------------------------------*/
-.index .articulos_carrusel,
-.index .artistas_carrusel {
-    display: block;
-    width: 100%;
-    max-width: 1572px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    gap: 49px;
-}
-
-.index .articulos_carrusel .articulo,
-.index .artistas_carrusel .artista {
-    width: 283.058px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--9, 9px);
-}
-
-.swiper-wrapper {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.swiper-slide {
-    width: auto;
-    flex-shrink: 0;
-}
-
-.swiper-pagination-bullet {
-    background: #333;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #333;
-}
-
-
 
 
 
@@ -1809,7 +1729,10 @@ footer {
     right: 20px;
     cursor: pointer;
 }
-
+.header_final{
+    display: flex;
+    justify-content: space-between;
+}
 #menu {
     position: fixed;
     top: 0;
