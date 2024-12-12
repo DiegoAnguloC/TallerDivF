@@ -50,7 +50,7 @@ body {
     font-size: var(--p);
     margin-bottom: 8px;
     color: white;
-    font-family: "firasans";
+    font-family: "fira sans";
 }
 
 .login input[type="email"],
@@ -87,7 +87,7 @@ button[type="submit"] {
     box-shadow: none;
     font-size: var(--h6);
     color: var(--azulOscuro);
-    font-family: "firasans";
+    font-family: "fira sans";
     font-weight: bold;
 }
 .recordar {
@@ -108,7 +108,7 @@ button[type="submit"] {
 .recordar a {
     color: var(--blanco);
     text-decoration: none;
-    font-family: "firasans";
+    font-family: "fira sans";
 }
 .recordar input[type="checkbox"] {
     margin-right: 8px;
@@ -151,7 +151,7 @@ button[type="submit"] {
 .center a { color: var(--blanco); 
     font-size: 14px; 
     text-decoration: none; 
-    font-family: "firasans"; 
+    font-family: "fira sans"; 
     margin-left: auto;
 
 }
@@ -380,7 +380,7 @@ main.main-info h1 {
 main.main-info .cyan6 p {
     line-height: 1.6;
     color: var(--azulOscuro);
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -438,7 +438,7 @@ main.main-info .cyan6 p {
     font-size: 16px;
     text-align: center;
     justify-self: end;
-    font-family: "firasans";
+    font-family: "fira sans";
     box-sizing: border-box; 
     font-weight: bold;
 }
@@ -538,7 +538,7 @@ index {
     line-height: normal;
     background-color: var(--azulOscuro);
     margin-bottom: 16px;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -656,7 +656,7 @@ index {
     font-weight: 400;
     line-height: normal;
     margin-top: 12px;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -668,7 +668,7 @@ index {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -710,7 +710,7 @@ index {
 /*///////////////////////// leer_tutorial_video-mobile ///////////////////////////////////////////////////////////////////*/
 
 .leer_tutorial_video-mobile {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -745,6 +745,7 @@ index {
     padding-right: 0px;
     padding-bottom: 16px;
     padding-left: 0px;
+    margin-top: 100px;
 }
 
 .leer_tutorial_video-mobile .tutorial_principal img {
@@ -753,16 +754,26 @@ index {
 }
 
 .leer_tutorial_video-mobile .tutorial_principal p:nth-child(1) {
-    background-color: transparent;
-    background-size: auto;
-    background-repeat: no-repeat;
+    width: 130px;
     height: 23px;
-    background-position: -838px -456px;
-    color: var(--blanco);
-    font-size: 16px;
-    width: 63%;
-    margin-top: 9px;
+    color: #000;
+    background-color: var(--amarillo);
+    text-align: right;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 10px;
+    /* display: flex; /* Convertir en contenedor flex */
+    justify-content: flex-end; /* Alinea horizontalmente el contenido a la derecha */
+    align-items: center;  */
 }
+
+
+
+
+
 
 .leer_tutorial_video-mobile .tutorial_principal h1 {
     color: var(--blanco);
@@ -795,7 +806,7 @@ index {
 }
 
 .leer_tutorial_video-mobile .subtitulo_tutorial p {
-    background-color: transparent;
+    /* background-color: transparent; */
     background-size: auto;
     background-repeat: no-repeat;
     width: 260px;
@@ -999,7 +1010,7 @@ index {
     margin-bottom: 25px;
     /* padding: 9px; */
     color: var(--blanco);
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
     src: url(../assets/fonts/FiraSans-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -1014,7 +1025,7 @@ index {
     font-size: var(--h6);
     color: var(--azulOscuro);
     align-self: flex-start;
-    font-family: 'FiraSans';
+    font-family: 'Fira Sans';
 }
 
 
