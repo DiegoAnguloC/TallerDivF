@@ -33,7 +33,7 @@
       "filosofia contemporanea",
       "conocimiento"
     ],
-    "descripcion_imagenes": [
+    "descripciones_imagenes": [
       {
         "descripcion": "Imagen de un vasto laberinto de estantes con libros",
         "detalles": "Evoca la biblioteca infinita de Borges, con un tono oscuro y caótico, representando la inmensidad de datos y conocimiento en desorden."
@@ -52,7 +52,7 @@
       "Byung-Chul Han: 'La informacion sin reflexion es ruido, no conocimiento'.",
       "Internet como el laberinto informacional de Borges: un espacio que contiene todo y nada."
     ],
-    "citas": [
+    "citas_autores": [
       {
         "autor": "Jorge Luis Borges",
         "cita": "La biblioteca es ilimitada y periódica. Si un eterno viajero la atravesara en cualquier dirección, vería después de siglos los mismos volúmenes, en el mismo desorden (que, repetido, sería un orden: el Orden)."
