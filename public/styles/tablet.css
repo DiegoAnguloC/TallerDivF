@@ -764,23 +764,18 @@ object-fit: cover;
     flex-direction: column;
 
     header {
-        background-color: #FFF;
+        
         position: fixed;
         top: 0;
         width: 100%;
-        height: 60px;
+        height: 130px;
 
         /* li {
             display: inline;
         } */
     }
 
-    footer {
-        background-color: black;
-        bottom: 0;
-        width: 100%;
-        height: 262px;
-    }
+   
 
     main {
         flex: 1;
@@ -811,9 +806,9 @@ object-fit: cover;
                 margin-bottom: 44px;
 
                 img {
-                    background-color: gray;
-                    width: 100px;
-                    height: 100px;
+                    background-color: transparent;
+                    width: 80%;
+                    height: 70%;
                     display: flex;
                 }
             }
@@ -826,6 +821,8 @@ object-fit: cover;
                 padding-bottom: 9;
                 padding-left: 12;
                 padding-right: 12;
+                margin: 80px;
+                
 
                 h6 {
                     font-size: var(--h1t);
@@ -838,103 +835,256 @@ object-fit: cover;
     }
 }
 /*========Configuracion para la pantalla Sign up y log in=====================*/
-.movil {
-    width: var(--movil);
+
+body {
     background-color: var(--azulOscuro);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    padding: 0 16px; 
 }
+
 .login {
+    padding: 16px;
+    background-color: var(--azulOscuro);
+
+}
+
+.login form {
     width: 100%;
     max-width: 360px;
-    height: 475px; 
-    background-color: var(--rosa);
-    padding-left:16px;
-    padding-right: 16px;
+    background-color: var(--azulOscuro);
+    padding-left: 16px;
     margin: 0 175px;
+    padding-right: 16px;
+}
+.login h1{
+    color: var(--rosa);
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto;
+    background-color: var(--azulOscuro);
+    line-height: normal;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 16px;
+    margin-bottom: 35px;
 }
 
 .login label {
     display: block;
-    font-size: var(--pt);
-    margin-bottom: 8px; 
+    font-size: var(--p);
+    margin-bottom: 8px;
+    color: white;
+    font-family: "Fira Sans";
 }
 
 .login input[type="email"],
 .login input[type="password"] {
     display: block;
     width: 100%;
-    height: 48px;
-    padding: 0 12px; 
-    background-color: var(--aqua);
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Contenedores.svg');
+    background-size: auto; 
+    background-repeat: no-repeat;
+    background-position: -835px -1152px; 
     border: none;
-    margin-bottom: 30px; 
-    font-size: var(--pt);
+    outline: none;
+    box-shadow: none;
 }
-::placeholder{
-    color: var(--azulOscuro);
+
+::placeholder {
+    padding-left:22px;
+    color: white;
 }
 
 button[type="submit"] {
     width: 100%;
     height: 48px;
-    background-color: var(--amarillo);
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Contenedores.svg');
+    background-size: auto; 
+    background-repeat: no-repeat;
+    background-position: -835px -812px; 
     border: none;
+    outline: none;
+    box-shadow: none;
     font-size: var(--h6);
     color: var(--azulOscuro);
-
+    font-family: "Fira Sans";
+    font-weight: bold;
 }
 
+.boton_texto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
 
-.recordar {
-    display: inline-flex;
+.recordar a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: "firasans";
+}
+.recordar input[type="checkbox"] {
+    margin-right: 8px;
+    appearance: none; 
+    width: 18.576px;
+    height: 18.576px;
+    border-radius: 4.644px;
+    border: 0.929px solid var(--blanco);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.recordar input[type="checkbox"]:checked {
+    background-color: var(--blanco);
+    display: flex;
     align-items: center;
-    width: 100%;
-    margin-bottom: 16px; 
-    color: var(--blanco);
-}
-.recordar a{
-    color: var(--blanco);
+    justify-content: center;
 }
 
+.recordar input[type="checkbox"]:checked::after {
+    content: '✓';
+    color: var(--negro);
+    font-size: 14px;
+}
+.recordar label { font-size: 14px; 
+    white-space: nowrap; 
+}
+.recordar a { 
+    color: var(--blanco); 
+    text-decoration: none; 
+    margin-left: auto; 
+    font-size: 14px; 
+    font-family: "Fira Sans";
+}
 .center {
+    margin-top: 33px;
+    color: var(--blanco);
+    display: flex;
+}
+
+.center a { color: var(--blanco); 
+    font-size: 14px; 
+    text-decoration: none; 
+    font-family: "Fira Sans"; 
+    margin-left: auto;
+
+}
+
+.orwith {
     text-align: center;
     color: var(--blanco);
-}
-.center a {
-    color: var(--blanco);
-}
-.orwith{
-    text-align: center;
-    color: var(--blanco);
-    font-size: var(--h6);
+    font-size: var 14px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+
+/*-----------------------*/
 .singin {
+    margin: 0 auto;
     width: 100%;
-    max-width: 360px; 
-    background-color: var(--rosa);
+    max-width: 360px;
+    background-color: var(--azulOscuro);
     padding: 16px 24px;
     text-align: center;
-    margin: 0 180px;
 }
 
+.singin h1 {
+    color: var(--rosa);
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto;
+    background-color: var(--azulOscuro);
+    line-height: normal;
+    font-family: 'Norteam';
+    src: url(../assets/fonts/norteam-norteam-texture-02-400.ttf);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 16px;
+    margin-bottom: 35px;
+}
 
 .singin input[type="email"],
 .singin input[type="tel"],
 .singin input[type="text"],
 .singin input[type="password"] {
     display: block;
-    width: 284px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    background-image: url('../assets/imagenes/Contenedores.svg');
+    background-size: auto; 
+    background-repeat: no-repeat;
+    background-position: -835px -1152px; 
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.singin input[type="email"]::placeholder,
+.singin input[type="tel"]::placeholder,
+.singin input[type="text"]::placeholder,
+.singin input[type="password"]::placeholder {
+    color: white;
+}
+
+.singin input[type="email"]:focus,
+.singin input[type="tel"]:focus,
+.singin input[type="text"]:focus,
+.singin input[type="password"]:focus,
+.singin input[type="email"]:hover,
+.singin input[type="tel"]:hover,
+.singin input[type="text"]:hover,
+.singin input[type="password"]:hover {
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -835px -1152px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
     height: 48px;
     margin-bottom: 30px;
-    background-color: var(--aqua);
+}
+
+.password-container input[type="password"] {
+    width: 100%;
+    padding-right: 40px;
+    background-color: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -835px -1152px;
     border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.password-container button {
+    position: fixed;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/imagenes/ojo_tachado.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    color: var(--blanco);
+    background-color: transparent;
 }
 
 .singin .orwith {
@@ -943,7 +1093,7 @@ button[type="submit"] {
 }
 
 .singin #show-password {
-    margin-left: -70px;
+    display: none;
 }
 
 .singin label[for="show-password"] {
@@ -952,40 +1102,7 @@ button[type="submit"] {
     color: var(--blanco);
     font-size: 14px;
 }
-.singin> form > .check{
-        
-}
-.singin .orwith{
-    font-size: 17px;
-}
-.singin button{
-    margin: 8px;
-}
-.singin .center{
-    font-size: 15px;
-}
-.singin> form > button{
-   text-align: center;
-    width: 165px;
-    height: 30px;
-    font-size: 17px;
-}
 
-.login .email form button{
-    text-align: center;
-}
-.login > .email> form > .orwith{
-    font-size: 17px;
-}
-.login > .email> form > button{
-    width: 300px;
-    height: 30px;
-    font-size: 17px;
-}
-.login > .email> form > button{
-    margin: 8px;
-    
-}
 /*==========INFORMACIÓN: TABLET===========*/
 .h-info {
     height: 90px;
@@ -1031,7 +1148,7 @@ button[type="submit"] {
     font-weight: bold;
 }
 
-main.main-info {
+main .main-info {
     display: flex;
     flex-direction: column; /* Asegura que los elementos dentro se coloquen en columna */
     align-items: center;    
@@ -1060,22 +1177,28 @@ main.main-info .info {
 
 main.main-info h1 {
     color: var(--blanco);
-    margin: 20px auto;
+    padding: 150px;
+    margin: 5px ;
     background-color: unset;
-    font-size: var(--h1t);
-    font-family: var(--fontTitle);
+    font-size: var(--h1);
+    font-family: "Norteam";
 }
 
-main.main-info .info p {
+main.main-info .cyan6 p {
     line-height: 1.6;
     color: var(--negro);
     font-size: 14px;
     margin: 0 ;
     margin-top:50px;
-    font-size: var(--pt);
-    font-family: var(--fontText);
+    font-size: var(--pp);
+    font-family: "Fira Sans";
 }
-
+main.main-info .cyan6 img {
+    width: 450px;
+}
+main.main-info .cyan6{
+    width: 60%;
+}
 .grupos-info {
     margin: 0 auto;
     width: 728px;
@@ -1189,14 +1312,23 @@ main.main-info .info p {
         }
 
         .fecha {
-            width: 100%;
+            width: 10%;
             height: auto;
             background-color: var(--aqua);
             background-image: unset;
             background-size: auto;
             background-repeat: no-repeat;
             background-position: -738px -254px;
-            font-size: 42px;
+            font-size: var(--h6);
+            margin: 0 600px;
+            margin-bottom: 12px;
+        }
+        .fecha h6 {
+            
+            height: auto;
+            
+            
+            
             text-align: right;
             margin-bottom: 12px;
         }
@@ -1215,8 +1347,8 @@ main.main-info .info p {
         p {
             background-color: unset;
             font-style: normal;
-            font-family: var(--fontText);
-            font-size: var(--pt);
+            font-family: "Fira Sans";
+            font-size: var(--pp);
             font-weight: 400;
             line-height: normal;
             width: 100%;
@@ -1245,7 +1377,7 @@ main.main-info .info p {
             background-color: unset;
             font-style: normal;
             font-family: var(--fontText);
-            font-size: var(--pt);
+            font-size: var(--pP);
             font-weight: 400;
             line-height: normal;
             width: 100%;
