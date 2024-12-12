@@ -2,7 +2,7 @@
     "titulo": "La teoría del Internet muerto: ¿Estamos rodeados de bots y manipulaciones?",
     "autor": "Equipo editorial de Mutarte",
     "fecha": "8 de noviembre de 2024",
-    "categoría": "Artículos",
+    "categoria": "Artículos",
     "lead": "La teoría del 'Internet Muerto' propone que buena parte de la actividad en la web está protagonizada por bots y algoritmos, y no por personas reales. Esta idea cuestiona si estamos interactuando genuinamente con otros usuarios o si somos presas de una manipulación sistemática en las redes sociales. ¿Hasta qué punto estamos rodeados de inteligencia artificial en lugar de humanidad? ¿Y quién se beneficia realmente de esta red fantasmal?",
     "contenido": [
         {
@@ -38,23 +38,23 @@
         "desinformación",
         "internet"
     ],
-    "descripción_de_imágenes": [
+    "descripciones_imagenes": [
         {
-            "descripción": "Una red de iconos de redes sociales en un fondo oscuro, simulando un vacío cibernético, con algunos rostros pixelados que se desvanecen."
+            "descripcion": "Una red de iconos de redes sociales en un fondo oscuro, simulando un vacío cibernético, con algunos rostros pixelados que se desvanecen."
         },
         {
-            "descripción": "Un teléfono móvil en el que se muestra una red social llena de comentarios idénticos, resaltando la presencia de posibles bots."
+            "descripcion": "Un teléfono móvil en el que se muestra una red social llena de comentarios idénticos, resaltando la presencia de posibles bots."
         },
         {
-            "descripción": "Una pantalla llena de códigos y algoritmos, simulando el concepto de inteligencia artificial gobernando el espacio digital."
+            "descripcion": "Una pantalla llena de códigos y algoritmos, simulando el concepto de inteligencia artificial gobernando el espacio digital."
         }
     ],
-    "epígrafes": [
+    "epigrafes": [
         "¿Es el Internet un teatro de sombras manejado por algoritmos?",
         "La manipulación sistemática de redes: bots y fake news como armas de control social.",
         "Interactuando con la nada: la teoría del ‘Internet Muerto’ y la presencia creciente de bots en línea."
     ],
-    "citas": [
+    "citas_autores": [
         {
             "texto": "Nos encontramos en una era de simulación total. Ya no podemos distinguir lo real de lo imaginado.",
             "autor": "Jean Baudrillard"
