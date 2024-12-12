@@ -4,7 +4,7 @@
     "fecha": "08 de noviembre de 2024",
     "categoria": "Artículos",
     "lead": "El 'Valle Inquietante' no solo es un término técnico, sino una estética que confronta la frontera entre lo humano y lo artificial. Hoy, este concepto pervade el cine, el arte digital y las gráficas contemporáneas, lanzándonos a un juego entre lo familiar y lo alienante. ¿Qué nos dice esta paradoja visual sobre nuestras propias percepciones y miedos?",
-    "desglose_del_contenido": [
+    "contenid": [
       "La teoría del Valle Inquietante fue propuesta por el investigador japonés Masahiro Mori en 1970 para explicar el fenómeno de incomodidad que surge cuando observamos una figura humanoide que se asemeja mucho a un ser humano, pero no lo suficiente como para convencernos completamente. Esa 'casi humanidad' provoca un rechazo instintivo: una mezcla de extrañeza y atracción que nos mantiene en una especie de suspenso emocional. En el ámbito de las artes gráficas, esta inquietud se ha transformado en una estética que explora lo grotesco, lo mecánico y lo posthumano, cuestionando qué significa ser humano en una era de simulaciones y réplicas.",
       "La estética del Valle Inquietante juega con los límites de la percepción humana. Al incorporar elementos casi orgánicos, pero imposibles de integrar por completo, esta estética se ha expandido más allá de la robótica para abarcar lo gráfico, lo cinematográfico y el arte digital. Artistas y diseñadores como Simon Stålenhag, James Jean y Juno Calypso han aprovechado esta zona de desconcierto para sumergir al espectador en universos que sienten incompletos, alienantes, incluso perversos. En este cruce entre lo familiar y lo extraño, el arte encuentra un terreno fértil para explorar nuestros miedos hacia lo artificial, lo casi vivo, lo que tiene 'alma' pero no una humanidad que reconocemos como propia.",
       "Simon Stålenhag, el ilustrador sueco conocido por sus paisajes futuristas poblados de robots y estructuras semiabandonadas, ejemplifica este concepto en sus obras. Los paisajes naturales se mezclan con criaturas mecánicas, cuyos ojos y gestos nos recuerdan vagamente a seres vivos, pero la estructura robótica las vuelve irreconocibles. Estos híbridos tecnológicos parecen observarnos, pero sus ojos sin emoción evocan esa paradoja del Valle Inquietante. En sus ilustraciones, vemos un mundo familiar, un entorno postapocalíptico que pudo haber sido el nuestro, y una estética casi orgánica pero definitivamente mecánica.",
@@ -27,7 +27,7 @@
       "inteligencia artificial",
       "CGI"
     ],
-    "descripcion_imagenes": [
+    "descripciones_imagenes": [
       "Paisaje de Simon Stålenhag mostrando un campo de aspecto desolado con una figura robótica, mezcla de animal y máquina, que observa al espectador en un entorno distópico.",
       "Escena de David Lynch en Twin Peaks, con un primer plano de 'Bob' en una expresión que mezcla familiaridad y amenaza, jugando con los tonos de luces y sombras.",
       "Imagen generada por IA que representa un rostro humanoide con ligeros desajustes (ojos asimétricos, expresión rígida), evocando el efecto del Valle Inquietante."
@@ -37,7 +37,7 @@
       "Simon Stålenhag explora un mundo donde la robótica y la naturaleza se funden en una inquietante armonía.",
       "En Twin Peaks, lo inquietante surge de lo humano que, a pesar de su apariencia, actúa con una inhumanidad fría y calculada."
     ],
-    "citas": [
+    "citas_autores": [
       "La sombra de lo humano es una sombra que nunca dejará de perseguirnos, porque está hecha de nuestras peores pesadillas y nuestros mayores deseos. - David Lynch",
       "Hay un límite extraño donde la realidad y la simulación colisionan, y en ese vacío percibimos una humanidad que nunca termina de ser. - Masahiro Mori",
       "La tecnología busca asemejarse a nosotros, pero en su perfección técnica a menudo falla en recordarnos la imperfecta naturaleza humana. - Simon Stålenhag"
