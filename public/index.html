@@ -108,20 +108,18 @@
         </section>
 
         <section class="tutorial_video">
-            <article class="video">
-                <video muted>
-                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
-                        type="video/webm">
-                    <source src="#" type="video/mp4">
-                </video>
-            </article>
+            <div class="video" id="videoContainer">
+                <iframe id="player" width="100%" height="200" src="https://www.youtube.com/embed/1ONxxlJnvdM?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
             <article class="contenido">
                 <p>8 de noviembre de 2024</p>
-                <h3>CON-CIENCIA</h3>
-                <p> DEl “Valle Inquietante” no solo es un término técnico, sino una estética que confronta la frontera
-                    entre lo humano y lo artificial. Hoy, este concepto pervade el cine, el arte digital y las gráficas
-                    contemporáneas, lanzándonos a un juego entre lo familiar y lo alienante. ¿Qué nos dice esta paradoja
-                    visual sobre nuestras propias percepciones y miedos?
+                <h3>Introducción a Variables en Figma</h3>
+                <p> Por definición, una variable es algo que puede variar en valor o tomar múltiples valores. Las
+                    variables en Figma almacenan valores reutilizables, como valores de color y números, que se pueden
+                    aplicar a todo tipo de propiedades de diseño e incluso prototipos. Los valores de una variable
+                    también pueden hacer referencia a otras variables, lo que facilita la actualización de los sistemas
+                    de diseño. En este video, cubriremos cómo funcionan las variables y cómo usarlas para representar
+                    tokens de diseño y dar cuenta de diferentes modos y temas.
                 </p>
             </article>
         </section>
@@ -222,6 +220,42 @@
             .catch((error) => {
                 console.error("Error al cargar los artículos:", error);
             });
+
+        var player;
+
+        // Cargar la API de IFrame de YouTube
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Crear el reproductor cuando la API esté lista
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            const videoContainer = document.getElementById('videoContainer');
+
+            videoContainer.addEventListener("mouseenter", () => {
+                player.seekTo(0); // Reinicia el video al inicio
+                player.mute(); // Silencia el video
+                player.playVideo(); // Reproduce el video
+            });
+
+            videoContainer.addEventListener("mouseleave", () => {
+                player.pauseVideo(); // Pausa el video
+            });
+
+            videoContainer.addEventListener("click", () => {
+                player.unMute(); // Activa el audio
+                player.playVideo(); // Asegúrate de que se reproduce al hacer clic
+            });
+        }
 
     </script>
 </body>
