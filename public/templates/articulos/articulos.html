@@ -65,7 +65,7 @@
         <section class="articulos_carrusel swiper">
             <h2>Casos de exito</h2>
             <div class="swiper-wrapper">
-                <div class="articulo swiper-slide">
+                <!-- <div class="articulo swiper-slide">
                     <img src="../../assets/imagenes/img_arti.png" alt="placeholder image">
                     <h3>El Mito de Sísifo: Cuando la Rutina se vuelve castigo</h3>
                     <p>Descripción: es una de las metáforas más crudas del esfuerzo humano 
@@ -85,7 +85,7 @@
                     <p>Descripción: es una de las metáforas más crudas del esfuerzo humano 
                         condenado a lo absurdo, una narrativa que se recicla en la vida 
                         cotidiana de quienes repiten la misma rutina hasta el hartazgo.</p>
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -108,5 +108,40 @@
     <script src="../../scripts/fter.js"></script>
     <script src="../../scripts/adn.js"></script>
     <script src="../../scripts/carrusel.js"></script> <!-- Se agregó el script del carrusel -->
+    <script>
+        const contenedor = document.querySelector(".swiper-wrapper");
+
+// Carga los artículos desde el archivo JSON
+fetch("./assets/jsons/articulos.json")
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error("No se pudo cargar el archivo JSON");
+        }
+        return response.json();
+    })
+    .then((articulos) => {
+        articulos.forEach((articulo) => {
+            const div = document.createElement("div");
+            div.className = "articulo swiper-slide";
+
+            // Contenido del artículo con ID dinámico
+            div.innerHTML = `
+        <img src="${articulo.portada}" alt="Portada artículo ${articulo.titulo}">
+        <h3>${articulo.titulo}</h3>
+        <p>${articulo.fecha}</p>
+    `;
+
+            // Agrega evento de clic para redirigir al artículo respectivo
+            div.addEventListener("click", () => {
+                window.location.href = `/articulos/${articulo.id}`; // Ruta dinámica
+            });
+
+            contenedor.appendChild(div);
+        });
+    })
+    .catch((error) => {
+        console.error("Error al cargar los artículos:", error);
+    });
+    </script>
 </body>
 </html>
