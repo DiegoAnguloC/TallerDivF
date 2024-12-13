@@ -1,6 +1,6 @@
 // Carrusel de artículos
 const articuloCarrusel = new Swiper('.articulos_carrusel', {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   navigation: {
     nextEl: '.articulos_carrusel .swiper-button-next',
@@ -13,7 +13,7 @@ const articuloCarrusel = new Swiper('.articulos_carrusel', {
       spaceBetween: 20,
     },
     1600: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
   },
@@ -29,7 +29,7 @@ const articuloCarrusel = new Swiper('.articulos_carrusel', {
 
 // Carrusel de artistas
 const artistaCarrusel = new Swiper('.artistas_carrusel', {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   navigation: {
     nextEl: '.artistas_carrusel .swiper-button-next',
@@ -38,11 +38,11 @@ const artistaCarrusel = new Swiper('.artistas_carrusel', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1600: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
   },
