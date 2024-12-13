@@ -753,7 +753,7 @@ index {
     height: 183px;
 }
 
-.leer_tutorial_video-mobile .tutorial_principal p:nth-child(1) {
+.leer_tutorial_video-mobile .tutorial_principal p:nth-child(1){
     width: 130px;
     height: 23px;
     color: #000;
@@ -767,7 +767,7 @@ index {
     padding-right: 10px;
     /* display: flex; /* Convertir en contenedor flex */
     justify-content: flex-end; /* Alinea horizontalmente el contenido a la derecha */
-    align-items: center;  */
+    align-items: center;
 }
 
 
@@ -1326,22 +1326,24 @@ index {
 /* ========================= TUTORIAL ================================= */
 .bodytuto {
     display: flex;
-    width: 360px;
-    height: 2600px;
-    padding: var(--16, 16px);
+    width: auto;
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--16, 16px);
+    
     background: var(--azulOscuro);
 }
 
 .bodytuto .maintuto {
     display: flex;
-    height: 2202px;
+    height: auto;
+    padding: var(--16, 16px);
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
     flex-shrink: 0;
+    width: auto;
+    margin-top: 100px;
 }
 
 .bodytuto .maintuto .sectiontuto {
